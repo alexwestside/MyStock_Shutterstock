@@ -1,2 +1,0 @@
-#!bin/user/python
-
