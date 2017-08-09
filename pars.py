@@ -6,6 +6,7 @@ import readline
 import linecache
 import re
 import datetime
+import os
 from peewee import *
 
 #### GlobalVar ########################################################################################################
@@ -19,8 +20,9 @@ erns = 0
 num = 0
 #######################################################################################################################
 
-fp = "/Users/alex/PycharmProjects/untitled1/ernings_july_2017.txt"
-fd = open(fp, mode='r')
+file = "ernings_july_2017.txt"
+fp = os.path.join(os.path.dirname(os.path.realpath('__file__')), file)
+fd = open(fp)
 len_lines = len(fd.readlines())
 fd.close()
 i = 0
@@ -55,7 +57,6 @@ with open(fp, mode='r') as f:
 
             # _ernings = ernings(month=month, date=date, weekday=weekday, id=id, ernings=erns, downloads=num, ernings_type=ernings_type)
             # _ernings.save()
-
 
             print(month, end=' ')
             print(date, end=' ')

@@ -16,6 +16,7 @@ from BeautifulSoup import BeautifulSoup
 # Login <a id="login-trigger" href="/login">Sign In</a>
 # url = https://contributor-accounts.shutterstock.com/login
 
+# https://submit.shutterstock.com/edit_media.mhtml?type=photos&approved=1&id=508654753
 
 EarningsSummaryPage = "https://submit.shutterstock.com/earnings/details?page=1&language=en&category=25_a_day&sort=desc&sorted_by=count&per_page=20"
 
@@ -91,28 +92,43 @@ url = 'https://contributor-accounts.shutterstock.com/login'
 
 
 
-import requests
+# import requests
+#
+# def parse_one():
+#     # USERNAME = input('yanushkov@gmail.com')
+#     # PASSWORD = input('328993Standart')
+#
+#     LOGIN_URL = 'https://contributor-accounts.shutterstock.com/login'
+#     URL = "https://submit.shutterstock.com/earnings/details?page=1&language=en&category=25_a_day&sort=desc&sorted_by=count&per_page=20"
+#
+#     session_requests = requests.session()
+#
+#     payload = {
+#         "email": 'yanushkov@gmail.com',
+#         "password": '328993Standart'
+#     }
+#
+#     # Perform login
+#     result = session_requests.post(LOGIN_URL, data=payload, headers=dict(referer=LOGIN_URL))
+#
+#     # Scrape journal_url
+#     result = session_requests.get(URL, headers=dict(referer=URL))
+#     soup = BeautifulSoup(result.content)
+#     print(soup)
+#
+# parse_one()
 
-def parse_one():
-    # USERNAME = input('yanushkov@gmail.com')
-    # PASSWORD = input('328993Standart')
 
-    LOGIN_URL = 'https://contributor-accounts.shutterstock.com/login'
-    URL = "https://submit.shutterstock.com/earnings/details?page=1&language=en&category=25_a_day&sort=desc&sorted_by=count&per_page=20"
 
-    session_requests = requests.session()
+import sha3
+import hashlib
+import request
 
-    payload = {
-        "email": 'yanushkov@gmail.com',
-        "password": '328993Standart'
-    }
-
-    # Perform login
-    result = session_requests.post(LOGIN_URL, data=payload, headers=dict(referer=LOGIN_URL))
-
-    # Scrape journal_url
-    result = session_requests.get(URL, headers=dict(referer=URL))
-    soup = BeautifulSoup(result.content)
-    print(soup)
-
-parse_one()
+# url = 'https://account.socialbakers.com/login'
+myemail = "yanushkov@gmail.com"
+mypassword = hashlib.sha512(b"328993Standart").hexdigest() #take SHA3 of password
+payload = {'email':myemail, 'password':mypassword}
+with session() as s:
+    soup = BeautifulSoup(s.get(url).content)
+    p = s.post(url, data = payload, verify=True)
+    print(p.text)
