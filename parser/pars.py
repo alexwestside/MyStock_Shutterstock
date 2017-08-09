@@ -8,11 +8,13 @@ import re
 import datetime
 import os
 from peewee import *
+from var import *
+import html_txt
 
 #### GlobalVar ########################################################################################################
-MONTH = {'01':'January', '02':'February', '03':'March', '4':'April', '5':'May', '6':'June',
-         '07':'July', '8':'August', '9':'September', '10':'October', '11':'November', '12':'December'}
-WEEKDAY = {0:'Monday', 1:'Tuesday', 2:'Wednesday', 3:'Thursday',4:'Fraiday', 5:'Saturday', 6:'Sunday'}
+# MONTH = {'01':'January', '02':'February', '03':'March', '4':'April', '5':'May', '6':'June',
+#          '07':'July', '8':'August', '9':'September', '10':'October', '11':'November', '12':'December'}
+# WEEKDAY = {0:'Monday', 1:'Tuesday', 2:'Wednesday', 3:'Thursday',4:'Fraiday', 5:'Saturday', 6:'Sunday'}
 ernings_type = None
 date = None
 id = 0
@@ -20,7 +22,7 @@ erns = 0
 num = 0
 #######################################################################################################################
 
-file = "ernings_july_2017.txt"
+file = "../html_txt/ernings_july_2017.txt"
 fp = os.path.join(os.path.dirname(os.path.realpath('__file__')), file)
 fd = open(fp)
 len_lines = len(fd.readlines())
@@ -41,7 +43,7 @@ i = 0
 #
 # mySQL_db.connect()
 
-with open(fp, mode='r') as f:
+with open(fp) as f:
     line = f.readlines()
     for i in range(0, len_lines):
         if line[i].find('li role=\"presentation\" class=\"active\"') > 0:

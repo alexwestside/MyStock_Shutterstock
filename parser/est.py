@@ -1,21 +1,18 @@
 
+
+
 from __future__ import print_function
 import fileinput
 import readline
 import re
 import datetime
-
-MONTH = {'01':'January', '02':'February', '03':'March', '4':'April', '5':'May', '6':'June',
-         '07':'July', '8':'August', '9':'September', '10':'October', '11':'November', '12':'December'}
-WEEKDAY = {0:'Monday', 1:'Tuesday', 2:'Wednesday', 3:'Thursday',4:'Fraiday', 5:'Saturday', 6:'Sunday'}
+from var import *
 
 url = 'https://submit.shutterstock.com/earnings/details?page=1&language=en&category=25_a_day&sort=desc&sorted_by=count&per_page=20'
 
 test1 = 'https://submit.shutterstock.com/earnings/details?page=1&language=en&category=25_a_day&sort=desc&sorted_by=count&per_page=20'
 test2 = 'https://submit.shutterstock.com/earnings/details?page=1&language=en&category=25_a_day&sort=desc&sorted_by=count&per_page=20'
 
-type_dict = {'Subscription': '25_a_day', 'Enhanced': 'enhanced', 'On Demand': 'on_demand', 'Videos': 'video_all', 'Single & other': 'single_image_and_other'}
-type_list = ['Subscription', 'Enhanced', 'On Demand', 'Videos', 'Single & other']
 
 type = None
 ernings_type = None
@@ -24,7 +21,7 @@ caunt_page = 0
 id = None
 link = None
 
-with open('test1.txt', mode='r') as file:
+with open('../html_txt/test1.txt', mode='r') as file:
     line = file.readlines()
     for i in range(len(line)):
         if line[i].find('li role=\"presentation\" class=\"active\"') > 0:
