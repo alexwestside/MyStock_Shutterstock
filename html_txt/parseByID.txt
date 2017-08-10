@@ -1,0 +1,2543 @@
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>  <html class="ie ie6 lte9 lte8 lte7" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<!--[if IE 7]>     <html class="ie ie7 lte9 lte8 lte7" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<!--[if IE 8]>     <html class="ie ie8 lte9 lte8" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<!--[if IE 9]>     <html class="ie ie9 lte9" prefix="og: http://ogp.me/ns#"><![endif]-->
+<!--[if gt IE 9]>  <html prefix="og: http://ogp.me/ns#"> <![endif]-->
+<!--[if !IE]><!--> <html prefix="og: http://ogp.me/ns#"> <!--<![endif]-->
+	<head>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta NAME="revisit-after" CONTENT="2 days">
+<meta name="description" content="Shutterstock - Sell your photos and make money"> <meta name="keywords" content="sell stock photography, photos, digital, royalty free, images, royalty, free, royalty free stock, communication , people, stock, stock images, photos, pictures, business, art, travel, wildlife, nature, illustration, advertising, gallery, digital photography, images, library, imagery, stock, agency, graphic, visual, design, graphic design, web design, content,  high resolution images, royalty free images,stock photo">
+<meta NAME="distribution" CONTENT="global">
+<meta NAME="resource-type" CONTENT="document">
+<meta NAME="rating" CONTENT="General">
+<meta NAME="ROBOTS" CONTENT="INDEX, ALL">
+<meta NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+
+<link rel="shortcut icon" href="/favicon_viewfinder.ico" />
+
+
+		<title>Shutterstock - Make money with your images and videos!</title>
+		<meta name="description" content="Shutterstock - Sell your images and video and make money">
+		<meta name="keywords" content="sell stock photography, photos, digital, royalty free, images, royalty, free, royalty free stock, communication , people, stock, stock images, photos, pictures, business, art, travel, wildlife, nature, illustration, advertising, gallery, digital photography, images, library, imagery, stock, agency, graphic, visual, design, graphic design, web design, content,  high resolution images, royalty free images,stock photo">
+		<meta property="og:title" content="Shutterstock - Make money with your images and videos!">
+		<meta property="og:image" content="http://submit.shutterstock.com/images/opengraph/icon.png">
+		<meta property="og:type" content="company">
+		<meta property="og:url" content="http://submit.shutterstock.com/">
+		<meta property="og:site_name" content="Shutterstock">
+		<meta property="og:description" content="Shutterstock - Sell your images and video and make money">
+			<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png" />
+
+
+
+
+<link rel="stylesheet" type="text/css" href="/css/lib/bootstrap.css?rev=3" />
+<link rel="stylesheet" type="text/css" href="/css/core.css?rev=21" />
+<link rel="stylesheet" type="text/css" href="/css/submit.css?rev=17" />
+<link rel="stylesheet" type="text/css" href="/css/submit.responsive.css?rev=5" />
+	<link rel="stylesheet" href="/css/submit.hover.css" />
+<!--[if (IE 7)|(IE 8)]>
+<link rel="stylesheet" type="text/css" href="/css/style_ie7_up.css?rev=5" />
+<![endif]-->
+
+<link rel="stylesheet" type="text/css" href="/css/content_editor.css?rev=54" />
+<link rel="stylesheet" type="text/css" href="/css/no_ie6.css" />
+
+		<script src="/js/lib/respondjs/respond.min.js"></script>
+	</head>
+	<body id="submit-page" class="en">
+
+<div class="logged_in">
+<div class="header_container ">
+	<div class="header">
+
+<div class="site_operations">
+	<ul id="account_details" class="navigation">
+	<li class="clearfix account_menu menu ">
+		<h6 class="pull-left">
+			<div class="ellipsis">Andrey</div>
+		</h6>
+		<i class="icon icon-chevron-down pull-left"></i>
+		<ul id="account_details_menu">
+			<li><a href="/admin.mhtml">Account Settings</a></li>
+			<li><a href="/public_information.mhtml">Public Information</a></li>
+			<li><a href="http://support.shutterstock.com/contributor">Support Center</a></li>
+			<li><a href="/contact/">Contact Us</a></li>
+			<li><a href="/logout.mhtml">Log Out</a></li>
+		</ul>
+	</li>
+</ul>
+
+
+	<ul id="language_dropdown" class="navigation">
+	<li class="language_dropdown_menu menu">
+		<h6>
+			English
+		</h6>
+		<i class="icon icon-chevron-down"></i>
+		<ul id="language_menu">
+			<li class="">
+				<a href="/edit_media.mhtml?language=de&amp;approved=1&amp;id=508655170&amp;type=photos">
+					<i class="pull-right icon icon-ok"></i>
+					Deutsch
+				</a>
+			</li>
+			<li class="selected">
+				<a href="/edit_media.mhtml?language=en&amp;approved=1&amp;id=508655170&amp;type=photos">
+					<i class="pull-right icon icon-ok"></i>
+					English
+				</a>
+			</li>
+			<li class="">
+				<a href="/edit_media.mhtml?language=es&amp;approved=1&amp;id=508655170&amp;type=photos">
+					<i class="pull-right icon icon-ok"></i>
+					Español
+				</a>
+			</li>
+			<li class="">
+				<a href="/edit_media.mhtml?language=fr&amp;approved=1&amp;id=508655170&amp;type=photos">
+					<i class="pull-right icon icon-ok"></i>
+					Français
+				</a>
+			</li>
+			<li class="">
+				<a href="/edit_media.mhtml?language=pt&amp;approved=1&amp;id=508655170&amp;type=photos">
+					<i class="pull-right icon icon-ok"></i>
+					Português
+				</a>
+			</li>
+			<li class="">
+				<a href="/edit_media.mhtml?language=ko&amp;approved=1&amp;id=508655170&amp;type=photos">
+					<i class="pull-right icon icon-ok"></i>
+					한국어
+				</a>
+			</li>
+			<li class="">
+				<a href="/edit_media.mhtml?language=ja&amp;approved=1&amp;id=508655170&amp;type=photos">
+					<i class="pull-right icon icon-ok"></i>
+					日本語
+				</a>
+			</li>
+		</ul>
+	</li>
+</ul>
+
+
+
+
+
+
+</div>
+
+		<a class="logo_container" href="/">
+			<div class="logo"></div>
+			<div class="home_icon">&nbsp;</div>
+		</a>
+	</div>
+
+
+
+<div class="navigation_container">
+	<ul class="navigation">
+		<li class="earnings menu">
+			<a href="/stats.mhtml">
+				<div id='stats_help_bubble' class="help_bubble help_bubble_colorway_default" style="display: none;">
+	<h1>Unpaid Earnings</h1>
+	<div class="help-message">See how much you have earned <br />since your last payout.</div>
+	<div class="arrow_border arrow_border_top_right arrow_border_top_right_colorway_default"></div>
+	<div class="arrow arrow_top_right arrow_top_right_colorway_default"></div>
+</div>
+
+
+
+
+
+					Earnings:
+					<h1 class="light">$331.53</h1>
+					<i class="icon icon-chevron-down"></i>
+			</a>
+			<ul>
+				<li>
+					<a>
+						<table>
+							<tr>
+								<td class="nav_stats_label">
+									Monthly Downloads:
+								</td>
+								<td class="nav_stats_value">
+									666
+								</td>
+							</tr>
+							<tr>
+								<td class="nav_stats_label">
+									Followers:
+								</td>
+								<td class="nav_stats_value">
+									0
+								</td>
+							</tr>
+						</table>
+					</a>
+				</li>
+			</ul>
+		</li>
+		<li class="home">
+			<a href="/" alt="Home" title="Home">
+				<div class="inline_logo">&nbsp;</div>
+			</a>
+		</li>
+		<li class="earnings_menu menu ">
+			<h6>Earnings</h6> <i class="icon icon-chevron-down"></i>
+			<ul>
+				<li><a href="/stats.mhtml">Earnings Summary</a></li>
+				<li><a href="/delayed_earnings.mhtml">Delayed Earnings</a></li>
+				<li><a href="/payment_history.mhtml">Payment History</a></li>
+				<li><a href="/referrals.mhtml">Referred Contributors</a></li>
+				<li><a href="/tax_center.mhtml">Tax Center</a></li>
+			</ul>
+		</li>
+		<li class="portfolio_menu menu ">
+			<h6>Portfolio</h6><i class="icon icon-chevron-down"></i>
+			<ul>
+				<li><a href="/submit_alt.mhtml">Upload</a></li>
+				<li><a href="/content_editor.mhtml">Submit Images</a></li>
+				<li><a href="/footage_content_editor.mhtml">Submit Videos</a></li>
+				<li><a href="/review.mhtml?type=photos">Approval Status: Images</a></li>
+				<li><a href="/review.mhtml?type=footage">Approval Status: Videos</a></li>
+				<li><a href="/catalog_manager.mhtml">Catalog Manager</a></li>
+				<li><a href="/saved_releases.mhtml">Manage Releases</a></li>
+				<li><a href="/portfolio/suggestions.mhtml">Keyword Suggestions</a></li>
+			</ul>
+		</li>
+		<li class="promotion_menu menu ">
+			<h6>Promotion</h6><i class="icon icon-chevron-down"></i>
+			<ul>
+				<li><a href="/promotions/referrals/">Referral Program</a></li>
+				<li><a href="/promotions/referrals/banners">Referral Banners</a></li>
+				<li><a href="http://promote.shutterstock.com">Gallery</a></li>
+			</ul>
+		</li>
+		<li class="insights_menu menu ">
+			<h6>Insights</h6><i class="icon icon-chevron-down"></i>
+			<ul>
+				<li class="has_beta"><a href="/darkroom/gallery.mhtml"><span class="beta">Beta</span>Image Gallery Stats</a></li>
+				<li><a href="/forum.mhtml">Forum</a></li>
+				<li><a href="http://www.shutterstock.com/contributor-blog?pl=SubGF" target="_blank">Contributor Blog</a></li>
+				<li><a href="http://www.shutterstock.com/blog/?tag=newsletter">Newsletter Archive</a></li>
+			</ul>
+		</li>
+		<li class="upload">
+			<h6><a href="/submit_alt.mhtml?r=nav">Upload</a></h6>
+		</li>
+		<li class="stub">
+			<h6>&nbsp;</h6>
+		</li>
+	</ul>
+	<div class="clearing"></div>
+</div>
+
+
+
+
+</div>
+
+
+
+
+<div class="shutterstock_submit_page">
+
+	<div class="pagetitle">
+		<h2></h2>
+	</div>
+
+
+
+
+
+<!--[if IE]>
+
+<style type="text/css">
+#language_options {
+	margin: 0px;
+	top: -25px !important;
+
+}
+</style>
+
+<![endif]-->
+
+<style type="text/css">
+#submission_container, #select_all_container, #inline_selection, #watch_video {
+	display: none;
+}
+
+#selection_controls_container {
+	height: 43px
+}
+
+#pending_images_workspace {
+	margin-top: 0px;
+}
+
+.property_text {
+	width: 141px;
+}
+
+.photos .item_view_thumb img {
+	max-width: none;
+}
+
+.footage .selection_item {
+	cursor: pointer !important;
+}
+
+#save_success_notification {
+	margin: 10px 0 10px 5px;
+	width: 942px;
+}
+
+#undo_container {
+	border-left: 0 none !important;
+}
+</style>
+
+<div id="batch_upload_beta">
+
+
+	<div class="pagetitle">
+		<h2>Edit Photo</h2>
+	</div>
+
+
+
+
+<div id="save_success_notification" class="alert alert-success" style="display: none">
+	Your content was updated successfully. The changes you made may take several hours to take effect on the Shutterstock site.
+</div>
+
+<p class="instructions browser-lang-en">
+	Please enter descriptions and keywords of your images in English.
+</p>
+
+<div id="selection_controls_container">
+
+	<div id="selection_controls">
+		<div id="actions">
+			<div id="batch_actions">
+				<div id="submission_container" class="page_operation_container">
+					<button id="submit_batch" class="btn btn-primary btn-small"></button>
+
+				</div>
+
+				<div id="save_page_container" class="page_operation_container">
+					<button id="save_page" class="btn btn-small">Submit &amp; Save</button>
+				</div>
+
+				<div id="select_all_container" class="action">
+					<span id="select_all_label" class="unselectable"></span><span id="select_all"></span><span id="select_none"></span>
+				</div>
+
+				<div id="undo_container" class="action" title="Undo">
+					<div class="icon"></div>
+				</div>
+
+				<div id="redo_container" class="action" title="Redo">
+					<div class="icon"></div>
+				</div>
+
+				<div id="delete_selected" class="action" title="Delete Selected Content">
+					<div class="icon"></div>
+				</div>
+
+				<div id="watch_video" class="action">
+					<div class="icon" title="Watch Video"></div>
+					<span></span>
+				</div>
+
+				<div id="stub" class="action unselectable disabled_button">
+					&nbsp;
+				</div>
+
+			</div>
+
+			<div class="clearing"></div>
+		</div>
+
+		<div id="inline_selection"></div>
+	</div>
+
+</div>
+
+<div id="pending_images_workspace">
+
+	<div id="selection_view" class="photos">
+
+
+<div id="edit-508655170" class="item_view">
+	<div class="item_view_thumb">
+		<div class="item_view_checkbox property_view_linked_editing" style="display: none">
+			<input type="checkbox" name="selectRow" autocomplete="off">
+		</div>
+
+		<a class="selection_item">
+
+<div style="overflow:hidden; max-height:150px; width:150px">
+	<img src="https://thumb1.shutterstock.com/thumb_large/161069038/508655170/photo-508655170.jpg"		height="150"		alt="Tropical Hawaii leaves palm tree in a watercolor style isolated. Aquarelle wild flower for background, texture, wrapper pattern, frame or border."		title="Tropical Hawaii leaves palm tree in a watercolor style isolated. Aquarelle wild flower for background, texture, wrapper pattern, frame or border."	/>
+</div>
+
+
+
+
+
+
+
+		</a>
+	</div>
+	<div class="item_view_details">
+		<div class="primary_properties">
+
+<div class="property_view property_view_description">
+	<div class="required property_label">
+		* Description/Title/Caption:
+	</div>
+	<div class="property_value input_text_ECECEC">
+		<textarea name="description" class="inline-edit description">Tropical Hawaii leaves palm tree in a watercolor style isolated. Aquarelle wild flower for background, texture, wrapper pattern, frame or border.</textarea>
+	</div>
+	<div class="counter">
+		<strong class="count">145</strong> / 200 characters
+	</div>
+</div>
+
+
+<div class="property_view property_view_keywords">
+	<div class="required property_label">
+		* Keywords:
+	</div>
+	<div>
+		<div class="property_value input_text_ECECEC">
+			<div class="keywords_container">
+				<span class="keywords"></span>
+				<textarea name="keywords" cols="25" class="keyword_input" autocomplete="off"></textarea>
+			</div>
+		</div>
+		<a class="keyword-action clear_keywords">Clear All</a>
+		<div class="counter">
+			<strong class="count out_of_bounds">0</strong> / 50 keywords
+		</div>
+	</div>
+</div>
+
+		</div>
+		<div class="secondary_properties">
+
+
+<div class="property_view property_view_categories property_view_category1">
+	<div class="required property_label">
+		* Category 1:
+	</div>
+	<div class="property_value input_text_ECECEC">
+
+<select name="category1" >
+
+		<option value="" 0>
+			--select one--
+		</option>
+		<option value="26" 0>
+			Abstract
+		</option>
+		<option value="1" 0>
+			Animals/Wildlife
+		</option>
+		<option value="11" 0>
+			The Arts
+		</option>
+		<option value="3" selected="selected">
+			Backgrounds/Textures
+		</option>
+		<option value="27" 0>
+			Beauty/Fashion
+		</option>
+		<option value="2" 0>
+			Buildings/Landmarks
+		</option>
+		<option value="4" 0>
+			Business/Finance
+		</option>
+		<option value="31" 0>
+			Celebrities
+		</option>
+		<option value="5" 0>
+			Education
+		</option>
+		<option value="6" 0>
+			Food and Drink
+		</option>
+		<option value="7" 0>
+			Healthcare/Medical
+		</option>
+		<option value="8" 0>
+			Holidays
+		</option>
+		<option value="10" 0>
+			Industrial
+		</option>
+		<option value="21" 0>
+			Interiors
+		</option>
+		<option value="22" 0>
+			Miscellaneous
+		</option>
+		<option value="12" 0>
+			Nature
+		</option>
+		<option value="9" 0>
+			Objects
+		</option>
+		<option value="25" 0>
+			Parks/Outdoor
+		</option>
+		<option value="13" 0>
+			People
+		</option>
+		<option value="14" 0>
+			Religion
+		</option>
+		<option value="15" 0>
+			Science
+		</option>
+		<option value="17" 0>
+			Signs/Symbols
+		</option>
+		<option value="18" 0>
+			Sports/Recreation
+		</option>
+		<option value="16" 0>
+			Technology
+		</option>
+		<option value="0" 0>
+			Transportation
+		</option>
+		<option value="24" 0>
+			Vintage
+		</option>
+
+
+</select>
+
+
+	</div>
+</div>
+<div class="property_view property_view_categories property_view_category2">
+	<div class="property_label">
+		Category 2:
+	</div>
+	<div class="property_value">
+		<div class="property_value input_text_ECECEC">
+
+<select name="category2" >
+
+		<option value="" 0>
+			--select one--
+		</option>
+		<option value="26" 0>
+			Abstract
+		</option>
+		<option value="1" 0>
+			Animals/Wildlife
+		</option>
+		<option value="11" 0>
+			The Arts
+		</option>
+		<option value="3" 0>
+			Backgrounds/Textures
+		</option>
+		<option value="27" 0>
+			Beauty/Fashion
+		</option>
+		<option value="2" 0>
+			Buildings/Landmarks
+		</option>
+		<option value="4" 0>
+			Business/Finance
+		</option>
+		<option value="31" 0>
+			Celebrities
+		</option>
+		<option value="5" 0>
+			Education
+		</option>
+		<option value="6" 0>
+			Food and Drink
+		</option>
+		<option value="7" 0>
+			Healthcare/Medical
+		</option>
+		<option value="8" 0>
+			Holidays
+		</option>
+		<option value="10" 0>
+			Industrial
+		</option>
+		<option value="21" 0>
+			Interiors
+		</option>
+		<option value="22" 0>
+			Miscellaneous
+		</option>
+		<option value="12" selected="selected">
+			Nature
+		</option>
+		<option value="9" 0>
+			Objects
+		</option>
+		<option value="25" 0>
+			Parks/Outdoor
+		</option>
+		<option value="13" 0>
+			People
+		</option>
+		<option value="14" 0>
+			Religion
+		</option>
+		<option value="15" 0>
+			Science
+		</option>
+		<option value="17" 0>
+			Signs/Symbols
+		</option>
+		<option value="18" 0>
+			Sports/Recreation
+		</option>
+		<option value="16" 0>
+			Technology
+		</option>
+		<option value="0" 0>
+			Transportation
+		</option>
+		<option value="24" 0>
+			Vintage
+		</option>
+
+
+</select>
+
+
+		</div>
+	</div>
+</div>
+
+
+
+<div class="property_view property_view_watermark_placement">
+	<div class="property_label">
+		Watermark:
+	</div>
+	<div class="property_value input_text_ECECEC">
+		<div class="property_text unselectable">
+			Center
+		</div>
+	</div>
+</div>
+
+
+
+<div class="property_view property_view_illustration">
+	<div class="property_label">
+		Illust./Clip-Art:
+	</div>
+	<div class="property_value input_text_ECECEC">
+		<div class="property_text unselectable">
+			Yes
+		</div>
+	</div>
+</div>
+
+
+
+<div class="property_view property_view_rated_r">
+	<div class="property_label">
+		Nudity/R-Rated:
+	</div>
+	<div class="property_value input_text_ECECEC">
+		<div class="property_text unselectable">
+			No
+		</div>
+	</div>
+</div>
+
+
+<div style="display: none">
+
+
+<div class="property_view property_view_editorial">
+	<div class="property_label">
+		Editorial:
+	</div>
+	<div class="property_value input_text_ECECEC">
+		<div class="property_text unselectable">
+			No
+		</div>
+	</div>
+</div>
+
+</div>
+<div >
+	<div class="property_view property_view_releases">
+		<div class="property_label">
+			Releases:
+		</div>
+		<div class="releases_container">
+			<ul class="releases_entry_list">
+				<li>MYSTOCKS-195_Tropical leaves</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+		</div>
+		<div class="clearing"></div>
+	</div>
+	<ul class="item_view_messages"></ul>
+	<div class="clearing"></div>
+</div>
+
+	</div>
+</div>
+
+<!-- Submission Request Overlay -->
+
+
+
+
+
+<!-- Submission Response Overlay -->
+
+
+
+
+<!-- Releases Overlay -->
+
+
+
+
+
+<div id="no_more_content" class="instructions no_images" style="display: none">
+	Your content was deleted. It may take several hours for this change to be reflected on the Shutterstock website.
+</div>
+
+
+
+	<div id="ss_shadow_container_page_cover" style="display: none"></div>
+
+			<div id="submit_request_overlay" class="ss_shadow_container" style="display: none">
+				<div class="shadow">
+					<div class="ss_shadow_container_content">
+	<div id="submission_details" class="shadow_content">
+		<span class="count"></span>
+		<div class="large_carousel mini_selection"></div>
+		<select id="note_reason"></select>
+		<div id="note_extra">
+			<div class="alert alert-error"></div>
+		</div>
+	</div>
+
+	<textarea id="notes_field" name="notes"></textarea>
+	<img id="submission_loading" src="/images/loading_icon_white.gif" alt="loading" />
+</div>
+				</div>
+				<div class="sc_notch"></div>
+				<!--<div class="ss_shadow_container_close cancel_overlay close_btn"></div>-->
+			</div>
+
+			<div id="submit_response_overlay" class="ss_shadow_container" style="display: none">
+				<div class="shadow">
+					<div class="ss_shadow_container_content">
+	<ul id="batch_errors"><!-- JAVASCRIPT --></ul>
+
+	<div id="response_status" class="shadow_content">
+		<div id="response_success"></div>
+		<div id="response_error"></div>
+	</div>
+
+	<div id="next_steps"><ul><!-- JAVASCRIPT --></ul></div>
+	<div id="more_information"></div>
+	<button id="cancel_submission_response_overlay" class="cancel_overlay button"></button>
+</div>
+				</div>
+				<div class="sc_notch"></div>
+				<!--<div class="ss_shadow_container_close cancel_overlay close_btn"></div>-->
+			</div>
+
+			<div id="releases_overlay" class="ss_shadow_container" style="display: none">
+				<div class="shadow">
+					<div class="ss_shadow_container_content">
+	<div class="title_bar">
+		<h2 class="core_headline_light core_h2_light shadow_header">Add Releases</h2>
+		<a class="cancel_overlay"></a>
+	</div>
+	<div class="shadow_content">
+		<div class="large_carousel mini_selection"></div>
+		<div class="single_element"></div>
+
+		<div id="releases_interface">
+
+	<div id="releases_options">
+
+<ul class="nav nav-tabs">
+		<li class="active">
+		 	<a href="#upload" data-toggle="tab">upload new</a>
+		</li>
+		<li class="">
+		 	<a href="#saved" data-toggle="tab">saved releases</a>
+		</li>
+	</ul>
+
+
+
+
+		<div class="tab-content">
+			<div class="tab-pane active" id="upload">
+				<form method="POST" enctype="multipart/form-data" id="releases_upload_form" action="/show_component.mhtml?component_path=content_editor/upload_releases.mh" target="upload_releases" class="form-horizontal">
+
+	<!-- Needed when this form posts to 'releases_interface.mhtml' -->
+	<input type="hidden" name="noheadfoot" value="1" />
+	<input type="hidden" name="action" value="upload" />
+
+	<!-- Needed when this form posts to 'upload_releases.mh'  -->
+	<input type="hidden" name="media_type" value="photo_release" />
+
+	<div id="releases_upload_errors" class="releases_errors alert alert-error">
+	</div>
+
+	<div id="release_fields">
+		<div id="release_type" class="control-group">
+			<label class="control-label">release type:</label>
+			<div class="controls">
+				<label class="radio inline">
+					<input name="release_type" type="radio" value="model" checked="checked" />
+					Model
+				</label>
+				<label class="radio inline">
+					<input name="release_type" type="radio" value="property" />
+					Property
+				</label>
+			</div>
+		</div>
+
+		<div class="release_upload_file control-group">
+			<img id="releases_interface_loading" style="display: none" src="/images/loading_icon_white.gif" alt="Loading" />
+			<label for="release_file" class="control-label">
+				release file:
+			</label>
+			<div class="controls">
+				<input id="release_file" name="release_file" type="file" />
+			</div>
+		</div>
+
+		<div class="control-group">
+			<label for="release_name" class="control-label">name:</label>
+			<div class="controls">
+				<input id="release_name" name="release_name" type="text" />
+			</div>
+		</div>
+
+		<div id="model_release_metadata_fields">
+			<div class="control-group">
+				<label for="model_age" class="control-label">model age:</label>
+				<div class="controls">
+
+<select name="model_age" id="model_age">
+	<option value=""></option>
+		<option
+			value="infants"
+
+		>
+			Infant
+		</option>
+		<option
+			value="children"
+
+		>
+			Child
+		</option>
+		<option
+			value="teenagers"
+
+		>
+			Teenager
+		</option>
+		<option
+			value="20s"
+
+		>
+			Age 20-29
+		</option>
+		<option
+			value="30s"
+
+		>
+			Age 30-39
+		</option>
+		<option
+			value="40s"
+
+		>
+			Age 40-49
+		</option>
+		<option
+			value="50s"
+
+		>
+			Age 50-59
+		</option>
+		<option
+			value="60s"
+
+		>
+			Age 60-69
+		</option>
+		<option
+			value="older"
+
+		>
+			Age 70+
+		</option>
+</select>
+
+
+					<div class="help-inline">
+						(optional)
+					</div>
+				</div>
+			</div>
+
+			<div class="control-group">
+				<label for="model_ethnicity" class="control-label">model ethnicity:</label>
+				<div class="controls">
+
+<select name="model_ethnicity" id="model_ethnicity">
+	<option value=""></option>
+		<option
+			value="african"
+
+		>
+			African
+		</option>
+		<option
+			value="african_american"
+
+		>
+			African American
+		</option>
+		<option
+			value="black"
+
+		>
+			Black
+		</option>
+		<option
+			value="brazilian"
+
+		>
+			Brazilian
+		</option>
+		<option
+			value="chinese"
+
+		>
+			Chinese
+		</option>
+		<option
+			value="caucasian"
+
+		>
+			Caucasian (White)
+		</option>
+		<option
+			value="east_asian"
+
+		>
+			East Asian
+		</option>
+		<option
+			value="hispanic"
+
+		>
+			Hispanic (Latin)
+		</option>
+		<option
+			value="japanese"
+
+		>
+			Japanese
+		</option>
+		<option
+			value="middle_eastern"
+
+		>
+			Middle Eastern
+		</option>
+		<option
+			value="native_american"
+
+		>
+			Native American
+		</option>
+		<option
+			value="pacific_islander"
+
+		>
+			Pacific Islander
+		</option>
+		<option
+			value="south_asian"
+
+		>
+			South Asian
+		</option>
+		<option
+			value="southeast_asian"
+
+		>
+			Southeast Asian
+		</option>
+		<option
+			value="other"
+
+		>
+			Other
+		</option>
+</select>
+
+
+					<div class="help-inline">
+						(optional)
+					</div>
+				</div>
+			</div>
+
+			<div class="control-group">
+				<label for="model_gender" class="control-label">model gender:</label>
+				<div class="controls">
+
+<select name="model_gender" id="model_gender">
+	<option value=""></option>
+		<option
+			value="male"
+
+		>
+			Male
+		</option>
+		<option
+			value="female"
+
+		>
+			Female
+		</option>
+</select>
+
+
+					<div class="help-inline">
+						(optional)
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="submission_area control-group">
+		<div class="controls">
+			<button type="submit" class="btn btn-primary">Upload</button>
+			<button id="cancel_release_overlay_button" class="cancel_overlay btn">Cancel</button>
+		</div>
+	</div>
+</form>
+
+
+
+			</div>
+			<div class="tab-pane" id="saved">
+
+
+
+<ul id="saved_releases_errors" class="releases_errors alert alert-error" style="display: none"><!-- JavaScript --></ul>
+
+<div class="form-horizontal">
+	<div class="control-group">
+		<label class="control-label">Select Release:</label>
+		<div class="controls">
+			<select id="select_releases" multiple="multiple">
+				<option value="19730351">
+					03_R_MYSTOCKS-15
+				</option>
+				<option value="19730369">
+					03_R_MYSTOCKS-15
+				</option>
+				<option value="19730378">
+					03_R_MYSTOCKS-15
+				</option>
+				<option value="19730336">
+					03_R_MYSTOCKS-16
+				</option>
+				<option value="19750046">
+					03_R_MYSTOCKS-16_edit
+				</option>
+				<option value="19730327">
+					03_R_MYSTOCKS-17
+				</option>
+				<option value="19750025">
+					03_R_MYSTOCKS-17_edit
+				</option>
+				<option value="19730297">
+					03_R_MYSTOCKS-21
+				</option>
+				<option value="19730318">
+					03_R_MYSTOCKS-22
+				</option>
+				<option value="19730309">
+					03_R_MYSTOCKS-23
+				</option>
+				<option value="22879465">
+					105_Watercolor_flowers
+				</option>
+				<option value="22723513">
+					111-Abstract_tape_watercolor
+				</option>
+				<option value="22879447">
+					136_roses
+				</option>
+				<option value="22768927">
+					151-Skull
+				</option>
+				<option value="22648396">
+					177- Rose
+				</option>
+				<option value="22879468">
+					17_forest
+				</option>
+				<option value="22720993">
+					194-r
+				</option>
+				<option value="22735936">
+					195-Tropical leaves
+				</option>
+				<option value="22869361">
+					198_Abstract watercolor
+				</option>
+				<option value="22879471">
+					22_river
+				</option>
+				<option value="22751374">
+					263-Poppies
+				</option>
+				<option value="22768942">
+					264-Poppies
+				</option>
+				<option value="22768909">
+					265-Poppies
+				</option>
+				<option value="22768924">
+					266-Poppies
+				</option>
+				<option value="22882375">
+					293-Poppies
+				</option>
+				<option value="22751371">
+					296-Peonies
+				</option>
+				<option value="22768906">
+					299-Feather
+				</option>
+				<option value="22600471">
+					2_colibri
+				</option>
+				<option value="22600468">
+					304-Iris
+				</option>
+				<option value="22821373">
+					342_Feather
+				</option>
+				<option value="22712335">
+					367-cactus
+				</option>
+				<option value="22712332">
+					371_hyacinth
+				</option>
+				<option value="22708222">
+					378-blooming
+				</option>
+				<option value="22821379">
+					379-viola
+				</option>
+				<option value="22694443">
+					439-poppy
+				</option>
+				<option value="22882417">
+					440_poppy
+				</option>
+				<option value="22649458">
+					472-butterfly
+				</option>
+				<option value="22715641">
+					485-butterfly
+				</option>
+				<option value="22774279">
+					486_feather
+				</option>
+				<option value="22829539">
+					488_dragonfly
+				</option>
+				<option value="22681723">
+					489-tropilal-leaves
+				</option>
+				<option value="22882414">
+					493_aquilegia
+				</option>
+				<option value="22721002">
+					531-Dragonflies
+				</option>
+				<option value="22708423">
+					535-Carnegiea
+				</option>
+				<option value="22702009">
+					554-cannabis
+				</option>
+				<option value="22723510">
+					556-tapes
+				</option>
+				<option value="22709341">
+					60-watercolor_flowers
+				</option>
+				<option value="22712266">
+					61-watercolor_flowers
+				</option>
+				<option value="22655914">
+					63-Bird
+				</option>
+				<option value="22655911">
+					64-Bird
+				</option>
+				<option value="22712359">
+					66-watercolor_flowers
+				</option>
+				<option value="22681711">
+					682_butterfly
+				</option>
+				<option value="22681690">
+					684_birds_of_paradise
+				</option>
+				<option value="22681693">
+					686_feather
+				</option>
+				<option value="22720990">
+					688-feather
+				</option>
+				<option value="22879426">
+					690_feather
+				</option>
+				<option value="22720996">
+					692-feather
+				</option>
+				<option value="22681720">
+					692-flamingo
+				</option>
+				<option value="22723516">
+					694-Peacock
+				</option>
+				<option value="22663927">
+					696- feather
+				</option>
+				<option value="22862707">
+					698_Feather
+				</option>
+				<option value="22712356">
+					70-watercolor_greeen_leaves
+				</option>
+				<option value="22610503">
+					702-fritillaria_imperials
+				</option>
+				<option value="22610506">
+					706-weigela_florida
+				</option>
+				<option value="22610476">
+					707_psychotria_elata
+				</option>
+				<option value="22615183">
+					708-fresia
+				</option>
+				<option value="22610479">
+					709-fresia
+				</option>
+				<option value="22615180">
+					710-fresia
+				</option>
+				<option value="22621852">
+					712-daisy
+				</option>
+				<option value="22621855">
+					713-peony
+				</option>
+				<option value="22649491">
+					714-poppy
+				</option>
+				<option value="22649482">
+					715-tulip
+				</option>
+				<option value="22640287">
+					716-peony
+				</option>
+				<option value="22718854">
+					717-roses
+				</option>
+				<option value="22649464">
+					718-lavender
+				</option>
+				<option value="22852948">
+					719_lavender
+				</option>
+				<option value="22663987">
+					720-lavender
+				</option>
+				<option value="22663945">
+					721-roses
+				</option>
+				<option value="22649461">
+					723-roses
+				</option>
+				<option value="22723507">
+					724_roses
+				</option>
+				<option value="22781386">
+					755-colibri
+				</option>
+				<option value="22600477">
+					757-flamingo
+				</option>
+				<option value="22821376">
+					759_Flamingo
+				</option>
+				<option value="22882378">
+					765_Abstraction
+				</option>
+				<option value="22610524">
+					769-Abstraction
+				</option>
+				<option value="22735933">
+					776-toucan
+				</option>
+				<option value="22729576">
+					778-dogs
+				</option>
+				<option value="22734286">
+					779-Swallows
+				</option>
+				<option value="22729579">
+					782-Owl
+				</option>
+				<option value="22774294">
+					784_cats
+				</option>
+				<option value="22912327">
+					786_toucan
+				</option>
+				<option value="22844692">
+					788_reindeer
+				</option>
+				<option value="22712311">
+					790-Owl
+				</option>
+				<option value="22841665">
+					792_toucan
+				</option>
+				<option value="22744042">
+					794-Rosa1
+				</option>
+				<option value="22774204">
+					794_rosa1
+				</option>
+				<option value="22774252">
+					796_rosa2
+				</option>
+				<option value="22774207">
+					798_rosa3
+				</option>
+				<option value="22712329">
+					800-rosa4
+				</option>
+				<option value="22744852">
+					809-02-ref
+				</option>
+				<option value="22745314">
+					809-03-ref
+				</option>
+				<option value="22744855">
+					809-ref
+				</option>
+				<option value="22814566">
+					817_Elephant
+				</option>
+				<option value="22829527">
+					821_Beetle bronze
+				</option>
+				<option value="22912324">
+					829_roses
+				</option>
+				<option value="22800802">
+					833_Tropical
+				</option>
+				<option value="22841668">
+					843_roses
+				</option>
+				<option value="22900615">
+					853_Roses
+				</option>
+				<option value="22795624">
+					857_roses
+				</option>
+				<option value="22829533">
+					863_Ladybug
+				</option>
+				<option value="22774282">
+					865_kiwi
+				</option>
+				<option value="22896640">
+					867_Pitaya
+				</option>
+				<option value="22821370">
+					869_roses
+				</option>
+				<option value="22827820">
+					871_Pose_ink_v
+				</option>
+				<option value="22754461">
+					877-Roses
+				</option>
+				<option value="22896448">
+					908_roses
+				</option>
+				<option value="22896445">
+					934_Exotic flower
+				</option>
+				<option value="22896463">
+					940_Orchid_flowers
+				</option>
+				<option value="22831174">
+					947_Feathers_v
+				</option>
+				<option value="22831171">
+					949_Orchids_v
+				</option>
+				<option value="22896451">
+					951_Splash
+				</option>
+				<option value="22896469">
+					956_Tropical_leaves5
+				</option>
+				<option value="22896490">
+					958_Tropical_leaves6
+				</option>
+				<option value="22557532">
+					Aquilegia
+				</option>
+				<option value="20522845">
+					Christmas
+				</option>
+				<option value="22580572">
+					Colobri
+				</option>
+				<option value="20233549">
+					Cream, Nature, Flowers
+				</option>
+				<option value="22041857">
+					Feather
+				</option>
+				<option value="22592467">
+					Flamingo
+				</option>
+				<option value="22648393">
+					Flamingo-759
+				</option>
+				<option value="19950634">
+					HB, Save Date, Cream
+				</option>
+				<option value="19867459">
+					Just for you, health, relax
+				</option>
+				<option value="21676868">
+					Katya Semenyak
+				</option>
+				<option value="21685823">
+					Katya_Semenyak
+				</option>
+				<option value="21685826">
+					Katya_Semenyak
+				</option>
+				<option value="20322001">
+					Lettering All
+				</option>
+				<option value="20309860">
+					Lettering_Release-1
+				</option>
+				<option value="20078830">
+					MYSTOCKS-102
+				</option>
+				<option value="20135503">
+					MYSTOCKS-103 flowers
+				</option>
+				<option value="20192449">
+					MYSTOCKS-104 flowers
+				</option>
+				<option value="20087467">
+					MYSTOCKS-105
+				</option>
+				<option value="20400478">
+					MYSTOCKS-107 flowers
+				</option>
+				<option value="20070592">
+					MYSTOCKS-107 roses
+				</option>
+				<option value="20108575">
+					MYSTOCKS-108 flowers
+				</option>
+				<option value="20010292">
+					MYSTOCKS-110 Sale
+				</option>
+				<option value="20485870">
+					MYSTOCKS-110 Watercolor SALE
+				</option>
+				<option value="20010289">
+					MYSTOCKS-111 Abstract tape
+				</option>
+				<option value="20214454">
+					MYSTOCKS-112 elements
+				</option>
+				<option value="20100457">
+					MYSTOCKS-112 lips
+				</option>
+				<option value="20214451">
+					MYSTOCKS-129 lips
+				</option>
+				<option value="20309845">
+					MYSTOCKS-130 elements
+				</option>
+				<option value="20182507">
+					MYSTOCKS-131 elements
+				</option>
+				<option value="20192446">
+					MYSTOCKS-133 feather
+				</option>
+				<option value="20257267">
+					MYSTOCKS-135 roses
+				</option>
+				<option value="20291014">
+					MYSTOCKS-136 roses
+				</option>
+				<option value="20236450">
+					MYSTOCKS-138 roses
+				</option>
+				<option value="20236453">
+					MYSTOCKS-138 roses
+				</option>
+				<option value="20237002">
+					MYSTOCKS-138 roses
+				</option>
+				<option value="20087473">
+					MYSTOCKS-151 Skull
+				</option>
+				<option value="20417020">
+					MYSTOCKS-177 Rose Reony Poppy
+				</option>
+				<option value="20437546">
+					MYSTOCKS-179 - wildflower
+				</option>
+				<option value="20715835">
+					MYSTOCKS-181-rose with birds
+				</option>
+				<option value="20469190">
+					MYSTOCKS-185 Peony
+				</option>
+				<option value="21184582">
+					MYSTOCKS-192_r
+				</option>
+				<option value="20360260">
+					MYSTOCKS-194 abstract
+				</option>
+				<option value="20428897">
+					MYSTOCKS-195_Tropical leaves
+				</option>
+				<option value="20370367">
+					MYSTOCKS-199 abstract
+				</option>
+				<option value="20520970">
+					MYSTOCKS-199_r
+				</option>
+				<option value="20437543">
+					MYSTOCKS-202_butterfly
+				</option>
+				<option value="20664538">
+					MYSTOCKS-204 roses
+				</option>
+				<option value="20715832">
+					MYSTOCKS-206-tulip
+				</option>
+				<option value="20603083">
+					MYSTOCKS-213-colibri
+				</option>
+				<option value="20684545">
+					MYSTOCKS-215-rose
+				</option>
+				<option value="20757634">
+					MYSTOCKS-224-roses
+				</option>
+				<option value="20747017">
+					MYSTOCKS-229-lavender
+				</option>
+				<option value="22479139">
+					MYSTOCKS-23-wilflower
+				</option>
+				<option value="20613751">
+					MYSTOCKS-230-poppy
+				</option>
+				<option value="20602888">
+					MYSTOCKS-231-tulip
+				</option>
+				<option value="20652154">
+					MYSTOCKS-232-rose
+				</option>
+				<option value="20747020">
+					MYSTOCKS-239-poppy
+				</option>
+				<option value="20652190">
+					MYSTOCKS-241-abstract
+				</option>
+				<option value="20722438">
+					MYSTOCKS-241-abstract2
+				</option>
+				<option value="20847760">
+					MYSTOCKS-246-roses
+				</option>
+				<option value="20892163">
+					MYSTOCKS-252-roses
+				</option>
+				<option value="21114634">
+					MYSTOCKS-254-crocuses
+				</option>
+				<option value="21113977">
+					MYSTOCKS-255-crocuses
+				</option>
+				<option value="21128608">
+					MYSTOCKS-256-crocuses
+				</option>
+				<option value="21446723">
+					MYSTOCKS-257-tulip
+				</option>
+				<option value="22438681">
+					MYSTOCKS-258-Poppies
+				</option>
+				<option value="21192763">
+					MYSTOCKS-259-roses
+				</option>
+				<option value="20988244">
+					MYSTOCKS-260-roses
+				</option>
+				<option value="21268744">
+					MYSTOCKS-261-rose
+				</option>
+				<option value="21182479">
+					MYSTOCKS-262-poppy
+				</option>
+				<option value="21337957">
+					MYSTOCKS-279-poppy
+				</option>
+				<option value="22377670">
+					MYSTOCKS-281-Peonies
+				</option>
+				<option value="22392199">
+					MYSTOCKS-283-Tulips
+				</option>
+				<option value="21384364">
+					MYSTOCKS-285-tulip
+				</option>
+				<option value="21304225">
+					MYSTOCKS-287-roses
+				</option>
+				<option value="20964247">
+					MYSTOCKS-289-aster
+				</option>
+				<option value="21058465">
+					MYSTOCKS-291-love
+				</option>
+				<option value="22438675">
+					MYSTOCKS-293-Poppies
+				</option>
+				<option value="22367773">
+					MYSTOCKS-294-Peonies
+				</option>
+				<option value="22377667">
+					MYSTOCKS-297-Violet
+				</option>
+				<option value="20236456">
+					MYSTOCKS-30 Watercolor, Roses, Wedding
+				</option>
+				<option value="20237008">
+					MYSTOCKS-30 Watercolor, Roses, Wedding
+				</option>
+				<option value="22321372">
+					MYSTOCKS-300-blueflowers
+				</option>
+				<option value="22392766">
+					MYSTOCKS-301-Poppy
+				</option>
+				<option value="22457914">
+					MYSTOCKS-302-Poppy
+				</option>
+				<option value="22377664">
+					MYSTOCKS-303-Poppy
+				</option>
+				<option value="21236155">
+					MYSTOCKS-305-peony
+				</option>
+				<option value="21322729">
+					MYSTOCKS-306-sprekelia
+				</option>
+				<option value="21255073">
+					MYSTOCKS-308-tulip
+				</option>
+				<option value="21177094">
+					MYSTOCKS-309-tulip
+				</option>
+				<option value="21268738">
+					MYSTOCKS-312-fuchsia
+				</option>
+				<option value="21376651">
+					MYSTOCKS-318-iris
+				</option>
+				<option value="21448265">
+					MYSTOCKS-321-viola
+				</option>
+				<option value="21513248">
+					MYSTOCKS-323-sakura
+				</option>
+				<option value="22041854">
+					MYSTOCKS-325-viola
+				</option>
+				<option value="21513245">
+					MYSTOCKS-327-amarillis
+				</option>
+				<option value="21466088">
+					MYSTOCKS-329-iris
+				</option>
+				<option value="22041851">
+					MYSTOCKS-333-blue-iris
+				</option>
+				<option value="21466082">
+					MYSTOCKS-335-chamomile
+				</option>
+				<option value="21516278">
+					MYSTOCKS-337-chrysanthemum
+				</option>
+				<option value="19959694">
+					MYSTOCKS-34
+				</option>
+				<option value="20236459">
+					MYSTOCKS-34 Happy Birthday, Save the Date, Cream
+				</option>
+				<option value="20237014">
+					MYSTOCKS-34 Happy Birthday, Save the Date, Cream
+				</option>
+				<option value="21517373">
+					MYSTOCKS-340-exotic
+				</option>
+				<option value="21517370">
+					MYSTOCKS-344-kosmeya
+				</option>
+				<option value="21547997">
+					MYSTOCKS-346-fuchsia
+				</option>
+				<option value="21580481">
+					MYSTOCKS-348-cherry
+				</option>
+				<option value="20291011">
+					MYSTOCKS-35 lettering
+				</option>
+				<option value="22021304">
+					MYSTOCKS-350-blue-lotus
+				</option>
+				<option value="21594077">
+					MYSTOCKS-352-orchid
+				</option>
+				<option value="21666002">
+					MYSTOCKS-354 -orchid
+				</option>
+				<option value="21698903">
+					MYSTOCKS-356-carnation garden
+				</option>
+				<option value="21679874">
+					MYSTOCKS-358-lavender
+				</option>
+				<option value="21918317">
+					MYSTOCKS-360-carnation-field
+				</option>
+				<option value="21466637">
+					MYSTOCKS-363-magnolia
+				</option>
+				<option value="21447401">
+					MYSTOCKS-364 succulentus
+				</option>
+				<option value="21653855">
+					MYSTOCKS-368-cactus
+				</option>
+				<option value="19959688">
+					MYSTOCKS-37
+				</option>
+				<option value="22497895">
+					MYSTOCKS-370-fish
+				</option>
+				<option value="22367770">
+					MYSTOCKS-372-roses
+				</option>
+				<option value="21653858">
+					MYSTOCKS-373-tropical leaves
+				</option>
+				<option value="22479160">
+					MYSTOCKS-374-tropical
+				</option>
+				<option value="22479163">
+					MYSTOCKS-375-Narcissus
+				</option>
+				<option value="21581588">
+					MYSTOCKS-376-primula
+				</option>
+				<option value="22479184">
+					MYSTOCKS-377-viola
+				</option>
+				<option value="22474252">
+					MYSTOCKS-379-viola
+				</option>
+				<option value="22479181">
+					MYSTOCKS-419-Gaillardia
+				</option>
+				<option value="21594764">
+					MYSTOCKS-420-olives
+				</option>
+				<option value="22497778">
+					MYSTOCKS-433_anemone
+				</option>
+				<option value="21667598">
+					MYSTOCKS-434-leo lily
+				</option>
+				<option value="22466707">
+					MYSTOCKS-436-dahlia
+				</option>
+				<option value="21654095">
+					MYSTOCKS-437-Myosotis arvensis
+				</option>
+				<option value="22457920">
+					MYSTOCKS-438-dahlia
+				</option>
+				<option value="22544170">
+					MYSTOCKS-441_poppy
+				</option>
+				<option value="22542139">
+					MYSTOCKS-442_poppy
+				</option>
+				<option value="22439071">
+					MYSTOCKS-447-roses
+				</option>
+				<option value="22457926">
+					MYSTOCKS-448-peony
+				</option>
+				<option value="22450840">
+					MYSTOCKS-449-peony
+				</option>
+				<option value="22043969">
+					MYSTOCKS-450-peony
+				</option>
+				<option value="22450843">
+					MYSTOCKS-452-wildflower
+				</option>
+				<option value="22439074">
+					MYSTOCKS-453-peony
+				</option>
+				<option value="21829373">
+					MYSTOCKS-454-peony
+				</option>
+				<option value="22497781">
+					MYSTOCKS-455_london
+				</option>
+				<option value="22479142">
+					MYSTOCKS-456-london
+				</option>
+				<option value="22479136">
+					MYSTOCKS-456-poppy
+				</option>
+				<option value="22438744">
+					MYSTOCKS-457-chrysanthemum
+				</option>
+				<option value="21918320">
+					MYSTOCKS-472-butterfly
+				</option>
+				<option value="21918323">
+					MYSTOCKS-473-dragonfly
+				</option>
+				<option value="22457923">
+					MYSTOCKS-476-boxes
+				</option>
+				<option value="22392769">
+					MYSTOCKS-481-tulip
+				</option>
+				<option value="22509802">
+					MYSTOCKS-488_dragonfly
+				</option>
+				<option value="22392181">
+					MYSTOCKS-489-tropilal-leaves
+				</option>
+				<option value="22392178">
+					MYSTOCKS-490-wildflowers
+				</option>
+				<option value="22479187">
+					MYSTOCKS-491-dahlia
+				</option>
+				<option value="22497775">
+					MYSTOCKS-492_Blue_aquilegia
+				</option>
+				<option value="22474255">
+					MYSTOCKS-493-aquilegia
+				</option>
+				<option value="22420387">
+					MYSTOCKS-494-Red-orchid
+				</option>
+				<option value="22420384">
+					MYSTOCKS-495-irises
+				</option>
+				<option value="22290805">
+					MYSTOCKS-496-purple-orhid
+				</option>
+				<option value="22420396">
+					MYSTOCKS-497-Camellia-Japanese
+				</option>
+				<option value="22414648">
+					MYSTOCKS-498-sea-shell
+				</option>
+				<option value="22376266">
+					MYSTOCKS-499-chubushnik
+				</option>
+				<option value="22420012">
+					MYSTOCKS-500-tulips
+				</option>
+				<option value="22482613">
+					MYSTOCKS-501-irises
+				</option>
+				<option value="22407211">
+					MYSTOCKS-502-rosa-arkansana
+				</option>
+				<option value="22407208">
+					MYSTOCKS-503-irises
+				</option>
+				<option value="22379797">
+					MYSTOCKS-504-crocuses
+				</option>
+				<option value="22394248">
+					MYSTOCKS-505-poppy
+				</option>
+				<option value="22394290">
+					MYSTOCKS-506-tulips
+				</option>
+				<option value="22264396">
+					MYSTOCKS-507-anemone
+				</option>
+				<option value="22439068">
+					MYSTOCKS-508-dandelion
+				</option>
+				<option value="22394293">
+					MYSTOCKS-509-plants
+				</option>
+				<option value="22377934">
+					MYSTOCKS-510-olives
+				</option>
+				<option value="22277284">
+					MYSTOCKS-511-dogwood
+				</option>
+				<option value="22274560">
+					MYSTOCKS-512-blue-dahlia
+				</option>
+				<option value="22377931">
+					MYSTOCKS-513-violet-flowers
+				</option>
+				<option value="22193689">
+					MYSTOCKS-514-hibiscus
+				</option>
+				<option value="22342318">
+					MYSTOCKS-528-hydrangea
+				</option>
+				<option value="22450837">
+					MYSTOCKS-536-Lilies
+				</option>
+				<option value="22349818">
+					MYSTOCKS-538-tearose
+				</option>
+				<option value="22438741">
+					MYSTOCKS-542-poppies
+				</option>
+				<option value="22369825">
+					MYSTOCKS-544-peonies
+				</option>
+				<option value="22369840">
+					MYSTOCKS-547-Pink_magnolia
+				</option>
+				<option value="22438678">
+					MYSTOCKS-548-Magnolia2
+				</option>
+				<option value="22392763">
+					MYSTOCKS-550-Magnolia1
+				</option>
+				<option value="22420360">
+					MYSTOCKS-552-exoticcolors
+				</option>
+				<option value="22402030">
+					MYSTOCKS-556-tapes
+				</option>
+				<option value="22402027">
+					MYSTOCKS-558-boxes
+				</option>
+				<option value="22377241">
+					MYSTOCKS-561-Viola
+				</option>
+				<option value="22351573">
+					MYSTOCKS-563-Indian_Paintbrush
+				</option>
+				<option value="22394251">
+					MYSTOCKS-565-Cornus_Florida
+				</option>
+				<option value="22377673">
+					MYSTOCKS-567_Cornus_Florida
+				</option>
+				<option value="22293487">
+					MYSTOCKS-569-Malus
+				</option>
+				<option value="20036296">
+					MYSTOCKS-63 Bird
+				</option>
+				<option value="20036293">
+					MYSTOCKS-64 Bird
+				</option>
+				<option value="20715829">
+					MYSTOCKS-65-rose
+				</option>
+				<option value="20036299">
+					MYSTOCKS-67 Flower
+				</option>
+				<option value="19978312">
+					MYSTOCKS-68 wildflowers
+				</option>
+				<option value="22491592">
+					MYSTOCKS-682_butterfly
+				</option>
+				<option value="20341972">
+					MYSTOCKS-69 flowers
+				</option>
+				<option value="19970059">
+					MYSTOCKS-71 Watercolor flowers
+				</option>
+				<option value="20018848">
+					MYSTOCKS-72 Watercolor flower
+				</option>
+				<option value="22043978">
+					MYSTOCKS-Butterfly
+				</option>
+				<option value="21753515">
+					Oleksii Kryzwanow
+				</option>
+				<option value="21685145">
+					Oleksii_Kryzwanov
+				</option>
+				<option value="21685148">
+					Oleksii_Kryzwanov
+				</option>
+				<option value="21685151">
+					Oleksii_Kryzwanov
+				</option>
+				<option value="21685154">
+					Oleksii_Kryzwanov
+				</option>
+				<option value="19950283">
+					Peonies
+				</option>
+				<option value="19866334">
+					Perfumer, Love, Autumn
+				</option>
+				<option value="19959706">
+					Red flower
+				</option>
+				<option value="22557214">
+					Roses
+				</option>
+				<option value="22557406">
+					Sarracenia
+				</option>
+				<option value="22592560">
+					Tropical leaves
+				</option>
+				<option value="22592575">
+					Tropical leaves_195
+				</option>
+				<option value="19959712">
+					Vintage, Nature
+				</option>
+				<option value="19960276">
+					Watercolor river
+				</option>
+				<option value="19853389">
+					Watercolor roses
+				</option>
+				<option value="19853401">
+					Watercolor, Roses, Wedding
+				</option>
+				<option value="19853395">
+					Wedding, Herbal, Summer
+				</option>
+				<option value="22600528">
+					xeranthemum_annuum
+				</option>
+			</select>
+		</div>
+	</div>
+
+	<div class="control-group">
+		<div class="controls">
+			<a href="/saved_releases.mhtml" target="_new">Manage Releases</a>
+		</div>
+	</div>
+
+	<div class="control-group">
+		<div class="controls">
+			<button id="apply_releases" class="btn btn-primary">Apply</button>
+			<button id="cancel_saved_releases" class="btn cancel_overlay">Cancel</button>
+		</div>
+	</div>
+</div>
+
+
+			</div>
+		</div>
+	</div>
+
+</div>
+
+
+
+
+		<iframe id="releases_interface_iframe" name="upload_releases" height="0" width="0" frameborder="0" src="about:blank"></iframe>
+	</div>
+</div>
+				</div>
+				<div class="sc_notch"></div>
+				<!--<div class="ss_shadow_container_close cancel_overlay close_btn"></div>-->
+			</div>
+
+
+
+
+<div id="search_autocomplete" class="autocomplete" style="display: none"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+<div id="global_footer" class="secondary">
+
+
+	<div id="footer_navigation">
+
+		<div class="footer_navigation_group">
+			<h6>
+				Stats
+			</h6>
+			<ul>
+				<li><a href="/stats.mhtml">Download Stats</a></li>
+				<li><a href="/review.mhtml?type=photos">Status of Submitted Photos</a></li>
+				<li><a href="/review.mhtml?type=footage">Status of Submitted Footage</a></li>
+				<li><a href="/payment_history.mhtml">Payment History</a></li>
+				<li><a href="/referrals.mhtml">Referred Photographers</a></li>
+				<li><a href="/delayed_earnings.mhtml">Delayed Earnings</a></li>
+			</ul>
+
+			<h6>
+				Legal
+			</h6>
+			<ul>
+				<li><a href="/legal/">Legal Center</a></li>
+				<li><a href="/tax_center.mhtml">Tax Center</a></li>
+				<li><a href="/terms/">Terms of Service</a></li>
+				<li><a href="/legal/privacy">Privacy Policy</a></li>
+                <li>
+                    <div>
+                        <a href="//privacy.truste.com/privacy-seal/validation?rid=e932cd1f-9988-40e9-a66f-d71c21cd57f5" title="TRUSTe Privacy Certification" target="_blank">
+                            <img style="border: none" src="//privacy-policy.truste.com/privacy-seal/seal?rid=e932cd1f-9988-40e9-a66f-d71c21cd57f5" alt="TRUSTe Privacy Certification"/>
+                        </a>
+                    </div>
+                </li>
+			</ul>
+		</div>
+
+		<div class="footer_navigation_group">
+			<h6>
+				Promotion
+			</h6>
+			<ul>
+				<li><a href="/promotions/referrals/">Referral Program</a></li>
+				<li><a href="/promotions/referrals/banners">Referral Banners</a></li>
+				<li><a href="http://promote.shutterstock.com">Gallery</a></li>
+			</ul>
+
+		</div>
+
+		<div class="footer_navigation_group">
+			<h6>
+				Resources
+			</h6>
+			<ul>
+				<li><a href="/admin.mhtml">Your Account</a></li>
+				<li><a href="/catalog_manager.mhtml">Catalog Manager</a></li>
+				<li><a href="http://support.shutterstock.com/contributor">Support Center</a></li>
+				<li><a href="/forum/">Discussion Forum</a></li>
+				<li><a href="/saved_releases.mhtml">Manage Releases</a></li>
+				<li><a href="http://www.shutterstock.com/blog/?category=Tips%20and%20Tricks">Graphic Design Tips & Tricks</a></li>
+				<li><a href="http://www.shutterstock.com/blog/?tag=newsletter">Newsletter Archive</a></li>
+				<li><a href="http://www.shutterstock.com/contributor-blog?pl=SubGF" target="_blank">Contributor Blog</a></li>
+				<li><a href="/contact/">Contact Us</a></li>
+			</ul>
+		</div>
+
+		<div class="footer_navigation_group">
+			<h6>
+				Upload Content
+			</h6>
+			<ul>
+				<li><a href="/portfolio/upload.mhtml">Upload Images</a></li>
+				<li><a href="/content_editor.mhtml">Edit Images</a></li>
+				<li><a href="/submit_footage.mhtml">Upload Footage</a></li>
+				<li><a href="/footage_content_editor.mhtml">Edit Footage</a></li>
+			</ul>
+
+			<div id="twitter_facebook">
+				<h6>
+					Follow Us
+				</h6>
+
+				<ul>
+					<li>
+						<a target="_blank" href="http://www.facebook.com/Shutterstock">
+							<img alt="facebook" src="/images/facebook_icon_20.png" border=0>
+						</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://twitter.com/shutterstock">
+							<img alt="twitter" src="/images/twitter_icon_20.png" border=0>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+
+	</div>
+
+
+	<div id="footer_legal">
+		Trademarks, logos and service marks displayed on this site, including Shutterstock&reg;, the Shutterstock logo and the Shutterstock favicon, are registered trademarks of Shutterstock, Inc. Copyright &copy; 2003-2017 Shutterstock, Inc.
+
+
+	</div>
+</div>
+
+
+
+
+</div>
+
+
+
+<script type="text/javascript" src="https://submit.shutterstock.com/js/prototype_17.js"></script>
+<script type="text/javascript" src="/js/prototype_16.patch.js?rev=2"></script>
+<script type="text/javascript" src="/js/svc-1.1.js"></script>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="/js/lib/bootstrap.min.js"></script>
+<script>
+window.$jq = jQuery.noConflict();
+</script>
+<script type="text/javascript" src="/js/content_editor.js?rev=58"></script>
+<script type="text/javascript" src="/js/effects.js"></script>
+<script type="text/javascript" src="/js/controls.js"></script>
+<script type="text/javascript" src="/js/AutoSuggest.js"></script>
+<script src="/js/edit/EditPageTweaks.js"></script>
+
+		<script type="text/javascript" src="//lilb2.shutterstock.com/lilbro.js?v=submit.ks01"></script>
+		<script type="text/javascript" src="/js/Ss/lilbro.js"></script>
+		<script>
+			Ss.lilbro.initialize({
+				id: 'submit-page',
+				server: 'lilb2.shutterstock.com',
+				server_ssl: 'lilb2.shutterstock.com'
+			});
+		</script>
+
+
+
+
+	<!-- JavaScript Client Code -->
+	<script type="text/javascript">
+	(function(){
+
+	(function () {
+		if ($('help') && Ss.HelpBubbles) { // checking because help may not exist on every page
+			$('help').observe('click', Ss.HelpBubbles.open);
+		}
+	})();
+
+/*
+ * Client JS:
+ *   executes immediately in an anonymous function
+ *   (keeping variables out of global namespace)
+ */
+
+(function(){
+
+	var metadataConfig = new Ss.content_editor.Config({
+
+		"description": {
+			label:     "Description/Title/Caption",
+			container: "primary_properties",
+			inputType: "textarea",
+			action:    'delayedSetValue',
+			counter:   {
+				max:        200,
+				min:        1,
+				label:      "&nbsp;/ 200 characters",
+				countingFn: function () {
+					// 'this' is the Controller context
+					return this._subject.get(this._property).length;
+				}
+			}
+
+		},
+
+		"keywords": {
+			label:     "Keywords",
+			container: "primary_properties",
+			inputType: "keyword",
+			action:    'addKeyword',
+			counter:   {
+				max:        50,
+				min:        7,
+				label:      "&nbsp;/ 50 keywords",
+				countingFn: function () {
+					// 'this' is the Controller context
+					return this._subject.get(this._property).size();
+				}
+			},
+			'language'     : 'en',
+			'autoSuggestURL' : "//submit.shutterstock.com/api/autocomplete"
+		},
+
+		"category1": {
+			label:      "Category 1",
+			container:  "secondary_properties",
+			inputType:  "select",
+			hasDefault: false
+		},
+
+		"category2": {
+			label:      "Category 2",
+			container:  "secondary_properties",
+			inputType:  "select",
+			hasDefault: false
+		},
+		"illustration": {
+			label: "Illust./Clip-Art",
+			container:  "secondary_properties",
+			inputType:  "text"
+		},
+
+		"watermark_placement": {
+			label:      "Watermark",
+			container:  "secondary_properties",
+			inputType:  "text"
+		},
+		"rated_r": {
+			label:      "Nudity/R-Rated",
+			container:  "secondary_properties",
+			inputType:  "text"
+		},
+		"editorial": {
+			label:      "Editorial",
+			container:  "secondary_properties",
+			inputType:  "text"
+		},
+
+		"releases": {
+			label:     "Releases",
+			container: "secondary_properties",
+			inputType: "text"
+		}
+
+	});
+
+	//TODO: merge all entry config data into this config
+	var config = {
+		'CarouselView': {
+			'ofText' : "of",
+			'selectedText' : "selected"
+		},
+		'DeleteController' : {
+			'actionPath'     : "edit/delete_media.md",
+			'errorMessage'   : "Error deleting selected items.",
+			'warningMessage' : "Are you sure you want to delete the selected content?",
+			'mediaType'      : 'photos'
+		},
+		'EditHistory' : {
+			'size'           : 20
+		},
+		'MediaView' : {
+			'vectorLabel'    : '(VECTOR)'
+		},
+		'SaveController' : {
+			'actionPath'     : "edit/save_media.md",
+			'errorMessage'   : "An error occurred while saving your work."
+		},
+		'SubmitController' : {
+			'actionPath'       : "",
+			'errorMessage'     : "An error occured while submitting your photos.",
+			'mediaConstructor' : Ss.content_editor.Photo
+		},
+		'UnloadView' : {
+			'promptMessage'  : "All edits you have made so far will be lost \n"
+			                 + "Please save your work by pressing the Save Work button.",
+			'actionPath'     : "show_component.mhtml",
+			'trailComponentPath' : "content_editor/event_trail_end.md"
+		},
+		'VideoThumbnailOverlayController' : {
+			'actionPath'     : 'edit/save_footage_thumbnail.mh'
+		},
+		'SubmitRequestOverlayView': {
+			'fields': {}
+		}
+	};
+
+	var maxMediaPerPage = 40;
+
+	//create a hash of Ss.media.Photo objects out of the raw metadata.
+	var keyToMediaMeta = $H({"508655170":{"illustration":"1","discipled":"1","keywords_language":"en","category2":"12","keywords":"isolated,tree,succulent,decoration,meadow,bud,foliage,green,floral,tropical,spring,travel,sprout,petal,flower,seasonal,leaf,botanical,deciduous,summer,drawing,wildflower,illustration,flora,stem,beach,forest,brazil,backdrop,garden,hawaiian,fall,plant,watercolor,tape,tropic,wild,exotic,palm,hawaii,splash,ribbon,jungle,rustic,\"watercolor tropic\",\"watercolor tree\",\"watercolor tropical\",\"watercolor leaf\",\"watercolor leaves\",watercolour","rated_r":"","error_fields":[],"id":"508655170","category1":"3","previous_errors":0,"description":"Tropical Hawaii leaves palm tree in a watercolor style isolated. Aquarelle wild flower for background, texture, wrapper pattern, frame or border.","approved":"1","releases":[{"name":"MYSTOCKS-195_Tropical leaves","id":"20428897"}],"editorial":0,"watermark_placement":"","model_released":"1","error_messages":[]}});
+	var collection = new Ss.svc.Collection({
+		collection : keyToMediaMeta
+			.values()
+			.sort(function (a, b) { return (parseInt(b.id, 10) - parseInt(a.id, 10)); })
+			.collect(function (mediaMeta) { return new Ss.content_editor.Photo(mediaMeta); })
+	});
+
+	// get a list of saved releases
+	var savedReleasesRaw = $A([{"name":"03_R_MYSTOCKS-15","id":"19730351"},{"name":"03_R_MYSTOCKS-15","id":"19730369"},{"name":"03_R_MYSTOCKS-15","id":"19730378"},{"name":"03_R_MYSTOCKS-16","id":"19730336"},{"name":"03_R_MYSTOCKS-16_edit","id":"19750046"},{"name":"03_R_MYSTOCKS-17","id":"19730327"},{"name":"03_R_MYSTOCKS-17_edit","id":"19750025"},{"name":"03_R_MYSTOCKS-21","id":"19730297"},{"name":"03_R_MYSTOCKS-22","id":"19730318"},{"name":"03_R_MYSTOCKS-23","id":"19730309"},{"name":"105_Watercolor_flowers","id":"22879465"},{"name":"111-Abstract_tape_watercolor","id":"22723513"},{"name":"136_roses","id":"22879447"},{"name":"151-Skull","id":"22768927"},{"name":"177- Rose","id":"22648396"},{"name":"17_forest","id":"22879468"},{"name":"194-r","id":"22720993"},{"name":"195-Tropical leaves","id":"22735936"},{"name":"198_Abstract watercolor","id":"22869361"},{"name":"22_river","id":"22879471"},{"name":"263-Poppies","id":"22751374"},{"name":"264-Poppies","id":"22768942"},{"name":"265-Poppies","id":"22768909"},{"name":"266-Poppies","id":"22768924"},{"name":"293-Poppies","id":"22882375"},{"name":"296-Peonies","id":"22751371"},{"name":"299-Feather","id":"22768906"},{"name":"2_colibri","id":"22600471"},{"name":"304-Iris","id":"22600468"},{"name":"342_Feather","id":"22821373"},{"name":"367-cactus","id":"22712335"},{"name":"371_hyacinth","id":"22712332"},{"name":"378-blooming","id":"22708222"},{"name":"379-viola","id":"22821379"},{"name":"439-poppy","id":"22694443"},{"name":"440_poppy","id":"22882417"},{"name":"472-butterfly","id":"22649458"},{"name":"485-butterfly","id":"22715641"},{"name":"486_feather","id":"22774279"},{"name":"488_dragonfly","id":"22829539"},{"name":"489-tropilal-leaves","id":"22681723"},{"name":"493_aquilegia","id":"22882414"},{"name":"531-Dragonflies","id":"22721002"},{"name":"535-Carnegiea","id":"22708423"},{"name":"554-cannabis","id":"22702009"},{"name":"556-tapes","id":"22723510"},{"name":"60-watercolor_flowers","id":"22709341"},{"name":"61-watercolor_flowers","id":"22712266"},{"name":"63-Bird","id":"22655914"},{"name":"64-Bird","id":"22655911"},{"name":"66-watercolor_flowers","id":"22712359"},{"name":"682_butterfly","id":"22681711"},{"name":"684_birds_of_paradise","id":"22681690"},{"name":"686_feather","id":"22681693"},{"name":"688-feather","id":"22720990"},{"name":"690_feather","id":"22879426"},{"name":"692-feather","id":"22720996"},{"name":"692-flamingo","id":"22681720"},{"name":"694-Peacock","id":"22723516"},{"name":"696- feather","id":"22663927"},{"name":"698_Feather","id":"22862707"},{"name":"70-watercolor_greeen_leaves","id":"22712356"},{"name":"702-fritillaria_imperials","id":"22610503"},{"name":"706-weigela_florida","id":"22610506"},{"name":"707_psychotria_elata","id":"22610476"},{"name":"708-fresia","id":"22615183"},{"name":"709-fresia","id":"22610479"},{"name":"710-fresia","id":"22615180"},{"name":"712-daisy","id":"22621852"},{"name":"713-peony","id":"22621855"},{"name":"714-poppy","id":"22649491"},{"name":"715-tulip","id":"22649482"},{"name":"716-peony","id":"22640287"},{"name":"717-roses","id":"22718854"},{"name":"718-lavender","id":"22649464"},{"name":"719_lavender","id":"22852948"},{"name":"720-lavender","id":"22663987"},{"name":"721-roses","id":"22663945"},{"name":"723-roses","id":"22649461"},{"name":"724_roses","id":"22723507"},{"name":"755-colibri","id":"22781386"},{"name":"757-flamingo","id":"22600477"},{"name":"759_Flamingo","id":"22821376"},{"name":"765_Abstraction","id":"22882378"},{"name":"769-Abstraction","id":"22610524"},{"name":"776-toucan","id":"22735933"},{"name":"778-dogs","id":"22729576"},{"name":"779-Swallows","id":"22734286"},{"name":"782-Owl","id":"22729579"},{"name":"784_cats","id":"22774294"},{"name":"786_toucan","id":"22912327"},{"name":"788_reindeer","id":"22844692"},{"name":"790-Owl","id":"22712311"},{"name":"792_toucan","id":"22841665"},{"name":"794-Rosa1","id":"22744042"},{"name":"794_rosa1","id":"22774204"},{"name":"796_rosa2","id":"22774252"},{"name":"798_rosa3","id":"22774207"},{"name":"800-rosa4","id":"22712329"},{"name":"809-02-ref","id":"22744852"},{"name":"809-03-ref","id":"22745314"},{"name":"809-ref","id":"22744855"},{"name":"817_Elephant","id":"22814566"},{"name":"821_Beetle bronze","id":"22829527"},{"name":"829_roses","id":"22912324"},{"name":"833_Tropical","id":"22800802"},{"name":"843_roses","id":"22841668"},{"name":"853_Roses","id":"22900615"},{"name":"857_roses","id":"22795624"},{"name":"863_Ladybug","id":"22829533"},{"name":"865_kiwi","id":"22774282"},{"name":"867_Pitaya","id":"22896640"},{"name":"869_roses","id":"22821370"},{"name":"871_Pose_ink_v","id":"22827820"},{"name":"877-Roses","id":"22754461"},{"name":"908_roses","id":"22896448"},{"name":"934_Exotic flower","id":"22896445"},{"name":"940_Orchid_flowers","id":"22896463"},{"name":"947_Feathers_v","id":"22831174"},{"name":"949_Orchids_v","id":"22831171"},{"name":"951_Splash","id":"22896451"},{"name":"956_Tropical_leaves5","id":"22896469"},{"name":"958_Tropical_leaves6","id":"22896490"},{"name":"Aquilegia","id":"22557532"},{"name":"Christmas","id":"20522845"},{"name":"Colobri","id":"22580572"},{"name":"Cream, Nature, Flowers","id":"20233549"},{"name":"Feather","id":"22041857"},{"name":"Flamingo","id":"22592467"},{"name":"Flamingo-759","id":"22648393"},{"name":"HB, Save Date, Cream","id":"19950634"},{"name":"Just for you, health, relax","id":"19867459"},{"name":"Katya Semenyak","id":"21676868"},{"name":"Katya_Semenyak","id":"21685823"},{"name":"Katya_Semenyak","id":"21685826"},{"name":"Lettering All","id":"20322001"},{"name":"Lettering_Release-1","id":"20309860"},{"name":"MYSTOCKS-102","id":"20078830"},{"name":"MYSTOCKS-103 flowers","id":"20135503"},{"name":"MYSTOCKS-104 flowers","id":"20192449"},{"name":"MYSTOCKS-105","id":"20087467"},{"name":"MYSTOCKS-107 flowers","id":"20400478"},{"name":"MYSTOCKS-107 roses","id":"20070592"},{"name":"MYSTOCKS-108 flowers","id":"20108575"},{"name":"MYSTOCKS-110 Sale","id":"20010292"},{"name":"MYSTOCKS-110 Watercolor SALE","id":"20485870"},{"name":"MYSTOCKS-111 Abstract tape","id":"20010289"},{"name":"MYSTOCKS-112 elements","id":"20214454"},{"name":"MYSTOCKS-112 lips","id":"20100457"},{"name":"MYSTOCKS-129 lips","id":"20214451"},{"name":"MYSTOCKS-130 elements","id":"20309845"},{"name":"MYSTOCKS-131 elements","id":"20182507"},{"name":"MYSTOCKS-133 feather","id":"20192446"},{"name":"MYSTOCKS-135 roses","id":"20257267"},{"name":"MYSTOCKS-136 roses","id":"20291014"},{"name":"MYSTOCKS-138 roses","id":"20236450"},{"name":"MYSTOCKS-138 roses","id":"20236453"},{"name":"MYSTOCKS-138 roses","id":"20237002"},{"name":"MYSTOCKS-151 Skull","id":"20087473"},{"name":"MYSTOCKS-177 Rose Reony Poppy","id":"20417020"},{"name":"MYSTOCKS-179 - wildflower","id":"20437546"},{"name":"MYSTOCKS-181-rose with birds","id":"20715835"},{"name":"MYSTOCKS-185 Peony","id":"20469190"},{"name":"MYSTOCKS-192_r","id":"21184582"},{"name":"MYSTOCKS-194 abstract","id":"20360260"},{"name":"MYSTOCKS-195_Tropical leaves","id":"20428897"},{"name":"MYSTOCKS-199 abstract","id":"20370367"},{"name":"MYSTOCKS-199_r","id":"20520970"},{"name":"MYSTOCKS-202_butterfly","id":"20437543"},{"name":"MYSTOCKS-204 roses","id":"20664538"},{"name":"MYSTOCKS-206-tulip","id":"20715832"},{"name":"MYSTOCKS-213-colibri","id":"20603083"},{"name":"MYSTOCKS-215-rose","id":"20684545"},{"name":"MYSTOCKS-224-roses","id":"20757634"},{"name":"MYSTOCKS-229-lavender","id":"20747017"},{"name":"MYSTOCKS-23-wilflower","id":"22479139"},{"name":"MYSTOCKS-230-poppy","id":"20613751"},{"name":"MYSTOCKS-231-tulip","id":"20602888"},{"name":"MYSTOCKS-232-rose","id":"20652154"},{"name":"MYSTOCKS-239-poppy","id":"20747020"},{"name":"MYSTOCKS-241-abstract","id":"20652190"},{"name":"MYSTOCKS-241-abstract2","id":"20722438"},{"name":"MYSTOCKS-246-roses","id":"20847760"},{"name":"MYSTOCKS-252-roses","id":"20892163"},{"name":"MYSTOCKS-254-crocuses","id":"21114634"},{"name":"MYSTOCKS-255-crocuses","id":"21113977"},{"name":"MYSTOCKS-256-crocuses","id":"21128608"},{"name":"MYSTOCKS-257-tulip","id":"21446723"},{"name":"MYSTOCKS-258-Poppies","id":"22438681"},{"name":"MYSTOCKS-259-roses","id":"21192763"},{"name":"MYSTOCKS-260-roses","id":"20988244"},{"name":"MYSTOCKS-261-rose","id":"21268744"},{"name":"MYSTOCKS-262-poppy","id":"21182479"},{"name":"MYSTOCKS-279-poppy","id":"21337957"},{"name":"MYSTOCKS-281-Peonies","id":"22377670"},{"name":"MYSTOCKS-283-Tulips","id":"22392199"},{"name":"MYSTOCKS-285-tulip","id":"21384364"},{"name":"MYSTOCKS-287-roses","id":"21304225"},{"name":"MYSTOCKS-289-aster","id":"20964247"},{"name":"MYSTOCKS-291-love","id":"21058465"},{"name":"MYSTOCKS-293-Poppies","id":"22438675"},{"name":"MYSTOCKS-294-Peonies","id":"22367773"},{"name":"MYSTOCKS-297-Violet","id":"22377667"},{"name":"MYSTOCKS-30 Watercolor, Roses, Wedding","id":"20236456"},{"name":"MYSTOCKS-30 Watercolor, Roses, Wedding","id":"20237008"},{"name":"MYSTOCKS-300-blueflowers","id":"22321372"},{"name":"MYSTOCKS-301-Poppy","id":"22392766"},{"name":"MYSTOCKS-302-Poppy","id":"22457914"},{"name":"MYSTOCKS-303-Poppy","id":"22377664"},{"name":"MYSTOCKS-305-peony","id":"21236155"},{"name":"MYSTOCKS-306-sprekelia","id":"21322729"},{"name":"MYSTOCKS-308-tulip","id":"21255073"},{"name":"MYSTOCKS-309-tulip","id":"21177094"},{"name":"MYSTOCKS-312-fuchsia","id":"21268738"},{"name":"MYSTOCKS-318-iris","id":"21376651"},{"name":"MYSTOCKS-321-viola","id":"21448265"},{"name":"MYSTOCKS-323-sakura","id":"21513248"},{"name":"MYSTOCKS-325-viola","id":"22041854"},{"name":"MYSTOCKS-327-amarillis","id":"21513245"},{"name":"MYSTOCKS-329-iris","id":"21466088"},{"name":"MYSTOCKS-333-blue-iris","id":"22041851"},{"name":"MYSTOCKS-335-chamomile","id":"21466082"},{"name":"MYSTOCKS-337-chrysanthemum","id":"21516278"},{"name":"MYSTOCKS-34","id":"19959694"},{"name":"MYSTOCKS-34 Happy Birthday, Save the Date, Cream","id":"20236459"},{"name":"MYSTOCKS-34 Happy Birthday, Save the Date, Cream","id":"20237014"},{"name":"MYSTOCKS-340-exotic","id":"21517373"},{"name":"MYSTOCKS-344-kosmeya","id":"21517370"},{"name":"MYSTOCKS-346-fuchsia","id":"21547997"},{"name":"MYSTOCKS-348-cherry","id":"21580481"},{"name":"MYSTOCKS-35 lettering","id":"20291011"},{"name":"MYSTOCKS-350-blue-lotus","id":"22021304"},{"name":"MYSTOCKS-352-orchid","id":"21594077"},{"name":"MYSTOCKS-354 -orchid","id":"21666002"},{"name":"MYSTOCKS-356-carnation garden","id":"21698903"},{"name":"MYSTOCKS-358-lavender","id":"21679874"},{"name":"MYSTOCKS-360-carnation-field","id":"21918317"},{"name":"MYSTOCKS-363-magnolia","id":"21466637"},{"name":"MYSTOCKS-364 succulentus","id":"21447401"},{"name":"MYSTOCKS-368-cactus","id":"21653855"},{"name":"MYSTOCKS-37","id":"19959688"},{"name":"MYSTOCKS-370-fish","id":"22497895"},{"name":"MYSTOCKS-372-roses","id":"22367770"},{"name":"MYSTOCKS-373-tropical leaves","id":"21653858"},{"name":"MYSTOCKS-374-tropical","id":"22479160"},{"name":"MYSTOCKS-375-Narcissus","id":"22479163"},{"name":"MYSTOCKS-376-primula","id":"21581588"},{"name":"MYSTOCKS-377-viola","id":"22479184"},{"name":"MYSTOCKS-379-viola","id":"22474252"},{"name":"MYSTOCKS-419-Gaillardia","id":"22479181"},{"name":"MYSTOCKS-420-olives","id":"21594764"},{"name":"MYSTOCKS-433_anemone","id":"22497778"},{"name":"MYSTOCKS-434-leo lily","id":"21667598"},{"name":"MYSTOCKS-436-dahlia","id":"22466707"},{"name":"MYSTOCKS-437-Myosotis arvensis","id":"21654095"},{"name":"MYSTOCKS-438-dahlia","id":"22457920"},{"name":"MYSTOCKS-441_poppy","id":"22544170"},{"name":"MYSTOCKS-442_poppy","id":"22542139"},{"name":"MYSTOCKS-447-roses","id":"22439071"},{"name":"MYSTOCKS-448-peony","id":"22457926"},{"name":"MYSTOCKS-449-peony","id":"22450840"},{"name":"MYSTOCKS-450-peony","id":"22043969"},{"name":"MYSTOCKS-452-wildflower","id":"22450843"},{"name":"MYSTOCKS-453-peony","id":"22439074"},{"name":"MYSTOCKS-454-peony","id":"21829373"},{"name":"MYSTOCKS-455_london","id":"22497781"},{"name":"MYSTOCKS-456-london","id":"22479142"},{"name":"MYSTOCKS-456-poppy","id":"22479136"},{"name":"MYSTOCKS-457-chrysanthemum","id":"22438744"},{"name":"MYSTOCKS-472-butterfly","id":"21918320"},{"name":"MYSTOCKS-473-dragonfly","id":"21918323"},{"name":"MYSTOCKS-476-boxes","id":"22457923"},{"name":"MYSTOCKS-481-tulip","id":"22392769"},{"name":"MYSTOCKS-488_dragonfly","id":"22509802"},{"name":"MYSTOCKS-489-tropilal-leaves","id":"22392181"},{"name":"MYSTOCKS-490-wildflowers","id":"22392178"},{"name":"MYSTOCKS-491-dahlia","id":"22479187"},{"name":"MYSTOCKS-492_Blue_aquilegia","id":"22497775"},{"name":"MYSTOCKS-493-aquilegia","id":"22474255"},{"name":"MYSTOCKS-494-Red-orchid","id":"22420387"},{"name":"MYSTOCKS-495-irises","id":"22420384"},{"name":"MYSTOCKS-496-purple-orhid","id":"22290805"},{"name":"MYSTOCKS-497-Camellia-Japanese","id":"22420396"},{"name":"MYSTOCKS-498-sea-shell","id":"22414648"},{"name":"MYSTOCKS-499-chubushnik","id":"22376266"},{"name":"MYSTOCKS-500-tulips","id":"22420012"},{"name":"MYSTOCKS-501-irises","id":"22482613"},{"name":"MYSTOCKS-502-rosa-arkansana","id":"22407211"},{"name":"MYSTOCKS-503-irises","id":"22407208"},{"name":"MYSTOCKS-504-crocuses","id":"22379797"},{"name":"MYSTOCKS-505-poppy","id":"22394248"},{"name":"MYSTOCKS-506-tulips","id":"22394290"},{"name":"MYSTOCKS-507-anemone","id":"22264396"},{"name":"MYSTOCKS-508-dandelion","id":"22439068"},{"name":"MYSTOCKS-509-plants","id":"22394293"},{"name":"MYSTOCKS-510-olives","id":"22377934"},{"name":"MYSTOCKS-511-dogwood","id":"22277284"},{"name":"MYSTOCKS-512-blue-dahlia","id":"22274560"},{"name":"MYSTOCKS-513-violet-flowers","id":"22377931"},{"name":"MYSTOCKS-514-hibiscus","id":"22193689"},{"name":"MYSTOCKS-528-hydrangea","id":"22342318"},{"name":"MYSTOCKS-536-Lilies","id":"22450837"},{"name":"MYSTOCKS-538-tearose","id":"22349818"},{"name":"MYSTOCKS-542-poppies","id":"22438741"},{"name":"MYSTOCKS-544-peonies","id":"22369825"},{"name":"MYSTOCKS-547-Pink_magnolia","id":"22369840"},{"name":"MYSTOCKS-548-Magnolia2","id":"22438678"},{"name":"MYSTOCKS-550-Magnolia1","id":"22392763"},{"name":"MYSTOCKS-552-exoticcolors","id":"22420360"},{"name":"MYSTOCKS-556-tapes","id":"22402030"},{"name":"MYSTOCKS-558-boxes","id":"22402027"},{"name":"MYSTOCKS-561-Viola","id":"22377241"},{"name":"MYSTOCKS-563-Indian_Paintbrush","id":"22351573"},{"name":"MYSTOCKS-565-Cornus_Florida","id":"22394251"},{"name":"MYSTOCKS-567_Cornus_Florida","id":"22377673"},{"name":"MYSTOCKS-569-Malus","id":"22293487"},{"name":"MYSTOCKS-63 Bird","id":"20036296"},{"name":"MYSTOCKS-64 Bird","id":"20036293"},{"name":"MYSTOCKS-65-rose","id":"20715829"},{"name":"MYSTOCKS-67 Flower","id":"20036299"},{"name":"MYSTOCKS-68 wildflowers","id":"19978312"},{"name":"MYSTOCKS-682_butterfly","id":"22491592"},{"name":"MYSTOCKS-69 flowers","id":"20341972"},{"name":"MYSTOCKS-71 Watercolor flowers","id":"19970059"},{"name":"MYSTOCKS-72 Watercolor flower","id":"20018848"},{"name":"MYSTOCKS-Butterfly","id":"22043978"},{"name":"Oleksii Kryzwanow","id":"21753515"},{"name":"Oleksii_Kryzwanov","id":"21685145"},{"name":"Oleksii_Kryzwanov","id":"21685148"},{"name":"Oleksii_Kryzwanov","id":"21685151"},{"name":"Oleksii_Kryzwanov","id":"21685154"},{"name":"Peonies","id":"19950283"},{"name":"Perfumer, Love, Autumn","id":"19866334"},{"name":"Red flower","id":"19959706"},{"name":"Roses","id":"22557214"},{"name":"Sarracenia","id":"22557406"},{"name":"Tropical leaves","id":"22592560"},{"name":"Tropical leaves_195","id":"22592575"},{"name":"Vintage, Nature","id":"19959712"},{"name":"Watercolor river","id":"19960276"},{"name":"Watercolor roses","id":"19853389"},{"name":"Watercolor, Roses, Wedding","id":"19853401"},{"name":"Wedding, Herbal, Summer","id":"19853395"},{"name":"xeranthemum_annuum","id":"22600528"}]);
+
+	var savedReleases = savedReleasesRaw.collect(function (release) { return Ss.content_editor.ReleaseCache.get(release); });
+
+	var eventTrackerId = 155811377
+;
+
+	var mediaType = "";
+
+	var contentEditor = new Ss.content_editor.ContentEditor(
+		collection,
+		metadataConfig,
+		savedReleases,
+		eventTrackerId,
+		config,
+		maxMediaPerPage,
+		mediaType
+	);
+
+	contentEditor.getSelection().select(collection.at(0));
+})();
+
+			// ie 10 detection
+			if(Function('/*@cc_on return document.documentMode===10@*/')()){
+				document.documentElement.className+=' ie10';
+			}
+
+			if(navigator.userAgent.match(/Trident.*rv:11\./)) {
+				document.documentElement.className+=' ie11';
+			}
+
+
+	})();
+	</script>
+
+
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-32034-2']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+	!function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","group","track","ready","alias","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="3.0.1";
+	analytics.load("ppdFHZfvJI9KIhcjw8knshch5RAziOUd");
+	analytics.page();
+	}}();
+</script>
+
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
