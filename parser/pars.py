@@ -40,7 +40,7 @@ with open(fp) as f:
     for i in range(0, len_lines):
         if line[i].find('li role=\"presentation\" class=\"active\"') > 0:
             date = line[i+1].split('=')[2].split('&')[0].split('-')
-            date = date[2] + '/' + date[1] + '/' + date[0]
+            date = date[1] + '/' + date[2] + '/' + date[0]
             for et in ERNINGS_TYPE:
                 if et in line[i+2]:
                     ernings_type = et
@@ -48,8 +48,12 @@ with open(fp) as f:
             id = line[i-1].split('<')[1].split('>')[1]
             erns = float(line[i].split('<')[1].split('$')[1])
             num = int(line[i+1].split('<')[1].split('>')[1])
-            month = MONTH.get(date.split('/')[1])
-            weekday = WEEKDAY.get(datetime.datetime(int(date.split('/')[2]), int(date.split('/')[1].split('0')[1]), int(date.split('/')[0])).weekday())
+            month = MONTH.get(date.split('/')[0])
+            dateList = date.split('/')
+
+
+            weekday = WEEKDAY.get(datetime.datetime(int(dateList[2]), int(dateList[1].split('0')[1]), int(dateList[0])).weekday())
+            # weekday = WEEKDAY.get(datetime.datetime(int(date.split('/')[2]), int(date.split('/')[0]), int(date.split('/')[1].split('0')[1])).weekday())
 
             lst.append(month)
             lst.append(date)
