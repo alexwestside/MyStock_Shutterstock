@@ -1,7 +1,7 @@
 
 from __future__ import print_function
 from datetime import date, datetime, timedelta
-import mysql.connector
+# import mysql.connector
 import fileinput
 import readline
 import re
@@ -21,7 +21,7 @@ caunt_page = 0
 id = None
 link = None
 
-with open('../html_txt/test1.txt', mode='r') as file:
+with open('../html_txt/html.txt', mode='r') as file:
     line = file.readlines()
     for i in range(len(line)):
         if line[i].find('li role=\"presentation\" class=\"active\"') > 0:

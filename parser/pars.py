@@ -9,12 +9,14 @@ import datetime
 import os
 from peewee import *
 from var import *
-import html_txt
+import csv
+
 
 #### GlobalVar ########################################################################################################
-# MONTH = {'01':'January', '02':'February', '03':'March', '4':'April', '5':'May', '6':'June',
-#          '07':'July', '8':'August', '9':'September', '10':'October', '11':'November', '12':'December'}
-# WEEKDAY = {0:'Monday', 1:'Tuesday', 2:'Wednesday', 3:'Thursday',4:'Fraiday', 5:'Saturday', 6:'Sunday'}
+MONTH = {'01':'January', '02':'February', '03':'March', '04':'April', '05':'May', '06':'June',
+         '07':'July', '08':'August', '09':'September', '10':'October', '11':'November', '12':'December'}
+WEEKDAY = {0:'Monday', 1:'Tuesday', 2:'Wednesday', 3:'Thursday',4:'Fraiday', 5:'Saturday', 6:'Sunday'}
+ERNINGS_TYPE = ['Subscription', 'Enhanced', 'On demand', 'Videos', 'Single & other']
 ernings_type = None
 date = None
 id = 0
@@ -22,7 +24,7 @@ erns = 0
 num = 0
 #######################################################################################################################
 
-file = "../html_txt/ernings_july_2017.txt"
+file = "../html_txt/html.txt"
 fp = os.path.join(os.path.dirname(os.path.realpath('__file__')), file)
 fd = open(fp)
 len_lines = len(fd.readlines())
@@ -44,12 +46,19 @@ i = 0
 # mySQL_db.connect()
 
 with open(fp) as f:
+    lst = []
+    # fp = open('august.csv', 'w')
+    fp = open('august.csv', 'w')
+    out = csv.writer(fp, delimiter=',', quoting=csv.QUOTE_ALL)
     line = f.readlines()
     for i in range(0, len_lines):
         if line[i].find('li role=\"presentation\" class=\"active\"') > 0:
             date = line[i+1].split('=')[2].split('&')[0].split('-')
             date = date[2] + '/' + date[1] + '/' + date[0]
-            ernings_type = line[i+2].strip().split(' ')[0]
+            for et in ERNINGS_TYPE:
+                if et in line[i+2]:
+                    ernings_type = et
+            # ernings_type = line[i+2].strip().split(' ')[0]
         if re.findall(r'\$+[0-9]+\.+[0-9]+[0-9]', line[i]):
             id = line[i-1].split('<')[1].split('>')[1]
             erns = float(line[i].split('<')[1].split('$')[1])
@@ -57,9 +66,15 @@ with open(fp) as f:
             month = MONTH.get(date.split('/')[1])
             weekday = WEEKDAY.get(datetime.datetime(int(date.split('/')[2]), int(date.split('/')[1].split('0')[1]), int(date.split('/')[0])).weekday())
 
-            # _ernings = ernings(month=month, date=date, weekday=weekday, id=id, ernings=erns, downloads=num, ernings_type=ernings_type)
-            # _ernings.save()
-
+            lst.append(month)
+            lst.append(date)
+            lst.append(weekday)
+            lst.append(id)
+            lst.append(erns)
+            lst.append(num)
+            lst.append(ernings_type)
+            out.writerow(lst)
+            lst = []
             print(month, end=' ')
             print(date, end=' ')
             print(weekday, end=' ')
@@ -67,6 +82,7 @@ with open(fp) as f:
             print(erns, end=' ')
             print(num, end=' ')
             print(ernings_type, end='\n')
+    fp.close()
 
 
 
