@@ -31,20 +31,6 @@ len_lines = len(fd.readlines())
 fd.close()
 i = 0
 
-##### Connect to DB ##################################
-# mySQL_db = MySQLDatabase('db_mystock')
-#
-# class ernings(Model):
-#     month = CharField
-#     date = CharField
-#     weekday = CharField
-#     id = IntegerField
-#     ernings = FloatField
-#     downloads = IntegerField
-#     ernings_type = CharField
-#
-# mySQL_db.connect()
-
 with open(fp) as f:
     lst = []
     # fp = open('august.csv', 'w')
@@ -58,7 +44,6 @@ with open(fp) as f:
             for et in ERNINGS_TYPE:
                 if et in line[i+2]:
                     ernings_type = et
-            # ernings_type = line[i+2].strip().split(' ')[0]
         if re.findall(r'\$+[0-9]+\.+[0-9]+[0-9]', line[i]):
             id = line[i-1].split('<')[1].split('>')[1]
             erns = float(line[i].split('<')[1].split('$')[1])
@@ -75,6 +60,7 @@ with open(fp) as f:
             lst.append(ernings_type)
             out.writerow(lst)
             lst = []
+
             print(month, end=' ')
             print(date, end=' ')
             print(weekday, end=' ')
