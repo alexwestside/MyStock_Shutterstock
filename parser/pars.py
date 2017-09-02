@@ -52,7 +52,7 @@ with open(fp) as f:
             dateList = date.split('/')
 
 
-            weekday = WEEKDAY.get(datetime.datetime(int(dateList[2]), int(dateList[1].split('0')[1]), int(dateList[0])).weekday())
+            weekday = WEEKDAY.get(datetime.datetime(int(dateList[2]), int(dateList[0].split('0')[1]), int(dateList[1])).weekday())
             # weekday = WEEKDAY.get(datetime.datetime(int(date.split('/')[2]), int(date.split('/')[0]), int(date.split('/')[1].split('0')[1])).weekday())
 
             lst.append(month)
