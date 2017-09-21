@@ -1,13 +1,8 @@
+
 from __future__ import print_function
 import requests
 import csv
 
-url_base = "https://submit.shutterstock.com/earnings/top-performers?page="
-page = 0
-url_append = "&date_range=0&sort_direction=desc&per_page=20&language=en"
-
-first_page = False
-n = 1
 cookies = {"__ssid": "9606bc02-747b-42ef-b851-4e738e7fd1de", "_photo_session_id": "68214e1d41c4266955645373481a5a42",
            "_ym_uid": "1494857922560381083", "accts_contributor": "MyStocks", "accts_customer": "yanushkov",
            "ajs_anonymous_id": "%226ae010e6-859b-484c-b5d9-6221581e51cf%22", "ajs_group_id": "null",
@@ -23,46 +18,8 @@ cookies = {"__ssid": "9606bc02-747b-42ef-b851-4e738e7fd1de", "_photo_session_id"
            "sbsid": "a8c044ff1ba8114f12f39f2a6024decb",
            "session": "s%3APOPXQWqr-nYusEExnUPhmPTJ4q76UUXl.iKOHDwAqW8hCq%2FrmqKYBSW8tXwW0Mz45RwTQPe2XW1o", }
 
+url = "https://submit.shutterstock.com/review.mhtml?approved=1&type=photos"
+n = 1
 
-def get_data(response, wr):
-    ids = "window.Ss.mediaKeys"
-    data_frame = response.split("\n")
-    for line in data_frame:
-        if ids in line:
-            ids = line.split('[')[1].strip("];").split(',')
-            break
-    i = 0
-    for j, line in enumerate(data_frame):
-        if ("ID: " + ids[i]) in line:
-            ImageDetails = data_frame[j + 3]
-        if "<td class=\"hidden-sm hidden-xs\">" in line:
-            tocsv = []
-            TotalDownloads = data_frame[j + 1]
-            TotalEarnings = data_frame[j + 4]
-            DateUploaded = data_frame[j + 7]
-            i += 1
-            if i == len(ids):
-                break
-            tocsv.append(str(ids[i]))
-            tocsv.append(TotalDownloads.strip())
-            tocsv.append(TotalEarnings.strip())
-            tocsv.append(DateUploaded.strip())
-            tocsv.append(ImageDetails.strip())
-            wr.writerow(tocsv)
-
-with open("TopPerformers.csv", "w") as file:
-    wr = csv.writer(file)
-    csv_header = ["ID", "TotalDownloads", "TotalEarnings", "DateUploaded", "ImageDetails"]
-    wr.writerow(csv_header)
-    while page <= n:
-        page += 1
-        if not first_page:
-            url = url_base + str(page) + url_append
-            response = requests.get(url, cookies=cookies)
-            n = 186  # TODO
-            get_data(response.text, wr)
-            first_page = True
-        else:
-            url = url_base + str(page) + url_append
-            response = requests.get(url, cookies=cookies)
-            get_data(response.text, wr)
+response = requests.get(url, cookies=cookies)
+get_data(response.text)
