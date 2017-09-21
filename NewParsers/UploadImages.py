@@ -24,14 +24,52 @@ ID = "170355946"
 AppendURL = "&type=photos&pg="
 Page = 1
 
+First = True
+UploadData = None
+
+toCSV = []
+
 dataFrameIN = pd.read_csv("ApprovedPhotos")
 listBatchID = dataFrameIN.BatchID
-with open("UploadImages", "w") as fileCSV:
-    for id in listBatchID:
-        i = 1
-        while i <= Page:
-            url = BaseURL + str(id) + AppendURL + str(i)
-            response = requests.get(url, cookies=cookies)
-            print(1)
-
-
+# with open("UploadImages", "w") as fileCSV:
+for id in listBatchID:
+    i = 1
+    while i <= Page:
+        url = BaseURL + str(id) + AppendURL + str(i)
+        response = requests.get(url, cookies=cookies)
+        dataFrame = response.text.split("\n")
+        for j, line in enumerate(dataFrame):
+            if "Batch ID:" in line:
+                # toCSV = []
+                UploadData = line.split("(")[1].split(")")[0]
+                # toCSV.append(UploadData)
+                # print(UploadData, end='')
+                # print(",", end='')
+            if "a href=http:" in line:
+                ID = re.findall('\d+', line)[0]
+                toCSV.append(UploadData)
+                toCSV.append(str(ID))
+                # print(ID, end='')
+                # print(",", end='')
+            if "img src=" in line:
+                tmp = line.split("\t\t")
+                Source = tmp[0][tmp[0].index("\"") + 1:tmp[0].rindex("\"")]
+                Title = tmp[3][tmp[3].index("\"") + 1:tmp[3].rindex("\"")]
+                toCSV.append(Source)
+                toCSV.append(Title)
+                # print(Source, end='')
+                # print(",", end='')
+                # print(Title, end='')
+                # print(",", end='')
+                # print()
+                print(toCSV)
+                toCSV = []
+            if "pager" in line:
+                if First == True:
+                    Page = int(dataFrame[j + 3].split('>')[1].split("<")[0])
+                    First = False
+                else:
+                    break
+        i += 1
+        if int(Page) < i:
+            break
