@@ -7,7 +7,7 @@ import linecache
 import re
 import datetime
 import os
-from peewee import *
+# from peewee import *
 from var import *
 import csv
 
