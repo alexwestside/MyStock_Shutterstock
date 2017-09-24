@@ -45,9 +45,12 @@ URLS = []
 
 def getData(url):
     DF = []
-    print(url)
-    response = requests.get(url, cookies=cookies)
-    dataFrame = response.text.split("\n")
+    # print(url)
+    try:
+        response = requests.get(url, cookies=cookies)
+        dataFrame = response.text.split("\n")
+    except ConnectionRefusedError:
+        print("ERRRRR")
     odd = True
     for i, line in enumerate(dataFrame):
         if re.findall(r'<td>\d+</td>', line):
@@ -89,14 +92,14 @@ for category in CATEGORYS:
         URL = urlBase + str(page) + urlCategory + category + urlAppend
         URLS.append(URL)
         page += 1
-for url in URLS:
-    getData(url)
+# for url in URLS:
+#     getData(url)
 
-# threads = [threading.Thread(target=getData, args=url) for url in URLS]
-# for thread in threads:
-#     thread.start()
-# for thread in threads:
-#     thread.join()
 
+threads = [threading.Thread(target=getData, args=[url]) for url in URLS]
+for thread in threads:
+    thread.start()
+for thread in threads:
+    thread.join()
 
 # https://submit.shutterstock.com/earnings/details?page=1&language=en&category=25_a_day&sort=desc&sorted_by=count&per_page=20
