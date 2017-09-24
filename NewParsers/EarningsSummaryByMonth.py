@@ -39,28 +39,30 @@ MONTHS = {'01': 'January', '02': 'February', '03': 'March', '04': 'April', '05':
           '07': 'July', '08': 'August', '09': 'September', '10': 'October', '11': 'November', '12': 'December'}
 WEEKDAY = {0: 'Monday', 1: 'Tuesday', 2: 'Wednesday', 3: 'Thursday', 4: 'Fraiday', 5: 'Saturday', 6: 'Sunday'}
 ERNINGS_TYPE = ['Subscription', 'Enhanced', 'On demand', 'Videos', 'Single & other']
-YEARS = ["2017"]
+YEARS = ["2016", "2017"]
 DAYS = {"01": "31", "02": "30", "03": "31", "04": "31", "05": "31", "06": "31", "07": "31", "08": "31", "09": "31",
         "10": "31", "11": "31", "12": "31"}
 CATEGORYS = ['25_a_day', 'on_demand', 'enhanced', 'single_image_and_other']
 QUARTER = {"01": "Q1", "02": "Q1", "03": "Q1", "04": "Q2", "05": "Q2", "06": "Q2", "07": "Q3", "08": "Q3", "09": "Q3",
            "10": "Q4", "11": "Q4", "12": "Q4"}
-#######################################################################################################################
-
 preURLS = []
 URLS = []
 
+
+#######################################################################################################################
 
 def generateURLS(MAX, URL, file):
     baseURL = URL[:URL.index("page=") + len("page=")]
     appendURL = URL[URL.index("&date"):]
     if MAX == 1:
         url = baseURL + str(MAX) + appendURL
+        print(url)
         file.write(url + "\n")
         return
     else:
         for page in range(2, int(MAX)):
             url = baseURL + str(page) + appendURL
+            print(url)
             file.write(url + "\n")
 
 
@@ -78,6 +80,7 @@ def getMAXpageAndGenerateURLS(URL, file):
             break
         if "max=" in line:
             MAX = re.findall('\d+', line)[0]
+            onePage = False
             break
     if onePage == True:
         MAX = 1
@@ -99,23 +102,19 @@ def generateStartUrls():
 def generateAllUrls():
     with open("URLs_EarningsSummaryByMonth.csv", "w") as file:
         threads = [threading.Thread(target=getMAXpageAndGenerateURLS, args=[url, file]) for url in preURLS]
+        n = 1
         for thread in threads:
-            time.sleep(0.05)
+            time.sleep(0.07)
             thread.start()
+            print("Threads # " + str(n) + " started!")
+            n += 1
+        n = 1
         for thread in threads:
-            time.sleep(0.05)
+            print("Threads # " + str(n) + " joined...")
+            n += 1
+            time.sleep(0.07)
             thread.join()
     file.close()
-
-
-print("##########################################################################################")
-
-# threads = [threading.Thread(target=print, args=[url]) for url in URLS]
-# for thread in threads:
-#     thread.start()
-# for thread in threads:
-#     thread.join()
-print("##########################################################################################")
 
 
 def getInfoData(url, infoData):
@@ -133,7 +132,7 @@ def getInfoData(url, infoData):
     return infoData
 
 
-def getDataFromURLSinThreads(url):
+def getDataFromURLSinThreads(url, wr):
     DF = []
     infoData = collections.namedtuple('infoData', ['Quarter', 'Data', 'Day_of_sale', 'Day_of_week', 'Category'])
     IFD = getInfoData(url, infoData)
@@ -157,29 +156,42 @@ def getDataFromURLSinThreads(url):
                 odd = True
                 DF.append(Downloads)
                 print(DF)
+                wr.writerow(DF)
                 del DF[5:]
         if re.findall(r'<td>[$]\d+.\d+</td>', line):
             Earnings = str(re.findall(r'\d+\.\d+', line)[0])
             DF.append(Earnings)
-            print(DF)
+            # wr.writerow(DF)
+            # odd = True
+            # print(DF)
+
 
 def getDataFromURLS():
-    # with open("URLs_EarningsSummaryByMonth.csv", "w") as fileWrite:
+    with open("DF_EarningsSummaryByMonth.csv", "w") as fileWrite:
+        wr = csv.writer(fileWrite)
         with open("URLs_EarningsSummaryByMonth.csv", "r") as fileRead:
             dataFromFile = fileRead.readlines()
             urlsList = [url.strip() for url in dataFromFile]
-
-            threads = [threading.Thread(target=getDataFromURLSinThreads, args=[url]) for url in urlsList]
+            threads = [threading.Thread(target=getDataFromURLSinThreads, args=[url, wr]) for url in urlsList]
+            n = 1
             for thread in threads:
+                time.sleep(0.05)
                 thread.start()
+                print("Threads # " + str(n) + " started!")
+                n += 1
+            n = 1
             for thread in threads:
+                time.sleep(0.05)
                 thread.join()
-
+                print("Threads # " + str(n) + " joined...")
+                n += 1
+        fileRead.close()
+    fileWrite.close()
 
 
 def main():
-    # generateStartUrls()
-    # generateAllUrls()
+    generateStartUrls()
+    generateAllUrls()
     getDataFromURLS()
 
 
