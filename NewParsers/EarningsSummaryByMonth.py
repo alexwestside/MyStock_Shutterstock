@@ -43,6 +43,8 @@ YEARS = ["2017"]
 DAYS = {"01": "31", "02": "30", "03": "31", "04": "31", "05": "31", "06": "31", "07": "31", "08": "31", "09": "31",
         "10": "31", "11": "31", "12": "31"}
 CATEGORYS = ['25_a_day', 'on_demand', 'enhanced', 'single_image_and_other']
+QUARTER = {"01": "Q1", "02": "Q1", "03": "Q1", "04": "Q2", "05": "Q2", "06": "Q2", "07": "Q3", "08": "Q3", "09": "Q3",
+           "10": "Q4", "11": "Q4", "12": "Q4"}
 #######################################################################################################################
 
 preURLS = []
@@ -95,8 +97,7 @@ def generateStartUrls():
 
 
 def generateAllUrls():
-    with open("EarningsSummaryByMonth.csv", "w") as file:
-        # wr = csv.writer(file)
+    with open("URLs_EarningsSummaryByMonth.csv", "w") as file:
         threads = [threading.Thread(target=getMAXpageAndGenerateURLS, args=[url, file]) for url in preURLS]
         for thread in threads:
             time.sleep(0.05)
@@ -116,10 +117,6 @@ print("#########################################################################
 #     thread.join()
 print("##########################################################################################")
 
-QUARTER = {"01": "Q1", "02": "Q1", "03": "Q1", "04": "Q2", "05": "Q2", "06": "Q2", "07": "Q3", "08": "Q3", "09": "Q3",
-           "10": "Q4", "11": "Q4", "12": "Q4"}
-DATES = {}
-
 
 def getInfoData(url, infoData):
     tmpDate = url[url.index("date=") + len("date="):url.index("&language=")]
@@ -135,40 +132,49 @@ def getInfoData(url, infoData):
         datetime.datetime(int(tmpDate[0]), int(tmpDate[1]), int(tmpDate[2])).weekday())
     return infoData
 
-def getDataFromURLS():
 
-    with open("EarningsSummaryByMonth.csv", "r") as file:
-        dataFromFile = file.readlines()
-        urlsList = [url.strip() for url in dataFromFile]
-        for url in urlsList:
-            DF = []
-            infoData = collections.namedtuple('infoData', ['Quarter', 'Data', 'Day_of_sale', 'Day_of_week', 'Category'])
-            IFD = getInfoData(url, infoData)
-            DF.append(IFD.Quarter)
-            DF.append(IFD.Data)
-            DF.append(IFD.Day_of_sale)
-            DF.append(IFD.Day_of_week)
-            DF.append(IFD.Category)
-            response = requests.get(url, cookies=COOKIES)
-            dataMass = response.text.split("\n")
-            odd = True
-            for i, line in enumerate(dataMass):
-                if re.findall(r'<td>\d+</td>', line):
-                    res = re.findall(r'\d+', line)[0]
-                    if odd:
-                        ID = str(res)
-                        odd = False
-                        DF.append(ID)
-                    else:
-                        Downloads = str(res)
-                        odd = True
-                        DF.append(Downloads)
-                        print(DF)
-                        del DF[5:]
-                if re.findall(r'<td>[$]\d+.\d+</td>', line):
-                    Earnings = str(re.findall(r'\d+\.\d+', line)[0])
-                    DF.append(Earnings)
-            # print(DF)
+def getDataFromURLSinThreads(url):
+    DF = []
+    infoData = collections.namedtuple('infoData', ['Quarter', 'Data', 'Day_of_sale', 'Day_of_week', 'Category'])
+    IFD = getInfoData(url, infoData)
+    DF.append(IFD.Quarter)
+    DF.append(IFD.Data)
+    DF.append(IFD.Day_of_sale)
+    DF.append(IFD.Day_of_week)
+    DF.append(IFD.Category)
+    response = requests.get(url, cookies=COOKIES)
+    dataMass = response.text.split("\n")
+    odd = True
+    for i, line in enumerate(dataMass):
+        if re.findall(r'<td>\d+</td>', line):
+            res = re.findall(r'\d+', line)[0]
+            if odd:
+                ID = str(res)
+                odd = False
+                DF.append(ID)
+            else:
+                Downloads = str(res)
+                odd = True
+                DF.append(Downloads)
+                print(DF)
+                del DF[5:]
+        if re.findall(r'<td>[$]\d+.\d+</td>', line):
+            Earnings = str(re.findall(r'\d+\.\d+', line)[0])
+            DF.append(Earnings)
+            print(DF)
+
+def getDataFromURLS():
+    # with open("URLs_EarningsSummaryByMonth.csv", "w") as fileWrite:
+        with open("URLs_EarningsSummaryByMonth.csv", "r") as fileRead:
+            dataFromFile = fileRead.readlines()
+            urlsList = [url.strip() for url in dataFromFile]
+
+            threads = [threading.Thread(target=getDataFromURLSinThreads, args=[url]) for url in urlsList]
+            for thread in threads:
+                thread.start()
+            for thread in threads:
+                thread.join()
+
 
 
 def main():
