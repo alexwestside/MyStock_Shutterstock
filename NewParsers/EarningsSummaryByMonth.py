@@ -60,17 +60,13 @@ def generateURLS(MAX, URL, file):
         file.write(url + "\n")
         return
     else:
-        for page in range(1, int(MAX)+1):
+        for page in range(1, int(MAX) + 1):
             url = baseURL + str(page) + appendURL
             print(url)
             file.write(url + "\n")
 
 
 def getMAXpageAndGenerateURLS(URL, file):
-    # print(URL)
-    # URL = "https://submit.shutterstock.com/earnings/daily?page=1&date=2016-10-18&language=en&category=25_a_day&sort=desc&sorted_by=count&per_page=20"
-    # if "2016-10-01" in URL:
-    #     print(1)
     onePage = True
     MAX = 0
     response = requests.get(URL, cookies=COOKIES)
@@ -108,8 +104,6 @@ def generateStartUrls():
 
 def generateAllUrls():
     with open("URLs_EarningsSummaryByMonth.csv", "w") as file:
-        # for url in preURLS:
-        #     getMAXpageAndGenerateURLS(url, file)
         threads = [threading.Thread(target=getMAXpageAndGenerateURLS, args=[url, file]) for url in preURLS]
         n = 1
         for thread in threads:
@@ -170,9 +164,6 @@ def getDataFromURLSinThreads(url, wr):
         if re.findall(r'<td>[$]\d+.\d+</td>', line):
             Earnings = str(re.findall(r'\d+\.\d+', line)[0])
             DF.append(Earnings)
-            # wr.writerow(DF)
-            # odd = True
-            # print(DF)
 
 
 def getDataFromURLS():
