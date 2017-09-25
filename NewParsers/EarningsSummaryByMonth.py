@@ -60,13 +60,17 @@ def generateURLS(MAX, URL, file):
         file.write(url + "\n")
         return
     else:
-        for page in range(2, int(MAX)):
+        for page in range(1, int(MAX)+1):
             url = baseURL + str(page) + appendURL
             print(url)
             file.write(url + "\n")
 
 
 def getMAXpageAndGenerateURLS(URL, file):
+    # print(URL)
+    # URL = "https://submit.shutterstock.com/earnings/daily?page=1&date=2016-10-18&language=en&category=25_a_day&sort=desc&sorted_by=count&per_page=20"
+    # if "2016-10-01" in URL:
+    #     print(1)
     onePage = True
     MAX = 0
     response = requests.get(URL, cookies=COOKIES)
@@ -91,16 +95,21 @@ def getMAXpageAndGenerateURLS(URL, file):
 def generateStartUrls():
     for year in YEARS:
         for month in MONTHS.keys():
-            for day in range(1, int(DAYS.get(month))):
+            for day in range(1, int(DAYS.get(month)) + 1):
                 for category in CATEGORYS:
                     DATE = year + "-" + month + "-" + ("0" + str(day) if len(str(day)) == 1 else str(day))
                     CATEGORY = category
                     URL = URLBASE + str(PAGE) + URLDATE + DATE + URLCATEGORY + CATEGORY + URLAPPEND
                     preURLS.append(URL)
+    for url in preURLS:
+        print(url)
+    print("########################################################")
 
 
 def generateAllUrls():
     with open("URLs_EarningsSummaryByMonth.csv", "w") as file:
+        # for url in preURLS:
+        #     getMAXpageAndGenerateURLS(url, file)
         threads = [threading.Thread(target=getMAXpageAndGenerateURLS, args=[url, file]) for url in preURLS]
         n = 1
         for thread in threads:
