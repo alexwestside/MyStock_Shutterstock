@@ -2,7 +2,6 @@ from __future__ import print_function
 import requests
 import csv
 import re
-import pandas as pd
 
 cookies = {"__ssid": "9606bc02-747b-42ef-b851-4e738e7fd1de", "_photo_session_id": "68214e1d41c4266955645373481a5a42",
            "_ym_uid": "1494857922560381083", "accts_contributor": "MyStocks", "accts_customer": "yanushkov",
@@ -24,52 +23,51 @@ ID = "170355946"
 AppendURL = "&type=photos&pg="
 Page = 1
 
-First = True
-UploadData = None
 
-toCSV = []
+def getUploadDataFromURLs():
+    with open("URLS_ApprovedPrhotoByBath.csv", "w") as fileURLS:
 
-dataFrameIN = pd.read_csv("ApprovedPhotos")
-listBatchID = dataFrameIN.BatchID
-# with open("UploadImages", "w") as fileCSV:
-for id in listBatchID:
-    i = 1
-    while i <= Page:
-        url = BaseURL + str(id) + AppendURL + str(i)
-        response = requests.get(url, cookies=cookies)
-        dataFrame = response.text.split("\n")
-        for j, line in enumerate(dataFrame):
-            if "Batch ID:" in line:
-                # toCSV = []
-                UploadData = line.split("(")[1].split(")")[0]
-                # toCSV.append(UploadData)
-                print(UploadData, end='')
-                print(",", end='')
-            if "a href=http:" in line:
-                ID = re.findall('\d+', line)[0]
-                toCSV.append(UploadData)
-                toCSV.append(str(ID))
-                print(ID, end='')
-                print(",", end='')
-            if "img src=" in line:
-                tmp = line.split("\t\t")
-                Source = tmp[0][tmp[0].index("\"") + 1:tmp[0].rindex("\"")]
-                Title = tmp[3][tmp[3].index("\"") + 1:tmp[3].rindex("\"")]
-                toCSV.append(Source)
-                toCSV.append(Title)
-                print(Source, end='')
-                print(",", end='')
-                print(Title, end='')
-                print(",", end='')
-                print()
-                print(toCSV)
-                toCSV = []
-            if "pager" in line:
-                if First == True:
-                    Page = int(dataFrame[j + 3].split('>')[1].split("<")[0])
-                    First = False
-                else:
-                    break
-        i += 1
-        if int(Page) < i:
-            break
+
+    pass
+
+
+
+def writeTofileURLS(fileURLS, BatchID, PhotosInBatch):
+    pages = int(PhotosInBatch / 20) + (1 if PhotosInBatch % 20 > 0 else 0)
+    for n in range(1, pages + 1):
+        url = BaseURL + str(BatchID) + AppendURL + str(n)
+        fileURLS.write(url)
+        fileURLS.write('\n')
+
+
+def approvedPhotos():
+    url = "https://submit.shutterstock.com/review.mhtml?approved=1&type=photos"
+    with open("URLS_ApprovedPrhotoByBath.csv", "w") as fileURLS:
+        with open("ApprovedPhotosTotalbyBatch.csv", "w") as file:
+            wr = csv.writer(file)
+            csv_header = ["BatchID", "DateSubmitted", "PhotosInBatch"]
+            wr.writerow(csv_header)
+            response = requests.get(url, cookies=cookies)
+            dataFrame = response.text.split("\n")
+            for i, line in enumerate(dataFrame):
+                linetoscv = []
+                if "?id=" in line:
+                    BatchID = re.findall('\d+', line)[0]
+                    DateSubmitted = dataFrame[i + 3].split(">")[1].split("<")[0]
+                    PhotosInBatch = re.findall('\d+', dataFrame[i + 4])[0]
+                    linetoscv.append(str(BatchID))
+                    linetoscv.append(str(DateSubmitted))
+                    linetoscv.append(str(PhotosInBatch))
+                    wr.writerow(linetoscv)
+                    # print(BatchID + "," + DateSubmitted + "," + PhotosInBatch)
+                    writeTofileURLS(fileURLS, BatchID, int(PhotosInBatch))
+            file.close()
+        fileURLS.close()
+
+
+def main():
+    approvedPhotos()
+    getUploadDataFromURLs()
+
+
+main()

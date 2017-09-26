@@ -21,20 +21,23 @@ cookies = {"__ssid": "9606bc02-747b-42ef-b851-4e738e7fd1de", "_photo_session_id"
 url = "https://submit.shutterstock.com/review.mhtml?approved=1&type=photos"
 n = 1
 
-with open("NewParsers", "w") as file:
-    wr = csv.writer(file)
-    csv_header = ["BatchID", "DateSubmitted", "PhotosInBatch"]
-    wr.writerow(csv_header)
-    response = requests.get(url, cookies=cookies)
-    dataFrame = response.text.split("\n")
-    for i, line in enumerate(dataFrame):
-        linetoscv = []
-        if "?id=" in line:
-            BatchID = re.findall('\d+', line)[0]
-            DateSubmitted = dataFrame[i + 3].split(">")[1].split("<")[0]
-            PhotosInBatch = re.findall('\d+', dataFrame[i + 4])[0]
-            linetoscv.append(str(BatchID))
-            linetoscv.append(str(DateSubmitted))
-            linetoscv.append(str(PhotosInBatch))
-            wr.writerow(linetoscv)
-            # print(BatchID + "," + DateSubmitted + "," + PhotosInBatch)
+with open("URLS_ApprovedPrhotoByBath.csv", "w") as fileURLS:
+    with open("ApprovedPhotosTotalbyBatch.csv", "w") as file:
+        wr = csv.writer(file)
+        csv_header = ["BatchID", "DateSubmitted", "PhotosInBatch"]
+        wr.writerow(csv_header)
+        response = requests.get(url, cookies=cookies)
+        dataFrame = response.text.split("\n")
+        for i, line in enumerate(dataFrame):
+            linetoscv = []
+            if "?id=" in line:
+                BatchID = re.findall('\d+', line)[0]
+                DateSubmitted = dataFrame[i + 3].split(">")[1].split("<")[0]
+                PhotosInBatch = re.findall('\d+', dataFrame[i + 4])[0]
+                linetoscv.append(str(BatchID))
+                linetoscv.append(str(DateSubmitted))
+                linetoscv.append(str(PhotosInBatch))
+                wr.writerow(linetoscv)
+                # print(BatchID + "," + DateSubmitted + "," + PhotosInBatch)
+        file.close()
+    fileURLS.close()
