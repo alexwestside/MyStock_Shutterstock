@@ -37,10 +37,14 @@ def getDataFrame(url, wr):
         if "img src=" in line:
             listUploadData = []
             tmp = line.split("\t\t")
-            Source = tmp[0][tmp[0].index("\"") + 1:tmp[0].rindex("\"")]
+            start = tmp[0].index("\"")
+            end1 = tmp[0].rindex("\"")
+            end2 = tmp[0].rindex(".")
+            Source = str(tmp[0][start + 1:end1 if end1 > 0 else end2])
             ID = Source[Source.index("photo-") + len("photo-"):Source.index(".jpg")]
-            Title = tmp[3][tmp[3].index("\"") + 1:tmp[3].rindex("\"")]
-            # print(str(ID) + "," + Source + "," + Title + ",")
+            if ID == "465268094":
+                print(1)
+            Title = tmp[2][tmp[2].index("\"") + 1:tmp[2].rindex("\"")]
             listUploadData.append(UploadData)
             listUploadData.append(ID)
             listUploadData.append(Source)
@@ -48,22 +52,22 @@ def getDataFrame(url, wr):
             wr.writerow(listUploadData)
             print(listUploadData)
 
+
 def uploadDataFromURLs():
     with open("DF_TotalUplodedImages.csv", "w") as file:
         wr = csv.writer(file)
+        csv_header = ["UploadData", "ID", "Source", "Title"]
+        wr.writerow(csv_header)
         threads = [threading.Thread(target=getDataFrame, args=[url, wr]) for url in listURLS]
-    # for url in listURLS:
-    #     getDataFrame(url, wr)
         n = 1
         for thread in threads:
             time.sleep(0.07)
             thread.start()
             print("Threads # " + str(n) + " started!")
             n += 1
-        n = 1
         for thread in threads:
+            n -= 1
             print("Threads # " + str(n) + " joined...")
-            n += 1
             time.sleep(0.07)
             thread.join()
     file.close()
@@ -94,7 +98,6 @@ def approvedPhotos():
                 linetoscv.append(str(DateSubmitted))
                 linetoscv.append(str(PhotosInBatch))
                 wr.writerow(linetoscv)
-                # print(BatchID + "," + DateSubmitted + "," + PhotosInBatch)
                 writeTofileURLS(BatchID, int(PhotosInBatch))
         file.close()
 
