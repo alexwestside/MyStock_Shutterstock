@@ -6,7 +6,13 @@ import threading
 import time
 import pandas as pd
 
-setList = ["patter", "frame", "vector", "camellia", "Tropical Hawaii coco", "Tropical Hawaii leaves", "aster",
+setList = ["FB cover", "Hand drawn poster", "vavender", "primula", "seashell", "texture illustration", "healthy food",
+           "kiwano", "durian", "Cherry", "Strawberry", "Wildflowers frame", "flower frame", "flower pattern", "leaf",
+           "Cup of tee", "stripes", "Hydrangea", "dahila", "dogwood", "anemone", "carnation", "portrait", "chamomile",
+           "Christmas", "banner", "lotus", "apple flower", "lips", "myosotis", "clematis", "skull", "cornus", "lily",
+           "Bluebell", "viola", "dahlia", "gift box", "fish", "psychotria", "Fritillaria", "sakura",
+           "chrysanthemum", "amarillis", "succulentus", "magnolia", "crocuses", "vector", "camellia",
+           "Tropical Hawaii coco", "Tropical Hawaii leaves", "aster",
            "Tropical plants", "iris", "petrikovka", "Wedding", "leaves", "Tropical Hawaii leaves aloe", "peony",
            "cherry", "Abstract", "aquilegia", "lavender", "fruit", "kiwi and avocado", "rose", "poppies", "hyacinth",
            "roses", "sunflower", "lavender", "bow", "decoration", "Mushrooms", "fuchsia", "peonies", "tulip",
@@ -29,13 +35,14 @@ def getSetByTitle():
     for id, title in zip(listID, listTitle):
         if type(title) == float:
             print(id, title)
-        # list = []
-        # for set in setList:
-        #     if set in title:
-        #         list.append(set)
-        # if len(list) == 0:
-        #     print(id, " | ", list, " | ", title)
-        # print(id)
+        list = []
+        for set in setList:
+            if set in title:
+                list.append(set)
+        if "feather" in str(list):
+            print(id, " | ", list, " | ", title)
+        if any("feather" in s for s in set):
+            print(id, " | ", list, " | ", title)
 
 
 def main():

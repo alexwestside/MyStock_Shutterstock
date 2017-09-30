@@ -4,6 +4,7 @@ import csv
 import re
 import threading
 import time
+import pandas as pd
 
 cookies = {"__ssid": "9606bc02-747b-42ef-b851-4e738e7fd1de", "_photo_session_id": "68214e1d41c4266955645373481a5a42",
            "_ym_uid": "1494857922560381083", "accts_contributor": "MyStocks", "accts_customer": "yanushkov",
@@ -37,14 +38,13 @@ def getDataFrame(url, wr):
         if "img src=" in line:
             listUploadData = []
             tmp = line.split("\t\t")
-            start = tmp[0].index("\"")
-            end1 = tmp[0].rindex("\"")
-            end2 = tmp[0].rindex(".")
-            Source = str(tmp[0][start + 1:end1 if end1 > 0 else end2])
+            end1 = tmp[2].rindex("\"")
+            end2 = tmp[2].rindex(".")
+            Source = str(tmp[0][tmp[0].index("\"") + 1:tmp[0].rindex("\"")])
             ID = Source[Source.index("photo-") + len("photo-"):Source.index(".jpg")]
-            if ID == "465268094":
+            if ID == "676053403":
                 print(1)
-            Title = tmp[2][tmp[2].index("\"") + 1:tmp[2].rindex("\"")]
+            Title = tmp[2][tmp[2].index("\"") + 1:end1 if end1 > 0 else end2]
             listUploadData.append(UploadData)
             listUploadData.append(ID)
             listUploadData.append(Source)

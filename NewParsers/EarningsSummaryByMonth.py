@@ -8,6 +8,7 @@ import threading
 import time
 import datetime
 import collections
+import os
 
 COOKIES = {"__ssid": "9606bc02-747b-42ef-b851-4e738e7fd1de", "_photo_session_id": "68214e1d41c4266955645373481a5a42",
            "_ym_uid": "1494857922560381083", "accts_contributor": "MyStocks", "accts_customer": "yanushkov",
@@ -75,57 +76,68 @@ def generateURLS(MAX, URL, file):
             file.write(url + "\n")
 
 
-def getMAXpageAndGenerateURLS(URL, file):
-    onePage = True
-    MAX = 0
-    response = requests.get(URL, cookies=COOKIES)
-    dataMass = response.text.split("\n")
-    for line in dataMass:
-        if "None of your images were downloaded" in line:
-            onePage = False
-            break
-        if "Sorry! We're having some issues loading this data right now." in line:
-            onePage = False
-            break
-        if "max=" in line:
-            MAX = re.findall('\d+', line)[0]
-            onePage = False
-            break
-    if onePage == True:
-        MAX = 1
-    if MAX != 0:
-        generateURLS(MAX, URL, file)
+def getMAXpageAndGenerateURLS(URL, erningsFile, allURLs):
+    if URL in allURLs:
+        return
+    else:
+        onePage = True
+        MAX = 0
+        response = requests.get(URL, cookies=COOKIES)
+        dataMass = response.text.split("\n")
+        for line in dataMass:
+            if "None of your images were downloaded" in line:
+                onePage = False
+                break
+            if "Sorry! We're having some issues loading this data right now." in line:
+                onePage = False
+                break
+            if "max=" in line:
+                MAX = re.findall('\d+', line)[0]
+                onePage = False
+                break
+        if onePage == True:
+            MAX = 1
+        if MAX != 0:
+            with open("AllURLS.csv", "a") as allURLSfile:
+                allURLSfile.write(URL + '\n')
+                allURLSfile.close()
+            generateURLS(MAX, URL, erningsFile)
 
 
 def generateStartUrls():
-    for year in YEARS:
-        for month in MONTHS.keys():
-            for day in range(1, int(DAYS.get(month)) + 1):
-                for category in CATEGORYS:
-                    DATE = year + "-" + month + "-" + ("0" + str(day) if len(str(day)) == 1 else str(day))
-                    CATEGORY = category
-                    URL = URLBASE + str(PAGE) + URLDATE + DATE + URLCATEGORY + CATEGORY + URLAPPEND
-                    preURLS.append(URL)
-    for url in preURLS:
-        print(url)
+    with open("AllStartURLS.csv", "w") as allStartURLSfile:
+        preURLS = [URLBASE + str(PAGE) + URLDATE + y + "-" + m + "-" + (
+            "0" + str(d) if len(str(d)) == 1 else str(d)) + URLCATEGORY + c + URLAPPEND + "\n" for y in YEARS for m in MONTHS.keys() for d in
+                   range(1, int(DAYS.get(m)) + 1) for c in CATEGORYS]
+        allStartURLSfile.writelines(preURLS)
+        allStartURLSfile.close()
+        for url in preURLS:
+            print(url)
 
 
 def generateAllUrls():
-    with open("URLs_EarningsSummaryByMonth.csv", "w") as file:
-        threads = [threading.Thread(target=getMAXpageAndGenerateURLS, args=[url, file]) for url in preURLS]
-        n = 1
-        for thread in threads:
-            time.sleep(0.07)
-            thread.start()
-            print("Threads # " + str(n) + " started!")
-            n += 1
-        n = 1
-        for thread in threads:
-            print("Threads # " + str(n) + " joined...")
-            n += 1
-            time.sleep(0.07)
-            thread.join()
-    file.close()
+    with open("URLs_EarningsSummaryByMonth.csv", "a") as erningsFile:
+        with open("AllStartURLS.csv", "r") as AllStartURLSfile:
+            preURLS = AllStartURLSfile.readlines()
+            AllStartURLSfile.close()
+            if os.path.exists("AllURLS.csv"):
+                allURLs = open("AllURLS.csv", "r").readlines()
+            else:
+                allURLs = []
+            threads = [threading.Thread(target=getMAXpageAndGenerateURLS, args=[url.strip(), erningsFile, allURLs]) for url in
+                           preURLS]
+            n = 1
+            for thread in threads:
+                time.sleep(0.07)
+                thread.start()
+                print("Threads # " + str(n) + " started!")
+                n += 1
+            for thread in threads:
+                n -= 1
+                print("Threads # " + str(n) + " joined...")
+                time.sleep(0.07)
+                thread.join()
+    erningsFile.close()
 
 
 def getInfoData(url, infoData):
@@ -147,11 +159,7 @@ def getDataFromURLSinThreads(url, wr):
     DF = []
     infoData = collections.namedtuple('infoData', ['Quarter', 'Data', 'Day_of_sale', 'Day_of_week', 'Category'])
     IFD = getInfoData(url, infoData)
-    DF.append(IFD.Quarter)
-    DF.append(IFD.Data)
-    DF.append(IFD.Day_of_sale)
-    DF.append(IFD.Day_of_week)
-    DF.append(IFD.Category)
+    DF.extend([IFD.Quarter, IFD.Data, IFD.Day_of_sale, IFD.Day_of_week, IFD.Category])
     response = requests.get(url, cookies=COOKIES)
     dataMass = response.text.split("\n")
     odd = True
@@ -175,7 +183,7 @@ def getDataFromURLSinThreads(url, wr):
 
 
 def getDataFromURLS():
-    with open("DF_EarningsSummaryByMonth.csv", "w") as fileWrite:
+    with open("DF_EarningsSummaryByMonth.csv", "w+") as fileWrite:
         wr = csv.writer(fileWrite)
         with open("URLs_EarningsSummaryByMonth.csv", "r") as fileRead:
             dataFromFile = fileRead.readlines()
@@ -187,21 +195,20 @@ def getDataFromURLS():
                 thread.start()
                 print("Threads # " + str(n) + " started!")
                 n += 1
-            n = 1
             for thread in threads:
+                n -= 1
                 time.sleep(0.05)
                 thread.join()
                 print("Threads # " + str(n) + " joined...")
-                n += 1
         fileRead.close()
     fileWrite.close()
 
 
 def main():
-    print(1)
-    # generateStartUrls()
-    # generateAllUrls()
-    # getDataFromURLS()
+    # print(1)
+    generateStartUrls()
+    generateAllUrls()
+    getDataFromURLS()
 
 
 main()
