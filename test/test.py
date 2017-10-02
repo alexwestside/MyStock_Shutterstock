@@ -90,9 +90,52 @@ COOKIES = {"__ssid": "9606bc02-747b-42ef-b851-4e738e7fd1de", "_ga": "GA1.2.19061
 
 url = "https://submit.shutterstock.com/review_batch.mhtml?id=109911473&approved=1&type=photos"
 
-response = requests.get(url, cookies=COOKIES)
-dataMass = response.text.split("\n")
-for i, line in enumerate(dataMass):
-    if "465268094" in line:
-        print(line)
-print(2)
+# response = requests.get(url, cookies=COOKIES)
+# dataMass = response.text.split("\n")
+# for i, line in enumerate(dataMass):
+#     if "img src=" in line:
+#         if "465268094" in line:
+#             listUploadData = []
+#             tmp = line.split("\t\t")
+#             end1 = tmp[2].rindex("\"")
+#             end2 = tmp[2].rindex(".")
+#             Source = str(tmp[0][tmp[0].index("\"") + 1:tmp[0].rindex("\"")])
+#             ID = Source[Source.index("photo-") + len("photo-"):Source.index(".jpg")]
+#             Title = tmp[2][tmp[2].index("\"") + 1:end1 if end1 > 0 and end1 != tmp[2].index("\"") else end2]
+#             print(line)
+# print(2)
+
+
+# PhotosInBatch = 20
+# PhotosInBatch1 = 36
+# PhotosInBatch2 = 27
+# PhotosInBatch3 = 39
+#
+# pages = int(PhotosInBatch / 20) + 1 if PhotosInBatch % 20 > 0 else int(PhotosInBatch / 20)
+# pages1 = int(PhotosInBatch1 / 20) + 1 if (int(PhotosInBatch1 % 20) > 0) else int(PhotosInBatch1 / 20)
+# pages2 = int(PhotosInBatch2 / 20) + 1 if PhotosInBatch2 % 20 > 0 else int(PhotosInBatch2 / 20)
+# pages3 = int(PhotosInBatch3 / 20) + 1 if PhotosInBatch3 % 20 > 0 else int(PhotosInBatch3 / 20)
+# for i in range(1, pages1 + 1):
+#     print(i)
+#
+# print(pages)
+# print(pages1)
+# print(pages2)
+# print(pages3)
+
+import xlsxwriter
+import time
+import datetime
+import string
+
+list = ["123", "321", "546"]
+# workbookName = datetime.datetime.now().strftime("%Y-%m-%d %H:%M") + "_" + "MyStocks_analytics_by_set.xlsx"
+# workbook = xlsxwriter.Workbook(workbookName, {'default_date_format': 'dd/mm/yy'})
+# with xlsxwriter.Workbook(workbookName) as wb:
+#     ws1 = wb.add_worksheet("123")
+#     ws2 = wb.add_worksheet("1111")
+#     ws1.write(list)
+alpha = string.ascii_uppercase
+for a in alpha:
+    for i in range(1, 10):
+        print(a + str(i))

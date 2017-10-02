@@ -2,11 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="47f320a1-f9dd-4705-a3cb-5759c4f3a0cf" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/q.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/trash/ApprovedPhotos.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/UploadedImages/ApprovedPhotos.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/UploadedImages/URLS_ApprovedPrhotoByBath.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cookies/!!!.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cookies/c.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cookies/cookie.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cookies/getcookies.py" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/DF_EarningsSummaryByMonth.csv" afterPath="$PROJECT_DIR$/trash/DF_EarningsSummaryByMonth.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/NewParsers/ErningsSummaryTotal.py" afterPath="$PROJECT_DIR$/trash/ErningsSummaryTotal.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/URLs_EarningsSummaryByMonth.csv" afterPath="$PROJECT_DIR$/trash/URLs_EarningsSummaryByMonth.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/UploadedImages/!!!.txt" afterPath="$PROJECT_DIR$/trash/!!!.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/UploadedImages/ApprovedPhotos" afterPath="$PROJECT_DIR$/trash/ApprovedPhotos" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NewParsers/AllURLS.csv" afterPath="$PROJECT_DIR$/NewParsers/AllURLS.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NewParsers/DF_EarningsSummaryByMonth.csv" afterPath="$PROJECT_DIR$/NewParsers/DF_EarningsSummaryByMonth.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NewParsers/URLs_EarningsSummaryByMonth.csv" afterPath="$PROJECT_DIR$/NewParsers/URLs_EarningsSummaryByMonth.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UploadedImages/ApprovedPhotosTotalbyBatch.csv" afterPath="$PROJECT_DIR$/UploadedImages/ApprovedPhotosTotalbyBatch.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UploadedImages/DF_TotalUplodedImages.csv" afterPath="$PROJECT_DIR$/UploadedImages/DF_TotalUplodedImages.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UploadedImages/TotalUplodedImages.py" afterPath="$PROJECT_DIR$/UploadedImages/TotalUplodedImages.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test.py" afterPath="$PROJECT_DIR$/test/test.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,13 +35,13 @@
     <SUITE FILE_PATH="coverage/MyStock_Shutterstock$UploadImages_py.coverage" NAME="UploadImages.py Coverage Results" MODIFIED="1506036320271" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/NewParsers" />
     <SUITE FILE_PATH="coverage/untitled1$pars_py.coverage" NAME="pars.py Coverage Results" MODIFIED="1501253076691" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/MyStock_Shutterstock$pars_portfolio_table_py.coverage" NAME="pars_portfolio_table.py Coverage Results" MODIFIED="1504553126661" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/MyStock_ShutterstockNEW$TotalUplodedImages_py.coverage" NAME="TotalUplodedImages.py Coverage Results" MODIFIED="1506632391163" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UploadedImages" />
+    <SUITE FILE_PATH="coverage/MyStock_ShutterstockNEW$TotalUplodedImages_py.coverage" NAME="TotalUplodedImages.py Coverage Results" MODIFIED="1506968730710" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UploadedImages" />
     <SUITE FILE_PATH="coverage/untitled1$test2_py.coverage" NAME="test2.py Coverage Results" MODIFIED="1501087262570" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/MyStock_Shutterstock$ApprovedPhotos_py.coverage" NAME="ApprovedPhotos.py Coverage Results" MODIFIED="1506028813839" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ApprovedPhotos" />
     <SUITE FILE_PATH="coverage/untitled1$pars.coverage" NAME="test.py Coverage Results" MODIFIED="1501086711526" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/MyStock_ShutterstockNEW$test_py.coverage" NAME="test.py Coverage Results" MODIFIED="1506890006022" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/MyStock_ShutterstockNEW$test_py.coverage" NAME="test.py Coverage Results" MODIFIED="1506966410930" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/parser_py$pars_py.coverage" NAME="pars.py Coverage Results" MODIFIED="1501495337071" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/MyStock_ShutterstockNEW$ApprovedPhotos_py.coverage" NAME="ApprovedPhotos.py Coverage Results" MODIFIED="1506452445593" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UploadedImages" />
+    <SUITE FILE_PATH="coverage/MyStock_ShutterstockNEW$ApprovedPhotos_py.coverage" NAME="ApprovedPhotos.py Coverage Results" MODIFIED="1506967681930" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UploadedImages" />
     <SUITE FILE_PATH="coverage/MyStock_ShutterstockNEW$UploadImages_py.coverage" NAME="UploadImages.py Coverage Results" MODIFIED="1506454319326" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UploadedImages" />
     <SUITE FILE_PATH="coverage/MyStock_Shutterstock$TopPerformers_py.coverage" NAME="TopPerformers.py Coverage Results" MODIFIED="1505855293053" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/parser" />
     <SUITE FILE_PATH="coverage/MyStock_Shutterstock$sets_py.coverage" NAME="sets.py Coverage Results" MODIFIED="1504553085011" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -55,28 +66,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="parseByID.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SetsByID/parseByID.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="19" />
-              <folding>
-                <element signature="e#0#37#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DF_TotalUplodedImages.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/UploadedImages/DF_TotalUplodedImages.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="16510" column="20" lean-forward="false" selection-start-line="16510" selection-start-column="11" selection-end-line="16510" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="SetsByTitle.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SetsByID/SetsByTitle.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -89,23 +78,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EarningsSummaryByMonth.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NewParsers/EarningsSummaryByMonth.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="109" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="25" selection-end-column="109" />
-              <folding>
-                <element signature="e#0#37#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="96" column="18" lean-forward="false" selection-start-line="96" selection-start-column="18" selection-end-line="96" selection-end-column="18" />
+            <state relative-caret-position="327">
+              <caret line="131" column="108" lean-forward="true" selection-start-line="131" selection-start-column="2" selection-end-line="131" selection-end-column="108" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -113,34 +90,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="q.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/q.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TotalUplodedImages.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TotalUplodedImages.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/UploadedImages/TotalUplodedImages.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="398">
-              <caret line="107" column="0" lean-forward="false" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
+            <state relative-caret-position="1170">
+              <caret line="78" column="25" lean-forward="true" selection-start-line="78" selection-start-column="25" selection-end-line="78" selection-end-column="25" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="!!!.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/UploadedImages/!!!.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -156,9 +113,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>'</find>
-      <find>4330</find>
-      <find>Vector</find>
       <find>Ros</find>
       <find>elephant</find>
       <find>rosa</find>
@@ -180,12 +134,15 @@
       <find>asd</find>
       <find>09/30/2017</find>
       <find>https://submit.shutterstock.com/review_batch.mhtml?id=109911473&amp;a</find>
-      <find>__ssid</find>
       <find>_ga</find>
       <find>Yes</find>
       <find>exp</find>
-      <find>optly.pgStore.p.0</find>
       <find>465268094</find>
+      <find>time</find>
+      <find>__ssid</find>
+      <find>append</find>
+      <find>fileURLS</find>
+      <find>optly.pgStore.p.0</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;</replace>
@@ -236,18 +193,18 @@
         <option value="$PROJECT_DIR$/NewParsers/URLs_EarningsSummaryByMonth.csv" />
         <option value="$PROJECT_DIR$/packet.txt" />
         <option value="$PROJECT_DIR$/UploadedImages/UploadImages.py" />
-        <option value="$PROJECT_DIR$/UploadedImages/ApprovedPhotos.py" />
         <option value="$PROJECT_DIR$/UploadedImages/DF_TotalUplodedImages.csv" />
         <option value="$PROJECT_DIR$/SetsByID/parseByID.py" />
         <option value="$PROJECT_DIR$/UploadedImages/!!!.txt" />
         <option value="$PROJECT_DIR$/SetsByID/SetsByTitle.py" />
-        <option value="$PROJECT_DIR$/UploadedImages/TotalUplodedImages.py" />
         <option value="$PROJECT_DIR$/test/test.scv" />
         <option value="$PROJECT_DIR$/NewParsers/EarningsSummaryByMonth.py" />
         <option value="$PROJECT_DIR$/NewParsers/AllStartURLS.csv" />
         <option value="$PROJECT_DIR$/NewParsers/AllURLS.csv" />
         <option value="$PROJECT_DIR$/test/q.txt" />
         <option value="$PROJECT_DIR$/test/test.py" />
+        <option value="$PROJECT_DIR$/UploadedImages/ApprovedPhotos.py" />
+        <option value="$PROJECT_DIR$/UploadedImages/TotalUplodedImages.py" />
       </list>
     </option>
   </component>
@@ -374,13 +331,14 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/trash" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/UploadedImages" />
       <recent name="$PROJECT_DIR$/SetsByUD" />
       <recent name="$PROJECT_DIR$/html_txt" />
-      <recent name="$PROJECT_DIR$/session" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/cookies" />
       <recent name="$PROJECT_DIR$/NewParsers" />
       <recent name="$PROJECT_DIR$/TopPerformers" />
     </key>
@@ -397,7 +355,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test.py">
+  <component name="RunManager" selected="Python.TotalUplodedImages.py">
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -979,18 +937,18 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21888413" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25679544" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32961586" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2788104" sideWeight="0.5089153" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32883242" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32771084" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32961586" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43373495" sideWeight="0.4974208" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27951807" sideWeight="0.4974208" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29638556" sideWeight="0.4910847" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.59638554" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38554215" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1053,12 +1011,12 @@
           <option name="timeStamp" value="116" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/NewParsers/ErningsSummaryTotal.py</url>
+          <url>file://$PROJECT_DIR$/trash/ErningsSummaryTotal.py</url>
           <line>46</line>
           <option name="timeStamp" value="162" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/NewParsers/ErningsSummaryTotal.py</url>
+          <url>file://$PROJECT_DIR$/trash/ErningsSummaryTotal.py</url>
           <line>100</line>
           <option name="timeStamp" value="165" />
         </line-breakpoint>
@@ -1072,16 +1030,11 @@
           <line>209</line>
           <option name="timeStamp" value="206" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/test/test.py</url>
-          <line>96</line>
-          <option name="timeStamp" value="215" />
-        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="216" />
+      <option name="time" value="226" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
@@ -1090,8 +1043,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/html_txt/._html.txt" />
-    <entry file="file://$PROJECT_DIR$/test/11111" />
     <entry file="file://$PROJECT_DIR$/sets.py" />
     <entry file="file://$PROJECT_DIR$/sets.txt" />
     <entry file="file://$PROJECT_DIR$/test.py" />
@@ -1134,13 +1085,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UploadedImages/ApprovedPhotos">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="23" lean-forward="false" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TopPerformers/TopPerformers.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
@@ -1149,29 +1093,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UploadedImages/ApprovedPhotos.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="41">
-          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/UploadedImages/UploadImages.py" />
-    <entry file="file://$PROJECT_DIR$/UploadedImages/ApprovedPhotosTotalbyBatch.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UploadedImages/!!!.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/_bootlocale.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -1180,7 +1102,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/URLs_EarningsSummaryByMonth.csv">
+    <entry file="file://$PROJECT_DIR$/trash/URLs_EarningsSummaryByMonth.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1188,26 +1110,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DF_EarningsSummaryByMonth.csv">
+    <entry file="file://$PROJECT_DIR$/trash/DF_EarningsSummaryByMonth.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="14087" column="39" lean-forward="false" selection-start-line="14087" selection-start-column="39" selection-end-line="14087" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UploadedImages/URLS_ApprovedPrhotoByBath.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/codecs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="331" column="0" lean-forward="false" selection-start-line="331" selection-start-column="0" selection-end-line="331" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1216,14 +1122,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="9" lean-forward="true" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NewParsers/ErningsSummaryTotal.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="46" column="2" lean-forward="false" selection-start-line="46" selection-start-column="2" selection-end-line="46" selection-end-column="11" />
           <folding />
         </state>
       </provider>
@@ -1244,16 +1142,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UploadedImages/TotalUplodedImages.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="107" column="0" lean-forward="false" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/NewParsers/AllURLS.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-22042">
@@ -1262,15 +1150,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NewParsers/DF_EarningsSummaryByMonth.csv">
+    <entry file="file://$PROJECT_DIR$/NewParsers/URLs_EarningsSummaryByMonth.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="14972" column="0" lean-forward="true" selection-start-line="14972" selection-start-column="0" selection-end-line="14972" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NewParsers/URLs_EarningsSummaryByMonth.csv">
+    <entry file="file://$PROJECT_DIR$/cookies/!!!.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1288,18 +1176,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/NewParsers/DF_EarningsSummaryByMonth.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="14972" column="0" lean-forward="true" selection-start-line="14972" selection-start-column="0" selection-end-line="14972" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/q.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
-          <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+          <caret line="11" column="19" lean-forward="false" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="319" column="0" lean-forward="false" selection-start-line="319" selection-start-column="0" selection-end-line="319" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trash/ErningsSummaryTotal.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="46" column="2" lean-forward="false" selection-start-line="46" selection-start-column="2" selection-end-line="46" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trash/!!!.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trash/ApprovedPhotos">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="23" lean-forward="false" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/NewParsers/EarningsSummaryByMonth.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="109" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="25" selection-end-column="109" />
+        <state relative-caret-position="2415">
+          <caret line="161" column="13" lean-forward="false" selection-start-line="161" selection-start-column="4" selection-end-line="161" selection-end-column="13" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>
@@ -1316,20 +1244,62 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/UploadedImages/URLS_ApprovedPrhotoByBath.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UploadedImages/URLS_ApprovedPrhotoByBatch.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/UploadedImages/DF_TotalUplodedImages.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="16510" column="20" lean-forward="false" selection-start-line="16510" selection-start-column="11" selection-end-line="16510" selection-end-column="20" />
+        <state relative-caret-position="378">
+          <caret line="16716" column="0" lean-forward="false" selection-start-line="16716" selection-start-column="0" selection-end-line="16716" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UploadedImages/ApprovedPhotosTotalbyBatch.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trash/ApprovedPhotos.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-357">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="8" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="96" column="18" lean-forward="false" selection-start-line="96" selection-start-column="18" selection-end-line="96" selection-end-column="18" />
+        <state relative-caret-position="327">
+          <caret line="131" column="108" lean-forward="true" selection-start-line="131" selection-start-column="2" selection-end-line="131" selection-end-column="108" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UploadedImages/TotalUplodedImages.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1170">
+          <caret line="78" column="25" lean-forward="true" selection-start-line="78" selection-start-column="25" selection-end-line="78" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
