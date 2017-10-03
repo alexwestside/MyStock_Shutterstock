@@ -90,15 +90,9 @@ def uploadDataFromURLs():
 
 
 def writeTofileURLS(BatchID, PhotosInBatch, BatchURLSfile):
-    # pages = int(PhotosInBatch / 20) + (1 if int(PhotosInBatch) % 20 > 0 else 0)
     pages = int(PhotosInBatch / 20) + 1 if PhotosInBatch % 20 > 0 else int(PhotosInBatch / 20)
-    # with open("BatchURLSfile.csv", "w") as BatchURLSfile:
     listURLS = [BaseURL + str(BatchID) + AppendURL + str(n) + "\n" for n in range(1, pages + 1)]
     BatchURLSfile.writelines(listURLS)
-        # BatchURLSfile.close()
-        # for n in range(1, pages + 1):
-        #     url = BaseURL + str(BatchID) + AppendURL + str(n)
-        #     listURLS.append(url)
 
 
 def approvedPhotos():
@@ -127,18 +121,7 @@ def approvedPhotos():
         file.close()
 
 
-# def writeToExcel():
-#     workbookName = datetime.datetime.now().strftime("%Y-%m-%d %H:%M") + "_" + "MyStocks_analytics_by_set.xlsx"
-#     df1 = pd.DataFrame(pd.read_csv("ApprovedPhotosTotalbyBatch.csv"))
-#     df2 = pd.DataFrame(pd.read_csv("DF_TotalUplodedImages.csv"))
-#     writer = pd.ExcelWriter(workbookName, engine='xlsxwriter')
-#     df1.to_excel(writer, sheet_name='InfoBatch')
-#     df2.to_excel(writer, sheet_name='TotalUplodedImages')
-#     writer.save()
-
 def uploadImages():
     approvedPhotos()
     uploadDataFromURLs()
     # writeToExcel()
-
-# main()
