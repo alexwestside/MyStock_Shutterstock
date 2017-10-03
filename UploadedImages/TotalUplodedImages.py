@@ -28,6 +28,11 @@ BaseURL = "https://submit.shutterstock.com/review_batch.mhtml?approved=1&id="
 ID = "170355946"
 AppendURL = "&type=photos&pg="
 Page = 1
+
+MONTHS = {'01': 'January', '02': 'February', '03': 'March', '04': 'April', '05': 'May', '06': 'June',
+          '07': 'July', '08': 'August', '09': 'September', '10': 'October', '11': 'November', '12': 'December'}
+WEEKDAY = {0: 'Monday', 1: 'Tuesday', 2: 'Wednesday', 3: 'Thursday', 4: 'Fraiday', 5: 'Saturday', 6: 'Sunday'}
+
 listURLS = []
 
 
@@ -52,7 +57,10 @@ def getDataFrame(url, wr):
             Source = str(tmp[0][tmp[0].index("\"") + 1:tmp[0].rindex("\"")])
             ID = Source[Source.index("photo-") + len("photo-"):Source.index(".jpg")]
             Title = tmp[2][tmp[2].index("\"") + 1:end1 if end1 > 0 and end1 != tmp[2].index("\"") else end2]
+            splitDate = UploadData.split("/")
+            listUploadData.append(MONTHS.get(splitDate[0]) + "-" + splitDate[2])
             listUploadData.append(UploadData)
+            listUploadData.append(str(WEEKDAY.get(datetime.datetime(int(splitDate[2]), int(splitDate[0]), int(splitDate[1])).weekday())))
             listUploadData.append(ID)
             listUploadData.append(Source)
             listUploadData.append(Title)
@@ -63,14 +71,15 @@ def getDataFrame(url, wr):
 def uploadDataFromURLs():
     with open("DF_TotalUplodedImages.csv", "w") as file:
         wr = csv.writer(file)
-        csv_header = ["UploadData", "ID", "Source", "Title"]
+        csv_header = ["MonthUpload", "UploadData", "Day_of_week", "ID", "Source", "Title"]
         wr.writerow(csv_header)
-        threads = [threading.Thread(target=getDataFrame, args=[url, wr]) for url in listURLS]
+        URLSlist = [line.rstrip('\n') for line in open("BatchURLSfile.csv")]
+        threads = [threading.Thread(target=getDataFrame, args=[url, wr]) for url in URLSlist]
         n = 1
         for thread in threads:
             time.sleep(0.07)
             thread.start()
-            print("Threads # " + str(n) + " started!")
+            print("Threads # " + str(n) + " started...")
             n += 1
         for thread in threads:
             n -= 1
@@ -80,33 +89,41 @@ def uploadDataFromURLs():
     file.close()
 
 
-def writeTofileURLS(BatchID, PhotosInBatch):
+def writeTofileURLS(BatchID, PhotosInBatch, BatchURLSfile):
     # pages = int(PhotosInBatch / 20) + (1 if int(PhotosInBatch) % 20 > 0 else 0)
     pages = int(PhotosInBatch / 20) + 1 if PhotosInBatch % 20 > 0 else int(PhotosInBatch / 20)
-    for n in range(1, pages + 1):
-        url = BaseURL + str(BatchID) + AppendURL + str(n)
-        listURLS.append(url)
+    # with open("BatchURLSfile.csv", "w") as BatchURLSfile:
+    listURLS = [BaseURL + str(BatchID) + AppendURL + str(n) + "\n" for n in range(1, pages + 1)]
+    BatchURLSfile.writelines(listURLS)
+        # BatchURLSfile.close()
+        # for n in range(1, pages + 1):
+        #     url = BaseURL + str(BatchID) + AppendURL + str(n)
+        #     listURLS.append(url)
 
 
 def approvedPhotos():
     url = "https://submit.shutterstock.com/review.mhtml?approved=1&type=photos"
     with open("ApprovedPhotosTotalbyBatch.csv", "w") as file:
-        wr = csv.writer(file)
-        csv_header = ["BatchID", "DateSubmitted", "PhotosInBatch"]
-        wr.writerow(csv_header)
-        response = requests.get(url, cookies=cookies)
-        dataFrame = response.text.split("\n")
-        for i, line in enumerate(dataFrame):
-            linetoscv = []
-            if "?id=" in line:
-                BatchID = re.findall('\d+', line)[0]
-                DateSubmitted = dataFrame[i + 3].split(">")[1].split("<")[0]
-                PhotosInBatch = re.findall('\d+', dataFrame[i + 4])[0]
-                linetoscv.append(str(BatchID))
-                linetoscv.append(str(DateSubmitted))
-                linetoscv.append(str(PhotosInBatch))
-                wr.writerow(linetoscv)
-                writeTofileURLS(BatchID, int(PhotosInBatch))
+        with open("BatchURLSfile.csv", "w") as BatchURLSfile:
+            wr = csv.writer(file)
+            csv_header = ["BatchID", "MonthSubmitted", "DateSubmitted", "Day_of_week", "PhotosInBatch"]
+            wr.writerow(csv_header)
+            response = requests.get(url, cookies=cookies)
+            dataFrame = response.text.split("\n")
+            for i, line in enumerate(dataFrame):
+                linetoscv = []
+                if "?id=" in line:
+                    BatchID = re.findall('\d+', line)[0]
+                    DateSubmitted = dataFrame[i + 3].split(">")[1].split("<")[0]
+                    PhotosInBatch = re.findall('\d+', dataFrame[i + 4])[0]
+                    dateSplit = DateSubmitted.split("/")
+                    linetoscv.append(str(BatchID))
+                    linetoscv.append(str(MONTHS.get(dateSplit[0])) + "-" + dateSplit[2])
+                    linetoscv.append(str(DateSubmitted))
+                    linetoscv.append(str(WEEKDAY.get(datetime.datetime(int(dateSplit[2]), int(dateSplit[0]), int(dateSplit[1])).weekday())))
+                    linetoscv.append(str(PhotosInBatch))
+                    wr.writerow(linetoscv)
+                    writeTofileURLS(BatchID, int(PhotosInBatch), BatchURLSfile)
         file.close()
 
 

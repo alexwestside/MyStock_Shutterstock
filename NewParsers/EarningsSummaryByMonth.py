@@ -201,11 +201,11 @@ def getDataFromURLS():
 
 def writeToExcel():
     workbookName = datetime.datetime.now().strftime("%Y-%m-%d %H:%M") + "_" + "MyStocks_analytics_by_set.xlsx"
-    df1 = pd.DataFrame(pd.read_csv("ApprovedPhotosTotalbyBatch.csv"))
+    # df1 = pd.DataFrame(pd.read_csv("ApprovedPhotosTotalbyBatch.csv"))
     df2 = pd.DataFrame(pd.read_csv("DF_TotalUplodedImages.csv"))
     df3 = pd.DataFrame(pd.read_csv("DF_EarningsSummaryByMonth.csv"))
     writer = pd.ExcelWriter(workbookName, engine='xlsxwriter')
-    df1.to_excel(writer, sheet_name='InfoBatch')
+    # df1.to_excel(writer, sheet_name='InfoBatch')
     df2.to_excel(writer, sheet_name='TotalUplodedImages')
     df3.to_excel(writer, sheet_name='EarningsSummaryByMonth')
     writer.save()
@@ -213,10 +213,10 @@ def writeToExcel():
 
 def main():
     TotalUplodedImages.uploadImages()
-    generateStartUrls()
-    generateAllUrls()
-    getDataFromURLS()
-    writeToExcel()
+    # generateStartUrls()
+    # generateAllUrls()
+    # getDataFromURLS()
+    # writeToExcel()
 
 
 main()
