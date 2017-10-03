@@ -9,20 +9,23 @@ import time
 import datetime
 import collections
 import os
+import xlsxwriter
+import string
+from UploadedImages import TotalUplodedImages
 
-COOKIES = {"__ssid": "9606bc02-747b-42ef-b851-4e738e7fd1de", "_photo_session_id": "68214e1d41c4266955645373481a5a42",
+COOKIES = {"__ssid": "9606bc02-747b-42ef-b851-4e738e7fd1de", "_ga": "GA1.2.1906198584.1505855712",
+           "_photo_session_id": "68214e1d41c4266955645373481a5a42", "_session_id": "a8c044ff1ba8114f12f39f2a6024decb",
            "_ym_uid": "1494857922560381083", "accts_contributor": "MyStocks", "accts_customer": "yanushkov",
-           "ajs_anonymous_id": "%226ae010e6-859b-484c-b5d9-6221581e51cf%22", "ajs_group_id": "null",
-           "ajs_user_id": "null", "did": "a9b91f2e-f3b6-4532-b41e-b34bd7cb67e7",
-           "IRF_3": "%7Bvisits%3A14%2Cuser%3A%7Btime%3A1494857922704%2Cref%3A%22direct%22%2Cpv%3A39%2Ccap%3A%7B%7D%2Cv%3A%7B%7D%7D%2Cvisit%3A%7Btime%3A1504427803093%2Cref%3A%22https%3A%2F%2Fsubmit.shutterstock.com%2Fearnings%2Fdaily%3Fpage%3D3%26date%3D2017-08-01%26language%3Den%26category%3D25_a_day%26sort%3Ddesc%26sorted_by%3Dcount%26per_page%3D20%22%2Cpv%3A12%2Ccap%3A%7B47%3A1%7D%2Cv%3A%7B1225%3A%22IR_AN_64%22%7D%7D%2Clp%3A%22https%3A%2F%2Fwww.shutterstock.com%2Fru%2Fimage-vector%2Fhand-drawn-botanical-art-isolated-on-687437659%22%2Cdebug%3A0%2Ca%3A1504430191128%2Cd%3A%22shutterstock.com%22%7D",
-           "IRMS_la1305": "1504427803784", "language": "en", "locale": "ru",
-           "optimizelyEndUserId": "oeu1498041993482r0.3441372721886864", "optly.pgStore.s.0": "{}",
-           "psst": "115:466,158:572,218:872,332:1160,377:1334,454:1558,530:1787,542:1853,551:1874",
-           "visit_id": "15831945931", "visitor_id": "11011468609",
-           "__utma": "265213581.1507426815.1494857922.1504638242.1505153117.27", "__utmc": "265213581",
-           "__utmz": "265213581.1494857970.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)", "__uvt": "",
-           "_ga": "GA1.3.1507426815.1494857922", "uvts": "6DIK18ZF738WyVeK",
-           "sbsid": "a8c044ff1ba8114f12f39f2a6024decb",
+           "ajs_anonymous_id": "%226ae010e6-859b-484c-b5d9-6221581e51cf%22", "ajs_group_id": "null", "ajs_user_id": "null",
+           "did": "a9b91f2e-f3b6-4532-b41e-b34bd7cb67e7",
+           "IRF_3": "%7Bvisits%3A21%2Cuser%3A%7Btime%3A1494857922704%2Cref%3A%22direct%22%2Cpv%3A47%2Ccap%3A%7B%7D%2Cv%3A%7B%7D%7D%2Cvisit%3A%7Btime%3A1506455994261%2Cref%3A%22direct%22%2Cpv%3A1%2Ccap%3A%7B47%3A1%7D%2Cv%3A%7B1225%3A%22IR_AN_64%22%7D%7D%2Clp%3A%22https%3A%2F%2Fwww.shutterstock.com%2Fru%2Fimage-illustration%2Fsky-bird-white-macaw-pattern-wildlife-722442694%22%2Cdebug%3A0%2Ca%3A1506455994261%2Cd%3A%22shutterstock.com%22%7D",
+           "IRMS_la1305": "1506455994548", "language": "en", "locale": "ru", "optimizelyEndUserId": "oeu1498041993482r0.3441372721886864",
+           "optly.pgStore.s.0": "{}", "psst": "115:466,158:572,218:872,332:1160,377:1334,454:1558,530:1787,542:1853,551:1874",
+           "urefid": "%7B%22contributor_id%22%3A%22161069038%22%2C%22time%22%3A1505855706%2C%22referrer%22%3A%22https%3A%2F%2Fsubmit.shutterstock.com%2Fdashboard%3Flanguage%3Den%22%2C%22entry_url%22%3A%22%2Fg%2FMyStocks%3Flanguage%3Den%22%7D",
+           "visit_id": "16173401993", "visitor_id": "11011468609", "__utma": "265213581.1507426815.1494857922.1506807077.1506887612.40",
+           "__utmb": "265213581.3.10.1506887612", "__utmc": "265213581",
+           "__utmz": "265213581.1494857970.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)", "__uvt": "", "_ga": "GA1.3.1507426815.1494857922",
+           "uvts": "6DIK18ZF738WyVeK", "sbsid": "1822b901c314b74acb7eed69318bfff4",
            "session": "s%3APOPXQWqr-nYusEExnUPhmPTJ4q76UUXl.iKOHDwAqW8hCq%2FrmqKYBSW8tXwW0Mz45RwTQPe2XW1o", }
 
 urlOrigin = "https://submit.shutterstock.com/earnings/daily?page=1&date=2017-09-01&language=en&category=25_a_day&sort=desc&sorted_by=count&per_page=20"
@@ -76,32 +79,29 @@ def generateURLS(MAX, URL, file):
             file.write(url + "\n")
 
 
-def getMAXpageAndGenerateURLS(URL, erningsFile, allURLs):
-    if URL in allURLs:
-        return
-    else:
-        onePage = True
-        MAX = 0
+def getMAXpageAndGenerateURLS(URL, file):
+    onePage = True
+    MAX = 0
+    try:
         response = requests.get(URL, cookies=COOKIES)
-        dataMass = response.text.split("\n")
-        for line in dataMass:
-            if "None of your images were downloaded" in line:
-                onePage = False
-                break
-            if "Sorry! We're having some issues loading this data right now." in line:
-                onePage = False
-                break
-            if "max=" in line:
-                MAX = re.findall('\d+', line)[0]
-                onePage = False
-                break
-        if onePage == True:
-            MAX = 1
-        if MAX != 0:
-            with open("AllURLS.csv", "a") as allURLSfile:
-                allURLSfile.write(URL + '\n')
-                allURLSfile.close()
-            generateURLS(MAX, URL, erningsFile)
+    except requests.exceptions.ConnectionError as e:
+        response = requests.get(URL, cookies=COOKIES)
+    dataMass = response.text.split("\n")
+    for line in dataMass:
+        if "None of your images were downloaded" in line:
+            onePage = False
+            break
+        if "Sorry! We're having some issues loading this data right now." in line:
+            onePage = False
+            break
+        if "max=" in line:
+            MAX = re.findall('\d+', line)[0]
+            onePage = False
+            break
+    if onePage == True:
+        MAX = 1
+    if MAX != 0:
+        generateURLS(MAX, URL, file)
 
 
 def generateStartUrls():
@@ -111,32 +111,25 @@ def generateStartUrls():
                    range(1, int(DAYS.get(m)) + 1) for c in CATEGORYS]
         allStartURLSfile.writelines(preURLS)
         allStartURLSfile.close()
-        for url in preURLS:
-            print(url)
+    for url in preURLS:
+        print(url)
 
 
 def generateAllUrls():
-    with open("URLs_EarningsSummaryByMonth.csv", "a") as erningsFile:
-        with open("AllStartURLS.csv", "r") as AllStartURLSfile:
-            preURLS = AllStartURLSfile.readlines()
-            AllStartURLSfile.close()
-            if os.path.exists("AllURLS.csv"):
-                allURLs = open("AllURLS.csv", "r").readlines()
-            else:
-                allURLs = []
-            threads = [threading.Thread(target=getMAXpageAndGenerateURLS, args=[url.strip(), erningsFile, allURLs]) for url in
-                           preURLS]
-            n = 1
-            for thread in threads:
-                time.sleep(0.07)
-                thread.start()
-                print("Threads # " + str(n) + " started!")
-                n += 1
-            for thread in threads:
-                n -= 1
-                print("Threads # " + str(n) + " joined...")
-                time.sleep(0.07)
-                thread.join()
+    with open("URLs_EarningsSummaryByMonth.csv", "w") as erningsFile:
+        preURLS = [line.rstrip('\n') for line in open("AllStartURLS.csv")]
+        threads = [threading.Thread(target=getMAXpageAndGenerateURLS, args=[url.strip(), erningsFile]) for url in preURLS]
+        n = 1
+        for thread in threads:
+            time.sleep(0.07)
+            thread.start()
+            print("Threads # " + str(n) + " started...")
+            n += 1
+        for thread in threads:
+            n -= 1
+            print("Threads # " + str(n) + " joined...")
+            time.sleep(0.07)
+            thread.join()
     erningsFile.close()
 
 
@@ -183,7 +176,7 @@ def getDataFromURLSinThreads(url, wr):
 
 
 def getDataFromURLS():
-    with open("DF_EarningsSummaryByMonth.csv", "w+") as fileWrite:
+    with open("DF_EarningsSummaryByMonth.csv", "w") as fileWrite:
         wr = csv.writer(fileWrite)
         with open("URLs_EarningsSummaryByMonth.csv", "r") as fileRead:
             dataFromFile = fileRead.readlines()
@@ -204,11 +197,20 @@ def getDataFromURLS():
     fileWrite.close()
 
 
+def writeToExcel():
+    workbookName = "2017-10-02 23:50_MyStocks_analytics_by_set.xlsx"
+    df1 = pd.DataFrame(pd.read_csv("DF_EarningsSummaryByMonth.csv"))
+    writer = pd.ExcelWriter(workbookName, engine='xlsxwriter')
+    df1.to_excel(writer, sheet_name='EarningsSummaryByMonth')
+    writer.save()
+
+
 def main():
-    # print(1)
+    # TotalUplodedImages.main1()
     generateStartUrls()
     generateAllUrls()
     getDataFromURLS()
+    writeToExcel()
 
 
 main()

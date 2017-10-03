@@ -119,9 +119,9 @@ def writeToExcel():
     df2.to_excel(writer, sheet_name='TotalUplodedImages')
     writer.save()
 
-def main():
+def main1():
     approvedPhotos()
     uploadDataFromURLs()
     writeToExcel()
 
-main()
+# main()

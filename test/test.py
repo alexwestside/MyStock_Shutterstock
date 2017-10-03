@@ -1,5 +1,7 @@
 import os
 import requests
+import time
+import datetime
 
 # str = '"Adfghh"'
 
@@ -88,10 +90,26 @@ COOKIES = {"__ssid": "9606bc02-747b-42ef-b851-4e738e7fd1de", "_ga": "GA1.2.19061
            "uvts": "6DIK18ZF738WyVeK", "sbsid": "1822b901c314b74acb7eed69318bfff4",
            "session": "s%3APOPXQWqr-nYusEExnUPhmPTJ4q76UUXl.iKOHDwAqW8hCq%2FrmqKYBSW8tXwW0Mz45RwTQPe2XW1o", }
 
-url = "https://submit.shutterstock.com/review_batch.mhtml?id=109911473&approved=1&type=photos"
+url = "https://submit.shutterstock.com/earnings/daily?page=1&date=2016-01-04&language=en&category=25_a_day&sort=desc&sorted_by=count&per_page=20"
 
-# response = requests.get(url, cookies=COOKIES)
-# dataMass = response.text.split("\n")
+a = datetime.datetime.now().microsecond
+lines = tuple(open("../NewParsers/AllStartURLS.csv", 'r'))
+# lines = [line.rstrip('\n') for line in open('filename')]
+b = datetime.datetime.now().microsecond
+print(int(b)-int(a))
+print(lines)
+
+c = datetime.datetime.now().microsecond
+# lines = tuple(open("../NewParsers/AllStartURLS.csv", 'r'))
+lines1 = [line.rstrip('\n') for line in open('../NewParsers/AllStartURLS.csv')]
+d = datetime.datetime.now().microsecond
+print(int(d)-int(c))
+print(lines1)
+
+# while True:
+#     response = requests.get(url, cookies=COOKIES)
+#     dataMass = response.text.split("\n")
+#     print(str(dataMass))
 # for i, line in enumerate(dataMass):
 #     if "img src=" in line:
 #         if "465268094" in line:
@@ -103,7 +121,7 @@ url = "https://submit.shutterstock.com/review_batch.mhtml?id=109911473&approved=
 #             ID = Source[Source.index("photo-") + len("photo-"):Source.index(".jpg")]
 #             Title = tmp[2][tmp[2].index("\"") + 1:end1 if end1 > 0 and end1 != tmp[2].index("\"") else end2]
 #             print(line)
-# print(2)
+
 
 
 # PhotosInBatch = 20
@@ -123,19 +141,19 @@ url = "https://submit.shutterstock.com/review_batch.mhtml?id=109911473&approved=
 # print(pages2)
 # print(pages3)
 
-import xlsxwriter
-import time
-import datetime
-import string
-
-list = ["123", "321", "546"]
+# import xlsxwriter
+# import time
+# import datetime
+# import string
+#
+# list = ["123", "321", "546"]
 # workbookName = datetime.datetime.now().strftime("%Y-%m-%d %H:%M") + "_" + "MyStocks_analytics_by_set.xlsx"
 # workbook = xlsxwriter.Workbook(workbookName, {'default_date_format': 'dd/mm/yy'})
 # with xlsxwriter.Workbook(workbookName) as wb:
 #     ws1 = wb.add_worksheet("123")
 #     ws2 = wb.add_worksheet("1111")
 #     ws1.write(list)
-alpha = string.ascii_uppercase
-for a in alpha:
-    for i in range(1, 10):
-        print(a + str(i))
+# alpha = string.ascii_uppercase
+# for a in alpha:
+#     for i in range(1, 10):
+#         print(a + str(i))
