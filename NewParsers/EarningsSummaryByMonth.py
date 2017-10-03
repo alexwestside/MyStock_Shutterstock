@@ -46,7 +46,7 @@ ERNINGS_TYPE = ['Subscription', 'Enhanced', 'On demand', 'Videos', 'Single & oth
 YEARS = ["2016", "2017"]
 DAYS = {"01": "31", "02": "30", "03": "31", "04": "31", "05": "31", "06": "31", "07": "31", "08": "31", "09": "31",
         "10": "31", "11": "31", "12": "31"}
-CATEGORYS = ['25_a_day', 'on_demand', 'enhanced', 'single_image_and_other']
+CATEGORYS = {"25_a_day": "subscription", "on_demand": "onDemand", "enhanced": "enhanced", "single_image_and_other": "single&other"}
 QUARTER = {"01": "Q1", "02": "Q1", "03": "Q1", "04": "Q2", "05": "Q2", "06": "Q2", "07": "Q3", "08": "Q3", "09": "Q3",
            "10": "Q4", "11": "Q4", "12": "Q4"}
 preURLS = []
@@ -136,9 +136,9 @@ def generateAllUrls():
 def getInfoData(url, infoData):
     tmpDate = url[url.index("date=") + len("date="):url.index("&language=")]
     tmpDate = tmpDate.split("-")
-    for category in CATEGORYS:
+    for category in CATEGORYS.keys():
         if category in url:
-            infoData.Category = category
+            infoData.Category = CATEGORYS.get(category)
             break
     infoData.Day_of_sale = tmpDate[1] + "/" + tmpDate[2] + '/' + tmpDate[0]
     infoData.Data = MONTHS.get(str(tmpDate[1])) + "-" + tmpDate[0][2:]
@@ -178,6 +178,8 @@ def getDataFromURLSinThreads(url, wr):
 def getDataFromURLS():
     with open("DF_EarningsSummaryByMonth.csv", "w") as fileWrite:
         wr = csv.writer(fileWrite)
+        csv_header = ["Qurter", "Data", "Day_of_sale", "Day_of_week", "Category", "ID", "Earnings", "Downloads"]
+        wr.writerow(csv_header)
         with open("URLs_EarningsSummaryByMonth.csv", "r") as fileRead:
             dataFromFile = fileRead.readlines()
             urlsList = [url.strip() for url in dataFromFile]
@@ -198,15 +200,19 @@ def getDataFromURLS():
 
 
 def writeToExcel():
-    workbookName = "2017-10-02 23:50_MyStocks_analytics_by_set.xlsx"
-    df1 = pd.DataFrame(pd.read_csv("DF_EarningsSummaryByMonth.csv"))
+    workbookName = datetime.datetime.now().strftime("%Y-%m-%d %H:%M") + "_" + "MyStocks_analytics_by_set.xlsx"
+    df1 = pd.DataFrame(pd.read_csv("ApprovedPhotosTotalbyBatch.csv"))
+    df2 = pd.DataFrame(pd.read_csv("DF_TotalUplodedImages.csv"))
+    df3 = pd.DataFrame(pd.read_csv("DF_EarningsSummaryByMonth.csv"))
     writer = pd.ExcelWriter(workbookName, engine='xlsxwriter')
-    df1.to_excel(writer, sheet_name='EarningsSummaryByMonth')
+    df1.to_excel(writer, sheet_name='InfoBatch')
+    df2.to_excel(writer, sheet_name='TotalUplodedImages')
+    df3.to_excel(writer, sheet_name='EarningsSummaryByMonth')
     writer.save()
 
 
 def main():
-    # TotalUplodedImages.main1()
+    TotalUplodedImages.uploadImages()
     generateStartUrls()
     generateAllUrls()
     getDataFromURLS()
