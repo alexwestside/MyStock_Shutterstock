@@ -52,16 +52,6 @@ QUARTER = {"01": "Q1", "02": "Q1", "03": "Q1", "04": "Q2", "05": "Q2", "06": "Q2
 preURLS = []
 URLS = []
 
-SETSLIST = ['Abstruct', 'Amarillis', 'Anemone', 'AppleFlower', 'Aquilegia', 'Bird', 'Butterflies', 'Camellia',
-            'cannabis', 'Carnation', 'carnegiea', 'CherryFlower', 'Chrysanthemum', 'Chubushnik', 'Clematis',
-            'Cornus', 'Crocuses', 'Dahila', 'daisy', 'dandelion', 'Dogwood', 'dragonfly', 'Eustoma', 'ExoticFlower',
-            'Feather', 'Fish', 'Forgetmenot', 'frame', 'fresia', 'Fuchsia', 'Gaillardia', 'hibiscus', 'immortelle',
-            'Iris', 'Kosmeya', 'Lavender', 'Lily', 'London', 'Love', 'Magnolia', 'Malus', 'Myosotis', 'Narcissus',
-            'Olive', 'Orchids', 'other', 'Paintbrush', 'pattern', 'Peony', 'PhotoPromotion', 'Poppy', 'Primula',
-            'Rose', 'Sakura', 'Sarracenia', 'Succulentus', 'cactus', 'Tropical Hawaii leaves palm tree', 'Tulip',
-            'Viola', 'Weigela']
-
-
 #######################################################################################################################
 
 def generateURLS(MAX, URL, file):

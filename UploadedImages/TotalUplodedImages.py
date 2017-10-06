@@ -51,12 +51,13 @@ def getDataFrame(url, wr):
             except:
                 print("substring not found", tmp[0])
             try:
-                end2 = tmp[2].rindex(".")
+                end2 = tmp[2].index(".")
             except:
                 print("substring not found", tmp[0])
             Source = str(tmp[0][tmp[0].index("\"") + 1:tmp[0].rindex("\"")])
             ID = Source[Source.index("photo-") + len("photo-"):Source.index(".jpg")]
-            Title = tmp[2][tmp[2].index("\"") + 1:end1 if end1 > 0 and end1 != tmp[2].index("\"") else end2]
+            Title = tmp[2][tmp[2].index("\"") + 1:end2 if end2 > 0 else end1]
+            # Title = tmp[2][tmp[2].index("\"") + 1:end1 if end1 > 0 and end1 != tmp[2].index("\"") else end2]
             splitDate = UploadData.split("/")
             listUploadData.append(MONTHS.get(splitDate[0]) + "-" + splitDate[2])
             listUploadData.append(UploadData)
