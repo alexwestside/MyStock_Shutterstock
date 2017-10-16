@@ -49,6 +49,11 @@ class Checker:
 
 
 def main():
+    a = pd.read_csv("batch.csv", usecols=["BatchID"])
+
+
+
+
     batchFile = "batch.csv"
     batchObj = Batch(batchFile)
     batchObj.writeAppend()
