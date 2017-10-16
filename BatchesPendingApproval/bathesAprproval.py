@@ -60,11 +60,6 @@ class Batch:
         return False if data in self.listBatchIDs else True
 
 def main():
-    user = "user"
-    password = "password"
-    touser = "touser"
-    subject = "subject"
-    mail = Gmail(user, password)
     batchFile = "batch.csv"
     title = ["BatchID", "MonthSubmitted", "DateSubmitted", "Day_of_week", "PhotosInBatch"]
     dataFrame = Response(Login().cookies, InitApprovedPhotosURLs).getResponse()
@@ -84,6 +79,12 @@ def main():
                 writer.writeTOscv(lineTOscv)
                 boby = boby.append(lineTOscv)
                 print(lineTOscv)
-    mail.send(subject, boby, touser)
+    if len(boby) != 0:
+        user = "user"
+        password = "password"
+        touser = "touser"
+        subject = "subject"
+        mail = Gmail(user, password)
+        mail.send(subject, boby, touser)
 
 main()
