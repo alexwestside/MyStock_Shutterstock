@@ -3,8 +3,31 @@ import requests
 import browsercookie
 import os
 import pandas as pd
+import smtplib
 
 InitApprovedPhotosURLs = "https://submit.shutterstock.com/review.mhtml?type=photos"
+
+class Gmail(object):
+    def __init__(self, email, password):
+        self.email = email
+        self.password = password
+        self.server = 'smtp.gmail.com'
+        self.port = 587
+        session = smtplib.SMTP(self.server, self.port)
+        session.ehlo()
+        session.starttls()
+        session.login(self.email, self.password)
+        self.session = session
+    def send(self, subject, body, to_user):
+        headers = [
+            "From: " + self.email,
+            "Subject: " + subject,
+            "To: " + to_user,
+            "MIME-Version: 1.0",
+           "Content-Type: text/html"]
+        headers = "\r\n".join(headers)
+        self.session.sendmail(self.email, self.email, headers + "\r\n\r\n" + body)
+        self.session.close()
 
 class Login:
     def __init__(self):
@@ -37,12 +60,18 @@ class Batch:
         return False if data in self.listBatchIDs else True
 
 def main():
+    user = "user"
+    password = "password"
+    touser = "touser"
+    subject = "subject"
+    mail = Gmail(user, password)
     batchFile = "batch.csv"
     title = ["BatchID", "MonthSubmitted", "DateSubmitted", "Day_of_week", "PhotosInBatch"]
     dataFrame = Response(Login().cookies, InitApprovedPhotosURLs).getResponse()
     writer = Writer(batchFile, title)
     batch = Batch(batchFile)
     batch.makeListIDs("BatchID")
+    boby = []
     for i, line in enumerate(dataFrame):
         lineTOscv = []
         if "?id=" in line:
@@ -53,6 +82,8 @@ def main():
                 dateSplit = DateSubmitted.split("/")
                 lineTOscv = lineTOscv.extend([str(BatchID), str(MONTHS.get(dateSplit[0])) + "-" + dateSplit[2], str(DateSubmitted), str(WEEKDAY.get(datetime.datetime(int(dateSplit[2]), int(dateSplit[0]), int(dateSplit[1])).weekday())), str(PhotosInBatch)])
                 writer.writeTOscv(lineTOscv)
+                boby = boby.append(lineTOscv)
                 print(lineTOscv)
+    mail.send(subject, boby, touser)
 
 main()
