@@ -93,9 +93,9 @@ def main():
                 boby.append(lineTOscv)
                 print(lineTOscv)
     if len(boby) != 0:
-        user = "sklif.85@gmail.com"
-        password = "1XyUNnz_"
-        touser = "olexandr.rizhiy@gmail.com"
+        user = "_@gmail.com"
+        password = "_"
+        touser = "_@gmail.com"
         subject = "subject"
 
         # TODO need test for sending email.....
