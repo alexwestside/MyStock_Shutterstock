@@ -84,6 +84,8 @@ def main():
         password = "password"
         touser = "touser"
         subject = "subject"
+
+        #TODO need test for sending email.....
         mail = Gmail(user, password)
         mail.send(subject, boby, touser)
 
