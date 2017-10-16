@@ -48,8 +48,6 @@ toUser = "olexandr.rizhiy@gmail.com"
 subject = "TEST"
 message = "Hello!!!"
 
-
-
 class Gmail(object):
     def __init__(self, email, password):
         self.email = email
@@ -60,6 +58,8 @@ class Gmail(object):
         session.ehlo()
         session.starttls()
         # session.ehlo()
+        print(self.email)
+        print(self.password)
         session.login(self.email, self.password)
         self.session = session
 
@@ -79,5 +79,5 @@ class Gmail(object):
 
 gm = Gmail(fromUser, fromUserPassword)
 
-gm.send_message('TEST', 'Hello!!!')
+gm.send_message('TEST', 'Hello!!!', toUser)
 
