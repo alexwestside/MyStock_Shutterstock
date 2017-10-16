@@ -3,6 +3,8 @@ import requests
 import browsercookie
 import os
 import pandas as pd
+from collections import defaultdict
+import numpy as np
 import smtplib
 
 InitApprovedPhotosURLs = "https://submit.shutterstock.com/review.mhtml?approved=1&type=photos"
@@ -29,6 +31,7 @@ class Batch:
         self.file = file
         self.fd = ""
         self.csv_header = ["BatchID", "MonthSubmitted", "DateSubmitted", "Day_of_week", "PhotosInBatch"]
+        self.listBatchID = []
     def writeAppend(self):
         if os.path.isfile(self.file):
             self.fd = open(self.file, self.append)
@@ -40,17 +43,26 @@ class Batch:
 
 class Checker:
     def __init__(self, columne, file):
-        self.getAllBatchesID = pd.read_csv(file, usecols=[columne])
-    def check(self, data):
-        if data in self.getAllBatchesID:
+        self.columne = columne
+        self.file = file
+        self.listBatchIDs = [self.listBatchIDs.append(val[0]) for val in pd.read_csv(self.file, usecols=[self.columne]).values.tolist()]
+    def checkNewIDinListIDs(self, data):
+        if data in self.listBatchIDs:
             return True
         else:
             return False
 
+class Write:
+    def __init__(self, fd, data):
+        self.fd = fd
+        self.data = data
+    def writeTOscv9(self):
+        csv.writer(self.fd).writerow(self.data)
+
 
 def main():
-    a = pd.read_csv("batch.csv", usecols=["BatchID"])
-
+    b = []
+    [b.append(val[0]) for val in pd.read_csv("batch.csv", usecols=["BatchID"]).values.tolist()]
 
 
 
