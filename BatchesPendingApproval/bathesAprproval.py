@@ -75,9 +75,9 @@ def main():
                 DateSubmitted = dataFrame[i + 3].split(">")[1].split("<")[0]
                 PhotosInBatch = re.findall('\d+', dataFrame[i + 4])[0]
                 dateSplit = DateSubmitted.split("/")
-                lineTOscv = lineTOscv.extend([str(BatchID), str(MONTHS.get(dateSplit[0])) + "-" + dateSplit[2], str(DateSubmitted), str(WEEKDAY.get(datetime.datetime(int(dateSplit[2]), int(dateSplit[0]), int(dateSplit[1])).weekday())), str(PhotosInBatch)])
+                lineTOscv.extend([str(BatchID), str(MONTHS.get(dateSplit[0])) + "-" + dateSplit[2], str(DateSubmitted), str(WEEKDAY.get(datetime.datetime(int(dateSplit[2]), int(dateSplit[0]), int(dateSplit[1])).weekday())), str(PhotosInBatch)])
                 writer.writeTOscv(lineTOscv)
-                boby = boby.append(lineTOscv)
+                boby.append(lineTOscv)
                 print(lineTOscv)
     if len(boby) != 0:
         user = "user"
