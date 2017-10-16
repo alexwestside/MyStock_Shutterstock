@@ -3,82 +3,56 @@ import requests
 import browsercookie
 import os
 import pandas as pd
-from collections import defaultdict
-import numpy as np
-import smtplib
 
-InitApprovedPhotosURLs = "https://submit.shutterstock.com/review.mhtml?approved=1&type=photos"
-a = "https://submit.shutterstock.com/review_batch.mhtml?id=174048139&approved=1&type=photos"
+InitApprovedPhotosURLs = "https://submit.shutterstock.com/review.mhtml?type=photos"
 
 class Login:
     def __init__(self):
-        self.url = "https://submit.shutterstock.com/earnings?language=en"
         self.cookies = browsercookie.chrome()
-    def getCookies(self):
-        return requests.get(self.url, cookies=self.cookies).cookies
 
 class Response:
     def __init__(self, cookies, url):
         self.url = url
         self.cookies = cookies
     def getResponse(self):
-        return requests.get(self.url, cookies=self.cookies).text
+        return requests.get(self.url, cookies=self.cookies).text.split("\n")
+
+class Writer:
+    def __init__(self, file, title):
+        self.file = file
+        self.title = title
+    def writeTOscv(self, data):
+        if not os.path.isfile(self.file):
+            csv.writer(open(self.file, "w")).writerow(self.title)
+        csv.writer(open(self.file, "a")).writerow(data)
 
 class Batch:
     def __init__(self, file):
-        self.write = "w"
-        self.append = "a"
         self.file = file
-        self.fd = ""
-        self.csv_header = ["BatchID", "MonthSubmitted", "DateSubmitted", "Day_of_week", "PhotosInBatch"]
-        self.listBatchID = []
-    def writeAppend(self):
+        self.listBatchIDs = []
+    def makeListIDs(self, columne):
         if os.path.isfile(self.file):
-            self.fd = open(self.file, self.append)
-        else:
-            self.fd = open(self.file, self.write)
-            self.scvWriter().writerow(self.csv_header)
-    def scvWriter(self):
-        return csv.writer(self.fd)
-
-class Checker:
-    def __init__(self, columne, file):
-        self.columne = columne
-        self.file = file
-        self.listBatchIDs = [self.listBatchIDs.append(val[0]) for val in pd.read_csv(self.file, usecols=[self.columne]).values.tolist()]
+            [self.listBatchIDs.append(val[0]) for val in pd.read_csv(self.file, usecols=[columne]).values.tolist()]
     def checkNewIDinListIDs(self, data):
-        if data in self.listBatchIDs:
-            return True
-        else:
-            return False
-
-class Write:
-    def __init__(self, fd, data):
-        self.fd = fd
-        self.data = data
-    def writeTOscv9(self):
-        csv.writer(self.fd).writerow(self.data)
-
+        return False if data in self.listBatchIDs else True
 
 def main():
-    b = []
-    [b.append(val[0]) for val in pd.read_csv("batch.csv", usecols=["BatchID"]).values.tolist()]
-
-
-
     batchFile = "batch.csv"
-    batchObj = Batch(batchFile)
-    batchObj.writeAppend()
-    checkerObj = Checker(batchObj.csv_header[0], batchObj.fd)
-    if checkerObj.check("12345"):
-        print(1)
-    else:
-        print(2)
-
-
-
-    # url = "https://submit.shutterstock.com/earnings/daily?category=25_a_day&language=en&date=2017-10-15"
-    # response = Response(Login().cookies, url).getResponse()
-    # print(response)
+    title = ["BatchID", "MonthSubmitted", "DateSubmitted", "Day_of_week", "PhotosInBatch"]
+    dataFrame = Response(Login().cookies, InitApprovedPhotosURLs).getResponse()
+    writer = Writer(batchFile, title)
+    batch = Batch(batchFile)
+    batch.makeListIDs("BatchID")
+    for i, line in enumerate(dataFrame):
+        lineTOscv = []
+        if "?id=" in line:
+            BatchID = re.findall('\d+', line)[0]
+            if batch.checkNewIDinListIDs(BatchID):
+                DateSubmitted = dataFrame[i + 3].split(">")[1].split("<")[0]
+                PhotosInBatch = re.findall('\d+', dataFrame[i + 4])[0]
+                dateSplit = DateSubmitted.split("/")
+                lineTOscv = lineTOscv.extend([str(BatchID), str(MONTHS.get(dateSplit[0])) + "-" + dateSplit[2], str(DateSubmitted), str(WEEKDAY.get(datetime.datetime(int(dateSplit[2]), int(dateSplit[0]), int(dateSplit[1])).weekday())), str(PhotosInBatch)])
+                writer.writeTOscv(lineTOscv)
+                print(lineTOscv)
 
 main()
