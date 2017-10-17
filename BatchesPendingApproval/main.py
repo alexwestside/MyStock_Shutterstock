@@ -1,6 +1,9 @@
 import requests
 import browsercookie
 import datetime
+import time
+from time import gmtime, strftime
+import sys
 from peewee import *
 from bs4 import BeautifulSoup
 
@@ -8,6 +11,12 @@ from bs4 import BeautifulSoup
 APPROVED_PHOTOS_URL = "https://submit.shutterstock.com/review.mhtml?type=photos"
 REJECTED_PHOTOS_URL = "https://submit.shutterstock.com/review.mhtml?approved=-1&type=photos"
 batches_db = SqliteDatabase('batches_statistic.db')
+
+
+def printer(data):
+    sys.stdout.write("\r")
+    sys.stdout.write(data)
+    sys.stdout.flush()
 
 
 class BatchInfo(Model):
@@ -119,32 +128,19 @@ def save_to_db(batches):
     batches_db.close()
 
 
-def get_batches_by_date(date_submitted):
-    batches_db.connect()
-    query = BatchInfo.select().where(BatchInfo.submitted == date_submitted)
-    batches_db.close()
-    return query
-
-
 def main():
-    yanushkov_login = LoginCredentials(browsercookie.chrome())
+    login_credentials = LoginCredentials(browsercookie.chrome())
 
-    yanushkov_pending_wrapper = BatchesPendingApprovalWrapper(yanushkov_login, APPROVED_PHOTOS_URL)
-    batches = yanushkov_pending_wrapper.get_batches()
+    pending_wrapper = BatchesPendingApprovalWrapper(login_credentials, APPROVED_PHOTOS_URL)
+    batches = pending_wrapper.get_batches()
     save_to_db(batches)
 
-    yanushkov_rejected_wrapper = BatchesRejectedWrapper(yanushkov_login, REJECTED_PHOTOS_URL)
-    batches = yanushkov_rejected_wrapper.get_batches()
+    rejected_wrapper = BatchesRejectedWrapper(login_credentials, REJECTED_PHOTOS_URL)
+    batches = rejected_wrapper.get_batches()
     save_rejected_to_db(batches)
 
-    total = 0
-    rejected = 0
-    filter_date = datetime.datetime.strptime("05/02/2017", '%m/%d/%Y').date()
-    batches = get_batches_by_date(filter_date)
-    for batch_sh in batches:
-        total += batch_sh.items
-        rejected += batch_sh.rejected_items
 
-    print "Date:", filter_date, "submitted files:", total, "rejected files:", rejected
-
-main()
+while True:
+    printer(strftime("%Y-%m-%d %H:%M:%S", gmtime()) + " getting latest batches:")
+    main()
+    time.sleep(3600)
