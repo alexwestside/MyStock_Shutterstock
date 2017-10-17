@@ -24,23 +24,26 @@ class BatchInfo(Model):
     submitted = DateField()
     items = IntegerField()
     rejected_items = IntegerField()
+    # 0 - illustrations, 1 - photos
+    type = IntegerField(default=0)
 
     def __repr__(self):
-        return "{id: " + str(self.id) + " submitted: " + str(self.submitted) + " items: " + str(self.items) + " rejected: " + str(self.rejected_items) + "}"
+        return "{id: " + str(self.id) + " submitted: " + str(self.submitted) + " items: " + str(self.items) + " rejected: " + str(self.rejected_items) + " type: "+ str(self.type) + "}"
 
     class Meta:
         database = batches_db
 
 
 class LoginCredentials:
-    def __init__(self, cookies):
+    def __init__(self, cookies, type):
         self.cookies = cookies
+        self.type = type
 
 
 class BatchesPendingApprovalWrapper:
     def __init__(self, login_credentials, url):
-        self.url = url
         self.login_credentials = login_credentials
+        self.url = url
 
     def get_response(self):
         return requests.get(self.url, cookies=self.login_credentials.cookies)
@@ -48,7 +51,11 @@ class BatchesPendingApprovalWrapper:
     def get_batches(self):
         html = self.get_response().text
         soup_talbe = BeautifulSoup(html, 'html.parser')
-        tr_search_results = soup_talbe.find('table', class_="table").find_all('tr');
+        table = soup_talbe.find('table', class_="table")
+        if table is None:
+            return []
+
+        tr_search_results = table.find_all('tr');
 
         batches = []
 
@@ -62,7 +69,7 @@ class BatchesPendingApprovalWrapper:
             id = int(td_search_results[0].get_text())
             submitted = datetime.datetime.strptime(td_search_results[1].get_text(), '%m/%d/%Y').date()
             items = int(td_search_results[2].get_text())
-            batches.append(BatchInfo(id=id, submitted=submitted, items=items))
+            batches.append(BatchInfo(id=id, submitted=submitted, items=items, type=self.login_credentials.type))
 
         return batches
 
@@ -78,7 +85,11 @@ class BatchesRejectedWrapper:
     def get_batches(self):
         html = self.get_response().text
         soup_talbe = BeautifulSoup(html, 'html.parser')
-        tr_search_results = soup_talbe.find('table', class_="table").find_all('tr');
+        table = soup_talbe.find('table', class_="table")
+        if table is None:
+            return []
+
+        tr_search_results = table.find_all('tr');
 
         batches = []
 
@@ -92,7 +103,7 @@ class BatchesRejectedWrapper:
             id = int(td_search_results[0].get_text())
             submitted = datetime.datetime.strptime(td_search_results[1].get_text(), '%m/%d/%Y').date()
             rejected_items = int(td_search_results[2].get_text())
-            batches.append(BatchInfo(id=id, submitted=submitted, rejected_items=rejected_items))
+            batches.append(BatchInfo(id=id, submitted=submitted, rejected_items=rejected_items, type=self.login_credentials.type))
 
         return batches
 
@@ -122,22 +133,22 @@ def save_to_db(batches):
     for batch_sh in batches:
         query = BatchInfo.select().where(BatchInfo.id == batch_sh.id)
         if not query.exists():
-            saved = BatchInfo.create(id=batch_sh.id, submitted=batch_sh.submitted, items=batch_sh.items, rejected_items=0)
+            saved = BatchInfo.create(id=batch_sh.id, submitted=batch_sh.submitted, items=batch_sh.items, rejected_items=0, type=batch_sh.type)
             print saved, "added to db"
 
     batches_db.close()
 
 
 def main():
-    login_credentials = LoginCredentials(browsercookie.chrome())
+    credentials = [ LoginCredentials(browsercookie.chrome(), 0), LoginCredentials(browsercookie.firefox(), 1)]
+    for credential in credentials:
+        pending_wrapper = BatchesPendingApprovalWrapper(credential, APPROVED_PHOTOS_URL)
+        batches = pending_wrapper.get_batches()
+        save_to_db(batches)
 
-    pending_wrapper = BatchesPendingApprovalWrapper(login_credentials, APPROVED_PHOTOS_URL)
-    batches = pending_wrapper.get_batches()
-    save_to_db(batches)
-
-    rejected_wrapper = BatchesRejectedWrapper(login_credentials, REJECTED_PHOTOS_URL)
-    batches = rejected_wrapper.get_batches()
-    save_rejected_to_db(batches)
+        rejected_wrapper = BatchesRejectedWrapper(credential, REJECTED_PHOTOS_URL)
+        batches = rejected_wrapper.get_batches()
+        save_rejected_to_db(batches)
 
 
 while True:

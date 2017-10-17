@@ -1,5 +1,4 @@
 from peewee import *
-import datetime
 import smtplib
 import time
 import datetime
