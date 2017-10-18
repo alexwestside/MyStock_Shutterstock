@@ -152,6 +152,6 @@ def main():
 
 
 while True:
-    printer(strftime("%Y-%m-%d %H:%M:%S", gmtime()) + " getting latest batches:")
+    printer(strftime("%Y-%m-%d %H:%M:%S", gmtime()) + " getting latest batches...")
     main()
     time.sleep(3600)

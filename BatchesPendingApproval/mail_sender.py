@@ -33,33 +33,47 @@ class BatchInfo(Model):
     submitted = DateField()
     items = IntegerField()
     rejected_items = IntegerField()
+    # 0 - illustrations, 1 - photos
+    type = IntegerField(default=0)
 
     def __repr__(self):
-        return "{id: " + str(self.id) + " submitted: " + str(self.submitted) + " items: " + str(self.items) + " rejected: " + str(self.rejected_items) + "}"
+        return "{id: " + str(self.id) + " submitted: " + str(self.submitted) + " items: " + str(self.items) + " rejected: " + str(self.rejected_items) + " type: "+ str(self.type) + "}"
 
     class Meta:
         database = batches_db
 
 
-def get_batches_by_date(date_submitted):
+def get_batches_by_date(date_submitted, batch_type):
     batches_db.connect()
-    query = BatchInfo.select().where(BatchInfo.submitted == date_submitted)
+    query = BatchInfo.select().where((BatchInfo.submitted == date_submitted) & (BatchInfo.type == batch_type))
     batches_db.close()
     return query
 
 
 def main():
+    filter_date = datetime.datetime.strptime("05/02/2017", '%m/%d/%Y').date()
+
     total = 0
     rejected = 0
-    filter_date = datetime.datetime.strptime("05/02/2017", '%m/%d/%Y').date()
-    batches = get_batches_by_date(filter_date)
+    batches = get_batches_by_date(filter_date, 0)
     for batch_sh in batches:
         total += batch_sh.items
         rejected += batch_sh.rejected_items
 
-    print "Date:", filter_date, "submitted files:", total, "rejected files:", rejected
-    send_email('Upload status illustration Shutterstock: ' + str(filter_date),
-               "Illustrations submitted: " + str(total) + " rejected: " + str(rejected),
+    illustration_string = "Illustrations Submitted: " + str(total) + " Rejected: " + str(rejected)
+
+    total = 0
+    rejected = 0
+    batches = get_batches_by_date(filter_date, 1)
+    for batch_sh in batches:
+        total += batch_sh.items
+        rejected += batch_sh.rejected_items
+
+    photos_string = "Photos Submitted: " + str(total) + " Rejected: " + str(rejected)
+
+    print illustration_string + "\n" + photos_string
+    send_email('Upload status Shutterstock: ' + str(filter_date),
+               illustration_string + "\n" + photos_string,
                TO_EMAIL)
 
 while True:
@@ -67,6 +81,5 @@ while True:
     future = datetime.datetime(t.year, t.month, t.day, 8, 0)
     if t.hour >= 8:
         future += datetime.timedelta(days=1)
-    print (future - t).seconds
     time.sleep((future - t).seconds)
     main()
