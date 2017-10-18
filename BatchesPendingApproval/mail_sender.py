@@ -51,7 +51,7 @@ def get_batches_by_date(date_submitted, batch_type):
 
 
 def main():
-    filter_date = datetime.datetime.strptime("05/02/2017", '%m/%d/%Y').date()
+    filter_date = datetime.date.today() - datetime.timedelta(days=1)
 
     total = 0
     rejected = 0
@@ -71,7 +71,7 @@ def main():
 
     photos_string = "Photos Submitted: " + str(total) + " Rejected: " + str(rejected)
 
-    print illustration_string + "\n" + photos_string
+    print str(filter_date) + "\n" + illustration_string + "\n" + photos_string
     send_email('Upload status Shutterstock: ' + str(filter_date),
                illustration_string + "\n" + photos_string,
                TO_EMAIL)
