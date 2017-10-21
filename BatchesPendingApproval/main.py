@@ -7,7 +7,6 @@ import sys
 from peewee import *
 from bs4 import BeautifulSoup
 
-
 APPROVED_PHOTOS_URL = "https://submit.shutterstock.com/review.mhtml?type=photos"
 REJECTED_PHOTOS_URL = "https://submit.shutterstock.com/review.mhtml?approved=-1&type=photos"
 batches_db = SqliteDatabase('batches_statistic.db')
@@ -28,7 +27,8 @@ class BatchInfo(Model):
     type = IntegerField(default=0)
 
     def __repr__(self):
-        return "{id: " + str(self.id) + " submitted: " + str(self.submitted) + " items: " + str(self.items) + " rejected: " + str(self.rejected_items) + " type: "+ str(self.type) + "}"
+        return "{id: " + str(self.id) + " submitted: " + str(self.submitted) + " items: " + str(self.items) + " rejected: " + str(
+            self.rejected_items) + " type: " + str(self.type) + "}"
 
     class Meta:
         database = batches_db
@@ -55,7 +55,7 @@ class BatchesPendingApprovalWrapper:
         if table is None:
             return []
 
-        tr_search_results = table.find_all('tr');
+        tr_search_results = table.find_all('tr')
 
         batches = []
 
@@ -120,7 +120,7 @@ def save_rejected_to_db(batches):
             res = batch_db.get()
             res.rejected_items = batch_sh.rejected_items
             saved = res.save()
-            print saved, batch_sh.id, "updated with rejections"
+            print(saved, batch_sh.id, "updated with rejections")
 
     batches_db.close()
 
@@ -134,13 +134,12 @@ def save_to_db(batches):
         query = BatchInfo.select().where(BatchInfo.id == batch_sh.id)
         if not query.exists():
             saved = BatchInfo.create(id=batch_sh.id, submitted=batch_sh.submitted, items=batch_sh.items, rejected_items=0, type=batch_sh.type)
-            print saved, "added to db"
-
+            print(saved, "added to db")
     batches_db.close()
 
 
 def main():
-    credentials = [ LoginCredentials(browsercookie.chrome(), 0), LoginCredentials(browsercookie.firefox(), 1)]
+    credentials = [LoginCredentials(browsercookie.chrome(), 0), LoginCredentials(browsercookie.firefox(), 1)]
     for credential in credentials:
         pending_wrapper = BatchesPendingApprovalWrapper(credential, APPROVED_PHOTOS_URL)
         batches = pending_wrapper.get_batches()

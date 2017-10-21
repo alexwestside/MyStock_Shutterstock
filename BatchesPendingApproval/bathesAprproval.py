@@ -4,6 +4,7 @@ import browsercookie
 import os
 import pandas as pd
 import smtplib
+import browser_cookie3
 
 InitApprovedPhotosURLs = "https://submit.shutterstock.com/review.mhtml?type=photos"
 
@@ -35,7 +36,7 @@ class Gmail(object):
 class Login:
     def __init__(self):
         self.cookies = browsercookie.chrome()
-
+        # self.cookies = browser_cookie3.chrome(domain_name='submit.shutterstock.com')
 
 class Response:
     def __init__(self, cookies, url):
@@ -73,6 +74,7 @@ class Batch:
 def main():
     batchFile = "batch.csv"
     title = ["BatchID", "MonthSubmitted", "DateSubmitted", "Day_of_week", "PhotosInBatch"]
+    print(Login().cookies)
     dataFrame = Response(Login().cookies, InitApprovedPhotosURLs).getResponse()
     writer = Writer(batchFile, title)
     batch = Batch(batchFile)
@@ -90,12 +92,14 @@ def main():
                                   str(WEEKDAY.get(datetime.datetime(int(dateSplit[2]), int(dateSplit[0]), int(dateSplit[1])).weekday())),
                                   str(PhotosInBatch)])
                 writer.writeTOscv(lineTOscv)
-                boby.append(lineTOscv)
+                # boby.append(lineTOscv)
+                boby = ', '.join(lineTOscv).join("\n")
                 print(lineTOscv)
+    print(boby)
     if len(boby) != 0:
-        user = "_@gmail.com"
-        password = "_"
-        touser = "_@gmail.com"
+        user = "sklif.85@gmail.com"
+        password = "1XyUNnz_"
+        touser = "olexandr.rizhiy@gmail.com"
         subject = "subject"
 
         # TODO need test for sending email.....
